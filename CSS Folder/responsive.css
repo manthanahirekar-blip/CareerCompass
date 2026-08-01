@@ -1,0 +1,136 @@
+@media (max-width: 768px){
+    .newsletter-wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-content{
+        flex-direction: column;
+    }
+
+    .newsletter-form{
+        width: 100%;
+    }
+
+    .newsletter-form form{
+        flex-direction: column;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button{
+        width: 100%;
+    }
+}
+
+
+
+/* ==========================
+        RESPONSIVE search part of career section
+========================== */
+
+@media(max-width:992px){
+
+    .filter-wrapper{
+
+        padding:1.5rem;
+
+    }
+
+    .filter-section{
+
+        flex-direction:column;
+        align-items:stretch;
+
+    }
+
+    .filter-group{
+
+        width:100%;
+
+    }
+
+    .clear-filter{
+
+        justify-content:center;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .search-box{
+
+        height:60px;
+
+    }
+
+    .category-list{
+
+        gap:.8rem;
+
+    }
+
+    .category-btn{
+
+        height:44px;
+        font-size:.9rem;
+
+    }
+
+}
+
+
+/* ===========================
+       Responsive career-details part
+=========================== */
+
+@media(max-width:950px){
+
+    .hero-wrapper{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:2.5rem;
+    }
+
+    .career-description{
+
+        margin-inline:auto;
+    }
+
+    .career-highlights{
+
+        justify-content:center;
+    }
+
+}
+
+/* ===========================
+   Responsive FAQ ACCORDIAN
+=========================== */
+@media(max-width:768px){
+
+    .section-heading h2{
+
+        font-size:1.45rem;
+
+    }
+
+    .accordion-button{
+
+        padding:1rem 1.2rem;
+
+        font-size:.95rem;
+
+    }
+
+    .accordion-body{
+
+        padding:0 1.2rem 1.2rem;
+
+    }
+
+}

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillForge</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="CSS Folder/roadmap.css">
+</head>
+
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">
+            <img src="assets/logos/logo.jpg" alt="SkillForge Logo">
+            SkillForge
+        </a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="careers.html">Career</a></li>
+            <li><a class="active" href="roadmap.html">Roadmap</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- Mobile par button ko menu ke andar show karne ke liye ya alag rakhne ke liye -->
+            <li class="mobile-btn-container"><a href="contact.html" class="nav-btn mobile-contact-btn">Contact</a></li>
+        </ul>
+
+        <a href="contact.html" class="nav-btn desktop-btn">Contact</a>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <a href="https://roadmap.sh" target="_blank" class="badge">
+            🚀 Learn with Structured Roadmaps
+        </a>
+        <h1>Master Skills & Build Your Dream Career</h1>
+        <p>Find career paths, master individual skills, and build real-world projects with step-by-step learning guides.
+        </p>
+
+        <div class="search-bar" id="searchBar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search Roadmaps (Coming Soon...)" readonly>
+        </div>
+
+        <div id="comingSoonPopup" class="coming-soon-popup">
+            🚧 Search feature will be available soon!
+        </div>
+
+        <div class="popular-tags">
+            Popular:
+            <a href="https://roadmap.sh/frontend" target="_blank">Frontend</a> •
+            <a href="https://roadmap.sh/ai-engineer" target="_blank">AI</a> •
+            <a href="https://roadmap.sh/cyber-security" target="_blank">Cyber Security</a> •
+            <a href="https://roadmap.sh/react" target="_blank">React</a> •
+            <a href="https://roadmap.sh/ai-data-scientist" target="_blank">Data Science</a> •
+            <a href="https://roadmap.sh/aws" target="_blank">AWS</a>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <!-- Featured Roadmaps
+        <h2 class="section-title">Featured Roadmaps</h2>
+        <div class="featured-grid">
+            <div class="feature-card">
+                <h3>Frontend 🔥</h3>
+                <p>6-8 Months • Beginner Friendly</p>
+                <a href="#">View Roadmap →</a>
+            </div>
+            <div class="feature-card">
+                <h3>AI Engineer 🔥</h3>
+                <p>10 Months • Advanced</p>
+                <a href="#">View Roadmap →</a>
+            </div>
+            <div class="feature-card">
+                <h3>Cyber Security 🔥</h3>
+                <p>8 Months • Intermediate</p>
+                <a href="#">View Roadmap →</a>
+            </div>
+        </div> -->
+
+        <!-- Career Roadmaps -->
+        <h2 class="section-title">Career Roadmaps</h2>
+        <div class="category-grid">
+            <div class="category-box">
+                <h4><i class="fa-solid fa-laptop-code"></i> Development</h4>
+                <ul>
+                    <li><a href="https://roadmap.sh/frontend" target="_blank">Frontend Developer</a></li>
+                    <li><a href="https://roadmap.sh/backend" target="_blank">Backend Developer</a></li>
+                    <li><a href="https://roadmap.sh/full-stack" target="_blank">Full Stack</a></li>
+                    <li><a href="https://roadmap.sh/software-design-architecture" target="_blank">Software Engineer</a>
+                    </li>
+                    <li><a href="https://roadmap.sh/android" target="_blank">Mobile Developer</a></li>
+                    <!-- <li><a href="#">DevOps</a></li> -->
+                </ul>
+            </div>
+            <div class="category-box">
+                <h4><i class="fa-solid fa-robot"></i> AI & Data</h4>
+                <ul>
+                    <li><a href="https://roadmap.sh/ai-engineer" target="_blank">AI Engineer</a></li>
+                    <li><a href="https://roadmap.sh/ai-engineer" target="_blank">ML Engineer</a></li>
+                    <li><a href="https://roadmap.sh/ai-data-scientist" target="_blank">Data Scientist</a></li>
+                    <li><a href="https://roadmap.sh/data-analyst" target="_blank">Data Analyst</a></li>
+                    <li><a href="https://roadmap.sh/data-engineer" target="_blank">Data Engineer</a></li>
+                </ul>
+            </div>
+            <div class="category-box">
+                <h4><i class="fa-solid fa-shield-halved"></i> Cyber Security</h4>
+                <ul>
+                    <li><a href="https://roadmap.sh/cyber-security" target="_blank">Cyber Security</a></li>
+                    <li><a href="https://roadmap.sh/cyber-security" target="_blank">Pen Tester</a></li>
+                    <li><a href="https://roadmap.sh/cyber-security" target="_blank">Security Engineer</a></li>
+                </ul>
+            </div>
+            <div class="category-box">
+                <h4><i class="fa-solid fa-cloud"></i> Cloud</h4>
+                <ul>
+                    <li><a href="https://roadmap.sh/devops" target="_blank">DevOps</a></li>
+                    <li><a href="https://roadmap.sh/aws" target="_blank">Cloud Engineer</a></li>
+                    <li><a href="https://roadmap.sh/aws" target="_blank">Cloud Architect</a></li>
+                    <li><a href="https://roadmap.sh/devops" target="_blank">SRE</a></li>
+                </ul>
+            </div>
+            <!-- Design -->
+            <div class="category-box">
+                <h4><i class="fa-solid fa-palette"></i> Design</h4>
+                <ul>
+                    <li><a href="https://roadmap.sh/ux-design" target="_blank">UI Designer</a></li>
+                    <li><a href="https://roadmap.sh/ux-design" target="_blank">UX Designer</a></li>
+                    <li><a href="https://roadmap.sh/ux-design" target="_blank">UI/UX Designer</a></li>
+                </ul>
+            </div>
+
+            <!-- Business -->
+            <div class="category-box">
+                <h4><i class="fa-solid fa-briefcase"></i> Business</h4>
+                <ul>
+                    <li><a href="https://roadmap.sh/product-manager" target="_blank">Product Manager</a></li>
+                    <li><a href="https://roadmap.sh/business-analyst" target="_blank">Business Analyst</a></li>
+                    <li><a href="https://academy.hubspot.com" target="_blank">Digital Marketing Specialist</a></li>
+                    <li><a href="https://roadmap.sh/product-manager" target="_blank">Project Manager</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Skill Roadmaps Section -->
+        <div class="skill-roadmaps-section">
+            <h2 class="section-title">Skill Roadmaps</h2>
+            <p class="section-subtitle">Master individual technologies with structured step-by-step learning paths.</p>
+
+            <div class="skill-roadmaps-wrapper">
+
+                <!-- Development Skills -->
+                <div class="skill-group">
+                    <div class="skill-header">
+                        <h3>
+                            <i class="fa-solid fa-code"></i> Development Skills
+                            <span class="skill-count">10 Roadmaps</span>
+                        </h3>
+                        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="skill-grid">
+                        <a href="https://roadmap.sh/frontend" target="_blank" class="skill-chip-btn">HTML</a>
+                        <a href="https://roadmap.sh/frontend" target="_blank" class="skill-chip-btn">CSS</a>
+                        <a href="https://roadmap.sh/javascript" target="_blank" class="skill-chip-btn">JavaScript</a>
+                        <a href="https://roadmap.sh/typescript" target="_blank" class="skill-chip-btn">TypeScript</a>
+                        <a href="https://roadmap.sh/react" target="_blank" class="skill-chip-btn">React</a>
+                        <a href="https://roadmap.sh/nextjs" target="_blank" class="skill-chip-btn">Next.js</a>
+                        <a href="https://roadmap.sh/nodejs" target="_blank" class="skill-chip-btn">Node.js</a>
+                        <a href="https://expressjs.com/" target="_blank" class="skill-chip-btn">Express.js</a>
+                        <a href="https://roadmap.sh/git-github" target="_blank" class="skill-chip-btn">Git</a>
+                        <a href="https://roadmap.sh/git-github" target="_blank" class="skill-chip-btn">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- AI & Data Skills -->
+                <div class="skill-group">
+                    <div class="skill-header">
+                        <h3>
+                            <i class="fa-solid fa-brain"></i> AI & Data Skills
+                            <span class="skill-count">8 Roadmaps</span>
+                        </h3>
+                        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="skill-grid">
+                        <a href="https://roadmap.sh/python" target="_blank" class="skill-chip-btn">Python</a>
+                        <a href="https://pandas.pydata.org/docs/" target="_blank" class="skill-chip-btn">Pandas</a>
+                        <a href="https://numpy.org/learn/" target="_blank" class="skill-chip-btn">NumPy</a>
+                        <a href="https://roadmap.sh/sql" target="_blank" class="skill-chip-btn">SQL</a>
+                        <a href="https://learn.microsoft.com/training/powerplatform/power-bi/" target="_blank"
+                            class="skill-chip-btn">Power BI</a>
+                        <a href="https://www.tableau.com/learn/training" target="_blank"
+                            class="skill-chip-btn">Tableau</a>
+                        <a href="https://www.tensorflow.org/learn" target="_blank" class="skill-chip-btn">TensorFlow</a>
+                        <a href="https://pytorch.org/tutorials/" target="_blank" class="skill-chip-btn">PyTorch</a>
+                    </div>
+                </div>
+
+                <!-- Cyber Security Skills -->
+                <div class="skill-group">
+                    <div class="skill-header">
+                        <h3>
+                            <i class="fa-solid fa-user-shield"></i> Cyber Security Skills
+                            <span class="skill-count">7 Roadmaps</span>
+                        </h3>
+                        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="skill-grid">
+                        <a href="https://roadmap.sh/linux" target="_blank" class="skill-chip-btn">Linux</a>
+                        <a href="https://roadmap.sh/computer-science" target="_blank"
+                            class="skill-chip-btn">Networking</a>
+                        <a href="https://nmap.org/book/man.html" target="_blank" class="skill-chip-btn">Nmap</a>
+                        <a href="https://www.wireshark.org/docs/" target="_blank" class="skill-chip-btn">Wireshark</a>
+                        <a href="https://portswigger.net/web-security" target="_blank" class="skill-chip-btn">Burp
+                            Suite</a>
+                        <a href="https://owasp.org/www-project-web-security-testing-guide/" target="_blank"
+                            class="skill-chip-btn">OWASP</a>
+                        <a href="https://www.splunk.com/en_us/training.html" target="_blank"
+                            class="skill-chip-btn">SIEM</a>
+                    </div>
+                </div>
+
+                <!-- Cloud Skills -->
+                <div class="skill-group">
+                    <div class="skill-header">
+                        <h3>
+                            <i class="fa-solid fa-cloud-arrow-up"></i> Cloud Skills
+                            <span class="skill-count">6 Roadmaps</span>
+                        </h3>
+                        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="skill-grid">
+                        <a href="https://roadmap.sh/aws" target="_blank" class="skill-chip-btn">AWS</a>
+                        <a href="https://roadmap.sh/azure" target="_blank" class="skill-chip-btn">Azure</a>
+                        <a href="https://roadmap.sh/docker" target="_blank" class="skill-chip-btn">Docker</a>
+                        <a href="https://roadmap.sh/kubernetes" target="_blank" class="skill-chip-btn">Kubernetes</a>
+                        <a href="https://developer.hashicorp.com/terraform/tutorials" target="_blank"
+                            class="skill-chip-btn">Terraform</a>
+                        <a href="https://docs.github.com/actions" target="_blank" class="skill-chip-btn">GitHub
+                            Actions</a>
+                    </div>
+                </div>
+
+                <!-- Design Skills -->
+                <div class="skill-group">
+                    <div class="skill-header">
+                        <h3>
+                            <i class="fa-solid fa-palette"></i> Design Skills
+                            <span class="skill-count">3 Roadmaps</span>
+                        </h3>
+                        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="skill-grid">
+                        <a href="https://roadmap.sh/ux-design" target="_blank" class="skill-chip-btn">UI Design</a>
+                        <a href="https://roadmap.sh/ux-design" target="_blank" class="skill-chip-btn">UX Design</a>
+                        <a href="https://roadmap.sh/ux-design" target="_blank" class="skill-chip-btn">Design Systems</a>
+                    </div>
+                </div>
+
+                <!-- Business Skills -->
+                <div class="skill-group">
+                    <div class="skill-header">
+                        <h3>
+                            <i class="fa-solid fa-briefcase"></i> Business Skills
+                            <span class="skill-count">4 Roadmaps</span>
+                        </h3>
+                        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="skill-grid">
+                        <a href="https://roadmap.sh/product-manager" target="_blank" class="skill-chip-btn">Product
+                            Management</a>
+                        <a href="https://roadmap.sh/business-analyst" target="_blank" class="skill-chip-btn">Business
+                            Analysis</a>
+                        <a href="https://roadmap.sh/software-design-architecture" target="_blank"
+                            class="skill-chip-btn">Agile</a>
+                        <a href="https://roadmap.sh/software-design-architecture" target="_blank"
+                            class="skill-chip-btn">Scrum</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="project-roadmaps-section">
+            <div class="section-heading-area">
+                <h2 class="section-title">Project Roadmaps</h2>
+                <p class="section-subtitle">Build real-world projects to strengthen your portfolio, gain practical
+                    experience, and prepare for interviews.</p>
+            </div>
+
+            <div class="project-cards-grid">
+
+                <!-- Development Projects Card -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <div>
+                            <h3><i class="fa-solid fa-code"></i> Development Projects</h3>
+                            <p class="card-desc">Learn by building modern web applications.</p>
+                        </div>
+                        <span class="project-count">12 Projects</span>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://projectai.in/projects/b699dcfd-2e29-421f-8e8b-3bee300d77ef" target="_blank"
+                            class="project-item">
+                            <span><i class="fa-solid fa-globe"></i> Portfolio Website</span>
+                            <span class="badge beginner">Beginner &nearr;</span>
+                        </a>
+                        <a href="https://projectai.in/projects/876e81e5-cdee-4a3c-9833-90715b7c6cb0" target="_blank"
+                            class="project-item">
+                            <span><i class="fa-solid fa-chart-pie"></i> Weather Dashboard</span>
+                            <span class="badge beginner">Beginner &nearr;</span>
+                        </a>
+                        <a href="https://projectai.in/projects/ad92ad3c-5d4a-4055-aede-da6c797e4f13" target="_blank"
+                            class="project-item">
+                            <span><i class="fa-solid fa-cart-shopping"></i> URL Shortener Service</span>
+                            <span class="badge intermediate">Intermediate &nearr;</span>
+                        </a>
+                        <a href="https://projectai.in/projects/5e2c1703-2a0f-4f55-9bb0-edb8cb7a4b24" target="_blank"
+                            class="project-item">
+                            <span><i class="fa-solid fa-circle-check"></i> Community Forum Platform</span>
+                            <span class="badge advanced">Advanced &nearr;</span>
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <button class="more-projects-btn" onclick="openModal()">+8 More Projects &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- AI & Data Projects Card -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <div>
+                            <h3><i class="fa-solid fa-brain"></i> AI & Data Projects</h3>
+                            <p class="card-desc">Build intelligent applications using AI & ML.</p>
+                        </div>
+                        <span class="project-count">10 Projects</span>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://projectai.in/projects/925969b5-c4f2-4160-991d-6eb98e94b3d4"
+                            class="project-item">
+                            <span><i class="fa-solid fa-robot"></i> Real Estate Price Prediction</span>
+                            <span class="badge beginner">Beginner &nearr;</span>
+                        </a>
+                        <a href="https://projectai.in/projects/4e5f8c49-fd8e-470b-abb1-16a9ba7914e1"
+                            class="project-item">
+                            <span><i class="fa-solid fa-image"></i> Movie Recommendation System</span>
+                            <span class="badge intermediate">Intermediate &nearr;</span>
+                        </a>
+                        <a href="https://projectai.in/projects/9e79b64b-af63-4498-a9d8-580d83b52461"
+                            class="project-item">
+                            <span><i class="fa-solid fa-chart-line"></i> Energy Consumption Forecasting</span>
+                            <span class="badge intermediate">Intermediate &nearr;</span>
+                        </a>
+                        <a href="https://projectai.in/projects/cbe01d7c-731f-4622-88b7-6289add4d08b?utm_source=chatgpt.com"
+                            class="project-item">
+                            <span><i class="fa-solid fa-comments"></i> Customer Churn Prediction</span>
+                            <span class="badge advanced">Advanced &nearr;</span>
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <button class="more-projects-btn" onclick="openModal()">+6 More Projects &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Cyber Security Projects Card -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <div>
+                            <h3><i class="fa-solid fa-shield-halved"></i> Cyber Security Projects</h3>
+                            <p class="card-desc">Practice ethical hacking & security tools.</p>
+                        </div>
+                        <span class="project-count">9 Projects</span>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://projectai.in/projects/f36376d7-6e41-417e-ab64-f6b68853bfd2/tasks/e949a597-2484-4205-b95e-b06f3526c446"
+                            class="project-item">
+                            <span><i class="fa-solid fa-bullseye"></i> Network Scanner</span>
+                            <span class="badge beginner">Beginner &nearr;</span>
+                        </a>
+                        <a href="https://projectai.in/projects/892a3353-98b9-4d05-af98-6f6f99947f42?utm_source=chatgpt.com"
+                            class="project-item">
+                            <span><i class="fa-solid fa-lock"></i> CyberVault</span>
+                            <span class="badge intermediate">Intermediate &nearr;</span>
+                        </a>
+                        <a href="https://github.com/digininja/DVWA?utm_source=chatgpt.com" class="project-item">
+                            <span><i class="fa-solid fa-tower-broadcast"></i> Damn Vulnerable Web Application</span>
+                            <span class="badge intermediate">Intermediate &nearr;</span>
+                        </a>
+                        <a href="https://documentation.wazuh.com/current/quickstart.html" class="project-item">
+                            <span><i class="fa-solid fa-shield"></i> SIEM & Threat Detection Dashboard</span>
+                            <span class="badge advanced">Advanced &nearr;</span>
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <button class="more-projects-btn" onclick="openModal()">+5 More Projects &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Cloud Projects Card -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <div>
+                            <h3><i class="fa-solid fa-cloud-arrow-up"></i> Cloud Projects</h3>
+                            <p class="card-desc">Gain hands-on cloud deployment experience.</p>
+                        </div>
+                        <span class="project-count">8 Projects</span>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://github.com/shubhammurti/AWS-Projects-Portfolio?utm_source=chatgpt.com"
+                            class="project-item">
+                            <span><i class="fa-solid fa-cloud"></i> AWS Solutions Portfolio</span>
+                            <span class="badge beginner">Beginner &nearr;</span>
+                        </a>
+                        <a href="https://github.com/aws-samples/aws-do-docker?utm_source=chatgpt.com"
+                            class="project-item">
+                            <span><i class="fa-brands fa-docker"></i> AWS DevOps for Docker</span>
+                            <span class="badge intermediate">Intermediate &nearr;</span>
+                        </a>
+                        <a href="https://devopsengine.cloud/devops-project-1/?utm_source=chatgpt.com"
+                            class="project-item">
+                            <span><i class="fa-solid fa-gears"></i> CI/CD Pipeline</span>
+                            <span class="badge intermediate">Intermediate &nearr;</span>
+                        </a>
+                        <a href="https://github.com/setheliot/eks_demo?utm_source=chatgpt.com" class="project-item">
+                            <span><i class="fa-solid fa-cubes"></i> EKS Demo (Terraform + Kubernetes + AWS)</span>
+                            <span class="badge advanced">Advanced &nearr;</span>
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <button class="more-projects-btn" onclick="openModal()">+4 More Projects &rarr;</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Coming Soon Modal -->
+        <div class="modal-overlay" id="comingSoonModal">
+            <div class="modal-box">
+                <div class="modal-icon">🚧</div>
+                <h3>Coming Soon</h3>
+                <p>More guided projects for this category will be available in a future update.</p>
+                <p class="modal-subtext">For now, you can explore the featured projects listed in this section.</p>
+                <button class="modal-close-btn" onclick="closeModal()">Got it</button>
+            </div>
+        </div>
+
+        <!-- Learning Process -->
+        <h2 class="section-title">Learning Process</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <h4>Choose Roadmap</h4>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <h4>Learn Skills</h4>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <h4>Build Projects</h4>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <h4>Practice Interview</h4>
+            </div>
+            <div class="step">
+                <div class="step-num">5</div>
+                <h4>Get Job Ready</h4>
+            </div>
+        </div>
+
+        <!-- CTA Box -->
+        <div class="cta-box">
+            <h3>Ready to start your learning journey?</h3>
+            <button class="cta-btn" onclick="window.location.href='resources.html'">Explore Learning Resources</button>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-wrapper">
+
+                <!-- ======================
+                    Brand
+            ======================= -->
+
+                <div class="footer-brand">
+
+                    <a href="#" class="footer-logo">
+
+                        <img src="assets/logos/logo.jpg" alt="SkillForge Logo">
+
+                        <span>SkillForge</span>
+
+                    </a>
+
+                    <p>
+                        Discover careers, explore learning paths, and access curated resources—all in one place.
+                    </p>
+
+                    <div class="social-links">
+
+                        <a href="#">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="ri-github-fill"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ======================
+                Platform Links
+            ======================= -->
+
+                <div class="footer-links">
+
+                    <h3>Platform</h3>
+
+                    <ul>
+
+                        <li><a href="careers.html">Career Explorer</a></li>
+
+                        <li><a href="roadmap.html">Roadmaps</a></li>
+
+                        <li><a href="resources.html">Resources</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <!-- <li><a href="#">Resume Builder</a></li> -->
+
+                    </ul>
+
+                </div>
+
+
+                <!-- ======================
+                Company Links
+            ======================= -->
+
+                <div class="footer-links">
+
+                    <h3>Company</h3>
+
+                    <ul>
+
+                        <li><a href="#">About Us</a></li>
+
+                        <li><a href="#">Contact Us</a></li>
+
+                        <li><a href="#">FAQ</a></li>
+
+                        <li><a href="#">Privacy Policy</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- ======================
+                Support Links
+            ======================= -->
+
+                <div class="footer-links">
+
+                    <h3>Support</h3>
+
+                    <ul>
+
+                        <li><a href="#">Help Center</a></li>
+
+                        <li><a href="#">FAQs</a></li>
+
+                        <li><a href="#">Privacy Policy</a></li>
+
+                        <li><a href="#">Terms & Conditions</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- ======================
+                    CTA CARD
+            ======================= -->
+
+                <div class="footer-cta">
+
+                    <h3>
+                        Ready to Explore?
+                    </h3>
+
+                    <p>
+                        Discover your ideal career path and start learning today.
+                    </p>
+
+                    <a href="careers.html" class="footer-btn">
+
+                        Explore Careers
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!--=========================
+            Bottom Footer
+        ==========================-->
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    © 2026 SkillForge. All Rights Reserved.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="JS Folder/roadmap.js"></script>
+
+</body>
+
+</html>

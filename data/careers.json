@@ -1,0 +1,6009 @@
+[
+  {
+    "id": 1,
+    "slug": "frontend-developer",
+    "title": "Frontend Developer",
+    "category": "Development",
+    "icon": "ri-code-box-line",
+    "color": "#6C63FF",
+    "image": "frontend.png",
+    "featured": true,
+    "shortDescription": "Builds the visual, user-facing elements of websites and applications.",
+    "fullDescription": "A Frontend Developer is responsible for creating the visual and interactive parts of websites and web applications. They transform UI/UX designs into responsive web pages using HTML, CSS, JavaScript, and modern frameworks. Frontend developers collaborate closely with backend developers and designers to deliver fast, accessible, and user-friendly digital experiences.",
+    "salary": {
+      "min": 4,
+      "max": 12
+    },
+    "demand": "High",
+    "experience": "Beginner",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "High",
+      "futureScope": "Excellent",
+      "industry": "IT Services, Product, Startups"
+    },
+    "skills": [
+      {
+        "name": "HTML",
+        "logo": "assets/logos/html.png",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+      },
+      {
+        "name": "CSS",
+        "logo": "assets/logos/css3.png",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      },
+      {
+        "name": "JavaScript",
+        "logo": "assets/logos/js.png",
+        "url": "https://javascript.info/"
+      },
+      {
+        "name": "React",
+        "logo": "assets/logos/react.png",
+        "url": "https://react.dev/learn"
+      },
+      {
+        "name": "Git",
+        "logo": "assets/logos/git.png",
+        "url": "https://git-scm.com/doc"
+      },
+      {
+        "name": "Responsive Design",
+        "logo": "assets/logos/responsive-design.png",
+        "url": "https://web.dev/learn/design"
+      }
+    ],
+    "tools": [
+      "VS Code",
+      "Git",
+      "GitHub",
+      "Chrome DevTools",
+      "Figma",
+      "npm"
+    ],
+    "responsibilities": [
+      "Develop responsive websites",
+      "Convert UI/UX designs into code",
+      "Write clean and maintainable code",
+      "Integrate REST APIs",
+      "Optimize website performance",
+      "Fix UI bugs",
+      "Ensure cross-browser compatibility",
+      "Collaborate with designers and backend developers"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn HTML"
+      },
+      {
+        "step": 2,
+        "title": "Master CSS"
+      },
+      {
+        "step": 3,
+        "title": "Learn JavaScript"
+      },
+      {
+        "step": 4,
+        "title": "Learb React"
+      },
+      {
+        "step": 5,
+        "title": "Build Projects"
+      },
+      {
+        "step": 6,
+        "title": "Learn Tools"
+      },
+      {
+        "step": 7,
+        "title": "Apply for Jobs"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com/"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com/en-in"
+      },
+      {
+        "name": "Amazon",
+        "logo": "assets/logos/amazon.png",
+        "url": "https://www.amazon.com/"
+      },
+      {
+        "name": "Adobe",
+        "logo": "assets/logos/adobe.png",
+        "url": "https://www.adobe.com/"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com/"
+      },
+      {
+        "name": "TCS",
+        "logo": "assets/logos/tcs.png",
+        "url": "https://www.tcs.com/"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com/in-en"
+      },
+      {
+        "name": "Zoho",
+        "logo": "assets/logos/zoho.png",
+        "url": "https://www.zoho.com/"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹4 - ₹12 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Beginner",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "High",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.2 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "MDN Web Docs",
+        "type": "Documentation",
+        "logo": "assets/logos/mdn.png",
+        "url": "https://developer.mozilla.org/"
+      },
+      {
+        "name": "freeCodeCamp",
+        "type": "Course",
+        "logo": "assets/logos/free-code-camp.png",
+        "url": "https://www.freecodecamp.org/"
+      },
+      {
+        "name": "Frontend Mentor",
+        "type": "Practice",
+        "logo": "assets/logos/frontend-mentor.png",
+        "url": "https://www.frontendmentor.io/"
+      },
+      {
+        "name": "JavaScript.info",
+        "type": "Documentation",
+        "logo": "assets/logos/javascript-info.png",
+        "url": "https://javascript.info/"
+      }
+    ],
+    "certifications": [
+      "Responsive Web Design - freeCodeCamp",
+      "Meta Front-End Developer Certificate",
+      "Google UX Design (Optional)"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Backend Developer",
+        "slug": "backend-developer"
+      },
+      {
+        "name": "Full Stack Developer",
+        "slug": "full-stack-developer"
+      },
+      {
+        "name": "UI/UX Designer",
+        "slug": "ui-ux-designer"
+      },
+      {
+        "name": "Web Designer",
+        "slug": "web-designer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is React mandatory?",
+        "answer": "No. However, React is one of the most widely used frontend libraries and is highly recommended."
+      },
+      {
+        "question": "Do I need a degree?",
+        "answer": "A degree helps, but strong projects and skills can also help you get hired."
+      },
+      {
+        "question": "Which language is most important?",
+        "answer": "JavaScript is the core programming language for frontend development."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "backend-developer",
+    "title": "Backend Developer",
+    "category": "Development",
+    "icon": "ri-server-line",
+    "color": "#2563EB",
+    "image": "backend.png",
+    "featured": true,
+    "shortDescription": "Builds the server-side logic, databases, and APIs that power modern web applications.",
+    "fullDescription": "A Backend Developer is responsible for building and maintaining the server-side of web applications. They create APIs, manage databases, implement authentication, optimize application performance, and ensure security and scalability. Backend developers work closely with frontend developers to deliver complete, reliable, and efficient software solutions.",
+    "salary": {
+      "min": 5,
+      "max": 15
+    },
+    "demand": "High",
+    "experience": "Beginner",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "High",
+      "futureScope": "Excellent",
+      "industry": "IT Services, Product Companies, Startups"
+    },
+    "skills": [
+      {
+        "name": "Java",
+        "logo": "assets/logos/java.png",
+        "url": "https://dev.java/learn/"
+      },
+      {
+        "name": "Spring Boot",
+        "logo": "assets/logos/spring-boot.png",
+        "url": "https://spring.io/guides"
+      },
+      {
+        "name": "Node.js",
+        "logo": "assets/logos/node-js.png",
+        "url": "https://nodejs.org/en/learn"
+      },
+      {
+        "name": "Express.js",
+        "logo": "assets/logos/express-js.png",
+        "url": "https://expressjs.com/"
+      },
+      {
+        "name": "SQL",
+        "logo": "assets/logos/sql.png",
+        "url": "https://www.w3schools.com/sql/"
+      },
+      {
+        "name": "MongoDB",
+        "logo": "assets/logos/mongo-db.png",
+        "url": "https://learn.mongodb.com/"
+      },
+      {
+        "name": "REST APIs",
+        "logo": "assets/logos/rest-api.png",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Fetching_data"
+      },
+      {
+        "name": "Git",
+        "logo": "assets/logos/git.png",
+        "url": "https://git-scm.com/doc"
+      }
+    ],
+    "tools": [
+      "VS Code",
+      "Postman",
+      "Git",
+      "GitHub",
+      "Docker",
+      "MongoDB Compass"
+    ],
+    "responsibilities": [
+      "Develop server-side applications",
+      "Design and build REST APIs",
+      "Manage relational and NoSQL databases",
+      "Implement authentication and authorization",
+      "Write secure and scalable business logic",
+      "Optimize backend performance",
+      "Debug and maintain backend systems",
+      "Collaborate with frontend developers and DevOps engineers"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Programming Language"
+      },
+      {
+        "step": 2,
+        "title": "Learn Databases"
+      },
+      {
+        "step": 3,
+        "title": "Master Backend Framework"
+      },
+      {
+        "step": 4,
+        "title": "Build REST APIs"
+      },
+      {
+        "step": 5,
+        "title": "Learn Authentication & Security"
+      },
+      {
+        "step": 6,
+        "title": "Build Real-world Projects"
+      },
+      {
+        "step": 7,
+        "title": "Apply for Jobs"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "Amazon",
+        "logo": "assets/logos/amazon.png",
+        "url": "https://www.amazon.com"
+      },
+      {
+        "name": "Oracle",
+        "logo": "assets/logos/oracle.png",
+        "url": "https://www.oracle.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      },
+      {
+        "name": "TCS",
+        "logo": "assets/logos/tcs.png",
+        "url": "https://www.tcs.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      },
+      {
+        "name": "Zoho",
+        "logo": "assets/logos/zoho.png",
+        "url": "https://www.zoho.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹5 - ₹15 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Beginner",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.4 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Node.js Documentation",
+        "type": "Documentation",
+        "logo": "assets/logos/node-doc.png",
+        "url": "https://nodejs.org/docs/latest/api/"
+      },
+      {
+        "name": "Express.js",
+        "type": "Documentation",
+        "logo": "assets/logos/express-doc.png",
+        "url": "https://expressjs.com/"
+      },
+      {
+        "name": "MongoDB Docs",
+        "type": "Documentation",
+        "logo": "assets/logos/mongo-db.png",
+        "url": "https://www.mongodb.com/docs/"
+      },
+      {
+        "name": "Postman Learning Center",
+        "type": "API Testing",
+        "logo": "assets/logos/postman.png",
+        "url": "https://learning.postman.com/"
+      }
+    ],
+    "certifications": [
+      "Meta Back-End Developer Professional Certificate",
+      "Oracle Certified Professional Java",
+      "MongoDB Associate Developer"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Frontend Developer",
+        "slug": "frontend-developer"
+      },
+      {
+        "name": "Full Stack Developer",
+        "slug": "full-stack-developer"
+      },
+      {
+        "name": "DevOps Engineer",
+        "slug": "devops-engineer"
+      },
+      {
+        "name": "Database Administrator",
+        "slug": "database-administrator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Which language is best for backend development?",
+        "answer": "Java, JavaScript (Node.js), Python, C#, and Go are among the most popular backend programming languages."
+      },
+      {
+        "question": "Do I need to learn SQL?",
+        "answer": "Yes. SQL is an essential skill because most backend applications interact with relational databases."
+      },
+      {
+        "question": "Is DSA important for Backend Developers?",
+        "answer": "Yes. Data Structures and Algorithms are frequently tested in interviews and help you build efficient applications."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "full-stack-developer",
+    "title": "Full Stack Developer",
+    "category": "Development",
+    "icon": "ri-stack-line",
+    "color": "#14B8A6",
+    "image": "full-stack.png",
+    "featured": true,
+    "shortDescription": "Builds complete web applications by handling both frontend and backend development.",
+    "fullDescription": "A Full Stack Developer is responsible for developing both the client-side and server-side of web applications. They create responsive user interfaces, build APIs, manage databases, implement authentication, and deploy scalable applications. Full Stack Developers possess knowledge of multiple technologies across the entire development lifecycle, making them highly versatile professionals in the software industry.",
+    "salary": {
+      "min": 6,
+      "max": 18
+    },
+    "demand": "Very High",
+    "experience": "Intermediate",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "Very High",
+      "futureScope": "Excellent",
+      "industry": "IT Services, Product Companies, SaaS, Startups"
+    },
+    "skills": [
+      {
+        "name": "HTML5",
+        "logo": "assets/logos/html.png",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+      },
+      {
+        "name": "CSS3",
+        "logo": "assets/logos/css3.png",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      },
+      {
+        "name": "JavaScript",
+        "logo": "assets/logos/js.png",
+        "url": "https://javascript.info/"
+      },
+      {
+        "name": "React",
+        "logo": "assets/logos/react.png",
+        "url": "https://react.dev/learn"
+      },
+      {
+        "name": "Node.js",
+        "logo": "assets/logos/node-js.png",
+        "url": "https://nodejs.org/en/learn"
+      },
+      {
+        "name": "MongoDB",
+        "logo": "assets/logos/mongo-db.png",
+        "url": "https://learn.mongodb.com/"
+      },
+      {
+        "name": "REST APIs",
+        "logo": "assets/logos/rest-api.png",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Fetching_data"
+      },
+      {
+        "name": "Git",
+        "logo": "assets/logos/git.png",
+        "url": "https://git-scm.com/doc"
+      }
+    ],
+    "tools": [
+      "VS Code",
+      "Git",
+      "GitHub",
+      "Postman",
+      "MongoDB Compass",
+      "Docker",
+      "npm",
+      "Chrome DevTools"
+    ],
+    "responsibilities": [
+      "Develop responsive frontend interfaces",
+      "Build scalable backend services",
+      "Design and integrate REST APIs",
+      "Manage SQL and NoSQL databases",
+      "Implement authentication and authorization",
+      "Debug and optimize application performance",
+      "Deploy and maintain web applications",
+      "Collaborate with designers and development teams"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn HTML & CSS"
+      },
+      {
+        "step": 2,
+        "title": "Master JavaScript"
+      },
+      {
+        "step": 3,
+        "title": "Learn React"
+      },
+      {
+        "step": 4,
+        "title": "Learn Backend Development"
+      },
+      {
+        "step": 5,
+        "title": "Master Databases & APIs"
+      },
+      {
+        "step": 6,
+        "title": "Build Full Stack Projects"
+      },
+      {
+        "step": 7,
+        "title": "Deploy & Apply for Jobs"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "Amazon",
+        "logo": "assets/logos/amazon.png",
+        "url": "https://www.amazon.com"
+      },
+      {
+        "name": "Meta",
+        "logo": "assets/logos/meta.png",
+        "url": "https://about.meta.com"
+      },
+      {
+        "name": "Netflix",
+        "logo": "assets/logos/netflix.png",
+        "url": "https://www.netflix.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      },
+      {
+        "name": "TCS",
+        "logo": "assets/logos/tcs.png",
+        "url": "https://www.tcs.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹6 - ₹18 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Intermediate",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.5 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "MDN Web Docs",
+        "type": "Documentation",
+        "logo": "assets/logos/mdn.png",
+        "url": "https://developer.mozilla.org/"
+      },
+      {
+        "name": "freeCodeCamp",
+        "type": "Course",
+        "logo": "assets/logos/free-code-camp.png",
+        "url": "https://www.freecodecamp.org/"
+      },
+      {
+        "name": "The Odin Project",
+        "type": "Course",
+        "logo": "assets/logos/the-odin-project.png",
+        "url": "https://www.theodinproject.com/"
+      },
+      {
+        "name": "Full Stack Open",
+        "type": "Course",
+        "logo": "assets/logos/full-stack-open.png",
+        "url": "https://fullstackopen.com/en/"
+      }
+    ],
+    "certifications": [
+      "Meta Full Stack Developer Professional Certificate",
+      "IBM Full Stack Software Developer Professional Certificate",
+      "freeCodeCamp Full Stack Certification"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Frontend Developer",
+        "slug": "frontend-developer"
+      },
+      {
+        "name": "Backend Developer",
+        "slug": "backend-developer"
+      },
+      {
+        "name": "DevOps Engineer",
+        "slug": "devops-engineer"
+      },
+      {
+        "name": "Software Engineer",
+        "slug": "software-engineer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Full Stack Development a good career?",
+        "answer": "Yes. Full Stack Developers are highly in demand because they can build complete web applications from frontend to backend."
+      },
+      {
+        "question": "Do I need to learn both frontend and backend?",
+        "answer": "Yes. A Full Stack Developer should understand both client-side and server-side technologies."
+      },
+      {
+        "question": "Which stack should I learn first?",
+        "answer": "The MERN Stack (MongoDB, Express.js, React, Node.js) is one of the most popular choices for beginners."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "software-engineer",
+    "title": "Software Engineer",
+    "category": "Development",
+    "icon": "ri-code-s-slash-line",
+    "color": "#3B82F6",
+    "image": "software-engineer.png",
+    "featured": true,
+    "shortDescription": "Designs, develops, tests, and maintains software applications and systems.",
+    "fullDescription": "A Software Engineer is responsible for designing, developing, testing, deploying, and maintaining software solutions for businesses and users. They apply engineering principles, programming skills, and problem-solving techniques to build scalable, secure, and efficient software applications across web, mobile, desktop, cloud, and enterprise platforms. Software Engineers collaborate with product managers, designers, QA engineers, and DevOps teams throughout the software development lifecycle.",
+    "salary": {
+      "min": 6,
+      "max": 20
+    },
+    "demand": "Very High",
+    "experience": "Intermediate",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "Very High",
+      "futureScope": "Excellent",
+      "industry": "IT Services, Product Companies, FinTech, Healthcare, SaaS, Startups"
+    },
+    "skills": [
+      {
+        "name": "Java",
+        "logo": "assets/logos/java.png",
+        "url": "https://dev.java/learn/"
+      },
+      {
+        "name": "Python",
+        "logo": "assets/logos/python.png",
+        "url": "https://docs.python.org/3/tutorial/"
+      },
+      {
+        "name": "C++",
+        "logo": "assets/logos/c++.png",
+        "url": "https://www.learncpp.com/"
+      },
+      {
+        "name": "Data Structures & Algorithms",
+        "logo": "assets/logos/dsa.png",
+        "url": "https://www.geeksforgeeks.org/dsa-tutorial-learn-data-structures-and-algorithms/"
+      },
+      {
+        "name": "Object-Oriented Programming",
+        "logo": "assets/logos/oop.png",
+        "url": "https://refactoring.guru/design-patterns/what-is-pattern"
+      },
+      {
+        "name": "SQL",
+        "logo": "assets/logos/sql.png",
+        "url": "https://www.w3schools.com/sql/"
+      },
+      {
+        "name": "Git",
+        "logo": "assets/logos/git.png",
+        "url": "https://git-scm.com/doc"
+      },
+      {
+        "name": "Software Design",
+        "logo": "assets/logos/software-design.png",
+        "url": "https://refactoring.guru/design-patterns"
+      }
+    ],
+    "tools": [
+      "VS Code",
+      "IntelliJ IDEA",
+      "Git",
+      "GitHub",
+      "Docker",
+      "Postman",
+      "Jira",
+      "Visual Studio"
+    ],
+    "responsibilities": [
+      "Design software architecture",
+      "Develop scalable software applications",
+      "Write clean, efficient, and maintainable code",
+      "Debug and fix software issues",
+      "Review and optimize existing code",
+      "Collaborate with cross-functional teams",
+      "Implement software testing and quality assurance",
+      "Maintain and improve existing software systems"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Programming Fundamentals"
+      },
+      {
+        "step": 2,
+        "title": "Master DSA & OOP"
+      },
+      {
+        "step": 3,
+        "title": "Learn Databases & SQL"
+      },
+      {
+        "step": 4,
+        "title": "Build Software Projects"
+      },
+      {
+        "step": 5,
+        "title": "Learn System Design Basics"
+      },
+      {
+        "step": 6,
+        "title": "Practice Interview Problems"
+      },
+      {
+        "step": 7,
+        "title": "Apply for Software Engineering Roles"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "Amazon",
+        "logo": "assets/logos/amazon.png",
+        "url": "https://www.amazon.com"
+      },
+      {
+        "name": "Apple",
+        "logo": "assets/logos/apple.png",
+        "url": "https://www.apple.com"
+      },
+      {
+        "name": "Adobe",
+        "logo": "assets/logos/adobe.png",
+        "url": "https://www.adobe.com"
+      },
+      {
+        "name": "Oracle",
+        "logo": "assets/logos/oracle.png",
+        "url": "https://www.oracle.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹6 - ₹20 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Intermediate",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.6 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "GeeksforGeeks",
+        "type": "Learning",
+        "logo": "assets/logos/gfg.png",
+        "url": "https://www.geeksforgeeks.org/"
+      },
+      {
+        "name": "LeetCode",
+        "type": "Practice",
+        "logo": "assets/logos/leetcode.png",
+        "url": "https://leetcode.com/"
+      },
+      {
+        "name": "freeCodeCamp",
+        "type": "Course",
+        "logo": "assets/logos/freecodecamp.png",
+        "url": "https://www.freecodecamp.org/"
+      },
+      {
+        "name": "Roadmap.sh",
+        "type": "Roadmap",
+        "logo": "assets/logos/roadmap.png",
+        "url": "https://roadmap.sh/software-engineer"
+      }
+    ],
+    "certifications": [
+      "Meta Programming with Java",
+      "AWS Certified Developer – Associate",
+      "Oracle Certified Professional Java",
+      "Microsoft Certified: Azure Developer Associate"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Full Stack Developer",
+        "slug": "full-stack-developer"
+      },
+      {
+        "name": "Backend Developer",
+        "slug": "backend-developer"
+      },
+      {
+        "name": "Frontend Developer",
+        "slug": "frontend-developer"
+      },
+      {
+        "name": "DevOps Engineer",
+        "slug": "devops-engineer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Software Engineering a good career in 2026 and beyond?",
+        "answer": "Yes. Software Engineering remains one of the highest-paying and most in-demand careers across industries."
+      },
+      {
+        "question": "Do Software Engineers need DSA?",
+        "answer": "Yes. Strong knowledge of Data Structures and Algorithms is essential for coding interviews and writing efficient software."
+      },
+      {
+        "question": "Do I need to know multiple programming languages?",
+        "answer": "No. Mastering one language first is enough, but learning additional languages later improves career opportunities."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "mobile-app-developer",
+    "title": "Mobile App Developer",
+    "category": "Development",
+    "icon": "ri-smartphone-line",
+    "color": "#10B981",
+    "image": "mobile-app-developer.png",
+    "featured": true,
+    "shortDescription": "Builds mobile applications for Android and iOS devices using modern development frameworks.",
+    "fullDescription": "A Mobile App Developer designs, develops, tests, and maintains applications for smartphones and tablets. They create user-friendly, high-performance mobile applications using native or cross-platform technologies such as Android, iOS, Flutter, and React Native. Mobile App Developers work closely with UI/UX designers, backend developers, and QA engineers to deliver seamless mobile experiences.",
+    "salary": {
+      "min": 5,
+      "max": 16
+    },
+    "demand": "High",
+    "experience": "Intermediate",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "High",
+      "futureScope": "Excellent",
+      "industry": "IT Services, Product Companies, Startups, FinTech, Healthcare"
+    },
+    "skills": [
+      {
+        "name": "Kotlin",
+        "logo": "assets/logos/kotlin.png",
+        "url": "https://developer.android.com/kotlin"
+      },
+      {
+        "name": "Java",
+        "logo": "assets/logos/java.png",
+        "url": "https://dev.java/learn/"
+      },
+      {
+        "name": "Flutter",
+        "logo": "assets/logos/flutter.png",
+        "url": "https://docs.flutter.dev/get-started"
+      },
+      {
+        "name": "Dart",
+        "logo": "assets/logos/dart.png",
+        "url": "https://dart.dev/guides"
+      },
+      {
+        "name": "Android Development",
+        "logo": "assets/logos/android.png",
+        "url": "https://developer.android.com/courses"
+      },
+      {
+        "name": "Firebase",
+        "logo": "assets/logos/firebase.png",
+        "url": "https://firebase.google.com/docs"
+      },
+      {
+        "name": "REST APIs",
+        "logo": "assets/logos/rest-api.png",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Fetching_data"
+      },
+      {
+        "name": "Git",
+        "logo": "assets/logos/git.png",
+        "url": "https://git-scm.com/doc"
+      }
+    ],
+    "tools": [
+      "Android Studio",
+      "Xcode",
+      "VS Code",
+      "Git",
+      "GitHub",
+      "Firebase",
+      "Postman",
+      "Figma"
+    ],
+    "responsibilities": [
+      "Develop Android and iOS applications",
+      "Build responsive and user-friendly mobile interfaces",
+      "Integrate REST APIs and backend services",
+      "Optimize app performance and battery usage",
+      "Debug and fix application issues",
+      "Publish apps on Play Store and App Store",
+      "Implement secure authentication",
+      "Collaborate with designers and backend developers"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Programming Basics"
+      },
+      {
+        "step": 2,
+        "title": "Choose Android or iOS"
+      },
+      {
+        "step": 3,
+        "title": "Learn Flutter or React Native"
+      },
+      {
+        "step": 4,
+        "title": "Work with APIs & Firebase"
+      },
+      {
+        "step": 5,
+        "title": "Build Real-world Apps"
+      },
+      {
+        "step": 6,
+        "title": "Publish Mobile Applications"
+      },
+      {
+        "step": 7,
+        "title": "Apply for Mobile Developer Jobs"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Apple",
+        "logo": "assets/logos/apple.png",
+        "url": "https://www.apple.com"
+      },
+      {
+        "name": "Samsung",
+        "logo": "assets/logos/samsung.png",
+        "url": "https://www.samsung.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "PhonePe",
+        "logo": "assets/logos/phonepay.png",
+        "url": "https://www.phonepe.com"
+      },
+      {
+        "name": "Flipkart",
+        "logo": "assets/logos/flipkart.png",
+        "url": "https://www.flipkart.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      },
+      {
+        "name": "TCS",
+        "logo": "assets/logos/tcs.png",
+        "url": "https://www.tcs.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹5 - ₹16 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Intermediate",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.5 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Android Developers",
+        "type": "Documentation",
+        "logo": "assets/logos/android.png",
+        "url": "https://developer.android.com"
+      },
+      {
+        "name": "Flutter Documentation",
+        "type": "Documentation",
+        "logo": "assets/logos/flutter.png",
+        "url": "https://docs.flutter.dev"
+      },
+      {
+        "name": "React Native Docs",
+        "type": "Documentation",
+        "logo": "assets/logos/reactnative-docs.png",
+        "url": "https://reactnative.dev"
+      },
+      {
+        "name": "Apple Developer",
+        "type": "Documentation",
+        "logo": "assets/logos/apple.png",
+        "url": "https://developer.apple.com"
+      }
+    ],
+    "certifications": [
+      "Google Associate Android Developer",
+      "Meta React Native Professional Certificate",
+      "Flutter & Dart Certification",
+      "Apple App Development with Swift"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Frontend Developer",
+        "slug": "frontend-developer"
+      },
+      {
+        "name": "Full Stack Developer",
+        "slug": "full-stack-developer"
+      },
+      {
+        "name": "Software Engineer",
+        "slug": "software-engineer"
+      },
+      {
+        "name": "UI/UX Designer",
+        "slug": "ui-ux-designer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Should I learn Flutter or React Native?",
+        "answer": "Both are excellent. Flutter offers better UI consistency, while React Native is a great choice if you already know React."
+      },
+      {
+        "question": "Do Mobile App Developers need backend knowledge?",
+        "answer": "Basic backend knowledge and API integration skills are highly recommended for building complete applications."
+      },
+      {
+        "question": "Can I build apps for both Android and iOS?",
+        "answer": "Yes. Cross-platform frameworks like Flutter and React Native allow you to develop apps for both platforms using a single codebase."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "devops-engineer",
+    "title": "DevOps Engineer",
+    "category": "Cloud",
+    "icon": "ri-cloud-line",
+    "color": "#F97316",
+    "image": "devops-engineer.png",
+    "featured": true,
+    "shortDescription": "Automates software delivery, manages cloud infrastructure, and ensures reliable application deployment.",
+    "fullDescription": "A DevOps Engineer bridges the gap between software development and IT operations by automating workflows, managing cloud infrastructure, implementing CI/CD pipelines, monitoring applications, and ensuring secure, scalable, and highly available systems. They help organizations deliver software faster and more reliably while improving collaboration between development and operations teams.",
+    "salary": {
+      "min": 7,
+      "max": 20
+    },
+    "demand": "Very High",
+    "experience": "Intermediate",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "Very High",
+      "futureScope": "Excellent",
+      "industry": "Cloud Computing, IT Services, SaaS, FinTech, Product Companies"
+    },
+    "skills": [
+      {
+        "name": "Linux",
+        "logo": "assets/logos/linux.png",
+        "url": "https://linuxjourney.com/"
+      },
+      {
+        "name": "Docker",
+        "logo": "assets/logos/docker.png",
+        "url": "https://docs.docker.com/get-started/"
+      },
+      {
+        "name": "Kubernetes",
+        "logo": "assets/logos/kubernetes.png",
+        "url": "https://kubernetes.io/docs/home/"
+      },
+      {
+        "name": "Jenkins",
+        "logo": "assets/logos/jenkins.png",
+        "url": "https://www.jenkins.io/doc/"
+      },
+      {
+        "name": "Terraform",
+        "logo": "assets/logos/terraform.png",
+        "url": "https://developer.hashicorp.com/terraform/tutorials"
+      },
+      {
+        "name": "AWS",
+        "logo": "assets/logos/aws.png",
+        "url": "https://explore.skillbuilder.aws/learn"
+      },
+      {
+        "name": "CI/CD",
+        "logo": "assets/logos/cicd.png",
+        "url": "https://www.redhat.com/en/topics/devops/what-is-ci-cd"
+      },
+      {
+        "name": "Git",
+        "logo": "assets/logos/git.png",
+        "url": "https://git-scm.com/doc"
+      }
+    ],
+    "tools": [
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "GitHub Actions",
+      "Terraform",
+      "Ansible",
+      "Prometheus",
+      "Grafana"
+    ],
+    "responsibilities": [
+      "Automate software deployment pipelines",
+      "Manage cloud infrastructure",
+      "Implement CI/CD workflows",
+      "Monitor application performance",
+      "Maintain system reliability and uptime",
+      "Improve infrastructure security",
+      "Troubleshoot production issues",
+      "Collaborate with development and operations teams"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Linux & Networking"
+      },
+      {
+        "step": 2,
+        "title": "Master Git & Scripting"
+      },
+      {
+        "step": 3,
+        "title": "Learn Docker"
+      },
+      {
+        "step": 4,
+        "title": "Learn Kubernetes"
+      },
+      {
+        "step": 5,
+        "title": "Master Cloud Platforms"
+      },
+      {
+        "step": 6,
+        "title": "Build CI/CD Pipelines"
+      },
+      {
+        "step": 7,
+        "title": "Deploy Production Projects"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Amazon Web Services",
+        "logo": "assets/logos/aws.png",
+        "url": "https://aws.amazon.com"
+      },
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "Oracle",
+        "logo": "assets/logos/oracle.png",
+        "url": "https://www.oracle.com"
+      },
+      {
+        "name": "IBM",
+        "logo": "assets/logos/ibm.png",
+        "url": "https://www.ibm.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      },
+      {
+        "name": "TCS",
+        "logo": "assets/logos/tcs.png",
+        "url": "https://www.tcs.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹7 - ₹20 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Intermediate",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.7 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "AWS Skill Builder",
+        "type": "Course",
+        "logo": "assets/logos/aws.png",
+        "url": "https://explore.skillbuilder.aws"
+      },
+      {
+        "name": "Docker Documentation",
+        "type": "Documentation",
+        "logo": "assets/logos/docker.png",
+        "url": "https://docs.docker.com"
+      },
+      {
+        "name": "Kubernetes Documentation",
+        "type": "Documentation",
+        "logo": "assets/logos/kubernetes.png",
+        "url": "https://kubernetes.io/docs"
+      },
+      {
+        "name": "Roadmap.sh DevOps",
+        "type": "Roadmap",
+        "logo": "assets/logos/roadmap.png",
+        "url": "https://roadmap.sh/devops"
+      }
+    ],
+    "certifications": [
+      "AWS Certified DevOps Engineer – Professional",
+      "Docker Certified Associate",
+      "Certified Kubernetes Administrator (CKA)",
+      "HashiCorp Terraform Associate"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Cloud Engineer",
+        "slug": "cloud-engineer"
+      },
+      {
+        "name": "Software Engineer",
+        "slug": "software-engineer"
+      },
+      {
+        "name": "Backend Developer",
+        "slug": "backend-developer"
+      },
+      {
+        "name": "Site Reliability Engineer",
+        "slug": "site-reliability-engineer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is coding required for DevOps?",
+        "answer": "Yes. Basic programming and scripting skills in languages like Python, Bash, or PowerShell are essential for automation."
+      },
+      {
+        "question": "Which cloud platform should I learn first?",
+        "answer": "AWS is the most widely adopted cloud platform, making it an excellent starting point for beginners."
+      },
+      {
+        "question": "Is DevOps a good career in the future?",
+        "answer": "Yes. With increasing cloud adoption and automation, DevOps Engineers are among the most in-demand IT professionals worldwide."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "ai-engineer",
+    "title": "AI Engineer",
+    "category": "AI & Data",
+    "icon": "ri-robot-2-line",
+    "color": "#8B5CF6",
+    "image": "ai-engineer.png",
+    "featured": true,
+    "shortDescription": "Designs, develops, and deploys intelligent systems using Artificial Intelligence and Machine Learning technologies.",
+    "fullDescription": "An AI Engineer develops intelligent software systems capable of learning, reasoning, and making predictions from data. They build AI-powered applications using machine learning, deep learning, natural language processing, and computer vision. AI Engineers work closely with Data Scientists, Software Engineers, and MLOps teams to deploy scalable AI solutions across industries such as healthcare, finance, robotics, e-commerce, and autonomous systems.",
+    "salary": {
+      "min": 8,
+      "max": 25
+    },
+    "demand": "Very High",
+    "experience": "Intermediate",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "Very High",
+      "futureScope": "Excellent",
+      "industry": "Artificial Intelligence, Healthcare, Finance, Robotics, E-commerce, SaaS"
+    },
+    "skills": [
+      {
+        "name": "Python",
+        "logo": "assets/logos/python.png",
+        "url": "https://docs.python.org/3/tutorial/"
+      },
+      {
+        "name": "Machine Learning",
+        "logo": "assets/logos/machine-learning.png",
+        "url": "https://developers.google.com/machine-learning/crash-course"
+      },
+      {
+        "name": "Deep Learning",
+        "logo": "assets/logos/deeplearning.png",
+        "url": "https://www.deeplearning.ai/courses/"
+      },
+      {
+        "name": "TensorFlow",
+        "logo": "assets/logos/tensorflow.png",
+        "url": "https://www.tensorflow.org/learn"
+      },
+      {
+        "name": "PyTorch",
+        "logo": "assets/logos/pytorch.png",
+        "url": "https://pytorch.org/tutorials/"
+      },
+      {
+        "name": "Natural Language Processing",
+        "logo": "assets/logos/nlp.png",
+        "url": "https://huggingface.co/learn"
+      },
+      {
+        "name": "Computer Vision",
+        "logo": "assets/logos/computer-vision.png",
+        "url": "https://opencv.org/university/"
+      },
+      {
+        "name": "Git",
+        "logo": "assets/logos/git.png",
+        "url": "https://git-scm.com/doc"
+      }
+    ],
+    "tools": [
+      "Jupyter Notebook",
+      "Google Colab",
+      "VS Code",
+      "TensorFlow",
+      "PyTorch",
+      "Git",
+      "Docker",
+      "MLflow"
+    ],
+    "responsibilities": [
+      "Develop AI and Machine Learning models",
+      "Collect, clean, and preprocess datasets",
+      "Train and optimize deep learning models",
+      "Deploy AI models into production",
+      "Evaluate model performance and accuracy",
+      "Integrate AI solutions into software applications",
+      "Research and implement new AI techniques",
+      "Collaborate with data scientists and software engineers"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Python & Mathematics"
+      },
+      {
+        "step": 2,
+        "title": "Master Machine Learning"
+      },
+      {
+        "step": 3,
+        "title": "Learn Deep Learning"
+      },
+      {
+        "step": 4,
+        "title": "Build AI Projects"
+      },
+      {
+        "step": 5,
+        "title": "Learn NLP & Computer Vision"
+      },
+      {
+        "step": 6,
+        "title": "Deploy AI Models"
+      },
+      {
+        "step": 7,
+        "title": "Apply for AI Engineer Roles"
+      }
+    ],
+    "companies": [
+      {
+        "name": "OpenAI",
+        "logo": "assets/logos/openai.png",
+        "url": "https://openai.com"
+      },
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "NVIDIA",
+        "logo": "assets/logos/nvidia.png",
+        "url": "https://www.nvidia.com"
+      },
+      {
+        "name": "Amazon",
+        "logo": "assets/logos/amazon.png",
+        "url": "https://www.amazon.com"
+      },
+      {
+        "name": "IBM",
+        "logo": "assets/logos/ibm.png",
+        "url": "https://www.ibm.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹8 - ₹25 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Intermediate",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.8 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "DeepLearning.AI",
+        "type": "Course",
+        "logo": "assets/logos/deeplearning.png",
+        "url": "https://www.deeplearning.ai"
+      },
+      {
+        "name": "TensorFlow Documentation",
+        "type": "Documentation",
+        "logo": "assets/logos/tensorflow.png",
+        "url": "https://www.tensorflow.org"
+      },
+      {
+        "name": "PyTorch Documentation",
+        "type": "Documentation",
+        "logo": "assets/logos/pytorch.png",
+        "url": "https://pytorch.org"
+      },
+      {
+        "name": "Kaggle",
+        "type": "Practice",
+        "logo": "assets/logos/kaggle.png",
+        "url": "https://www.kaggle.com"
+      }
+    ],
+    "certifications": [
+      "Google Professional Machine Learning Engineer",
+      "Microsoft Azure AI Engineer Associate",
+      "IBM AI Engineering Professional Certificate",
+      "DeepLearning.AI Machine Learning Specialization"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Machine Learning Engineer",
+        "slug": "machine-learning-engineer"
+      },
+      {
+        "name": "Data Scientist",
+        "slug": "data-scientist"
+      },
+      {
+        "name": "Data Engineer",
+        "slug": "data-engineer"
+      },
+      {
+        "name": "Computer Vision Engineer",
+        "slug": "computer-vision-engineer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is AI Engineering a good career?",
+        "answer": "Yes. AI Engineering is one of the fastest-growing and highest-paying technology careers with opportunities across multiple industries."
+      },
+      {
+        "question": "Do I need mathematics for AI?",
+        "answer": "Yes. Linear Algebra, Probability, Statistics, and Calculus help in understanding and building AI and Machine Learning models."
+      },
+      {
+        "question": "Should I learn Machine Learning before Deep Learning?",
+        "answer": "Yes. A strong foundation in Machine Learning makes it much easier to understand Deep Learning concepts and frameworks."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "machine-learning-engineer",
+    "title": "Machine Learning Engineer",
+    "category": "AI & Data",
+    "icon": "ri-brain-line",
+    "color": "#6366F1",
+    "image": "machine-learning-engineer.png",
+    "featured": true,
+    "shortDescription": "Builds, trains, and deploys machine learning models that enable systems to learn from data and make intelligent predictions.",
+    "fullDescription": "A Machine Learning Engineer designs, develops, and deploys machine learning models for real-world applications. They collect and preprocess data, select appropriate algorithms, train predictive models, optimize performance, and deploy scalable ML solutions into production. Machine Learning Engineers collaborate with Data Scientists, AI Engineers, Software Engineers, and MLOps teams to build intelligent systems across industries like healthcare, finance, e-commerce, cybersecurity, and autonomous technologies.",
+    "salary": {
+      "min": 8,
+      "max": 24
+    },
+    "demand": "Very High",
+    "experience": "Intermediate",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "Very High",
+      "futureScope": "Excellent",
+      "industry": "Artificial Intelligence, FinTech, Healthcare, E-commerce, Robotics, SaaS"
+    },
+    "skills": [
+      {
+        "name": "Python",
+        "logo": "assets/logos/python.png",
+        "url": "https://docs.python.org/3/tutorial/"
+      },
+      {
+        "name": "Machine Learning",
+        "logo": "assets/logos/machine-learning.png",
+        "url": "https://developers.google.com/machine-learning/crash-course"
+      },
+      {
+        "name": "Scikit-learn",
+        "logo": "assets/logos/scikit-learn.png",
+        "url": "https://scikit-learn.org/stable/tutorial/"
+      },
+      {
+        "name": "TensorFlow",
+        "logo": "assets/logos/tensorflow.png",
+        "url": "https://www.tensorflow.org/learn"
+      },
+      {
+        "name": "PyTorch",
+        "logo": "assets/logos/pytorch.png",
+        "url": "https://pytorch.org/tutorials/"
+      },
+      {
+        "name": "Pandas",
+        "logo": "assets/logos/pandas.png",
+        "url": "https://pandas.pydata.org/docs/getting_started/index.html"
+      },
+      {
+        "name": "NumPy",
+        "logo": "assets/logos/numpy.png",
+        "url": "https://numpy.org/learn/"
+      },
+      {
+        "name": "Git",
+        "logo": "assets/logos/git.png",
+        "url": "https://git-scm.com/doc"
+      }
+    ],
+    "tools": [
+      "Jupyter Notebook",
+      "Google Colab",
+      "VS Code",
+      "TensorFlow",
+      "PyTorch",
+      "Scikit-learn",
+      "Git",
+      "MLflow"
+    ],
+    "responsibilities": [
+      "Collect and preprocess datasets",
+      "Design and train machine learning models",
+      "Evaluate and optimize model performance",
+      "Deploy ML models into production",
+      "Monitor model accuracy and reliability",
+      "Implement feature engineering techniques",
+      "Collaborate with data scientists and software engineers",
+      "Research and improve machine learning solutions"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Python & Mathematics"
+      },
+      {
+        "step": 2,
+        "title": "Master Statistics & Probability"
+      },
+      {
+        "step": 3,
+        "title": "Learn Machine Learning Algorithms"
+      },
+      {
+        "step": 4,
+        "title": "Master TensorFlow & PyTorch"
+      },
+      {
+        "step": 5,
+        "title": "Build Machine Learning Projects"
+      },
+      {
+        "step": 6,
+        "title": "Deploy ML Models"
+      },
+      {
+        "step": 7,
+        "title": "Apply for ML Engineer Roles"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "OpenAI",
+        "logo": "assets/logos/openai.png",
+        "url": "https://openai.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "NVIDIA",
+        "logo": "assets/logos/nvidia.png",
+        "url": "https://www.nvidia.com"
+      },
+      {
+        "name": "Amazon",
+        "logo": "assets/logos/amazon.png",
+        "url": "https://www.amazon.com"
+      },
+      {
+        "name": "IBM",
+        "logo": "assets/logos/ibm.png",
+        "url": "https://www.ibm.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹8 - ₹24 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Intermediate",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.8 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Scikit-learn Documentation",
+        "type": "Documentation",
+        "logo": "assets/logos/scikit-learn.png",
+        "url": "https://scikit-learn.org"
+      },
+      {
+        "name": "TensorFlow Documentation",
+        "type": "Documentation",
+        "logo": "assets/logos/tensorflow.png",
+        "url": "https://www.tensorflow.org"
+      },
+      {
+        "name": "Kaggle",
+        "type": "Practice",
+        "logo": "assets/logos/kaggle.png",
+        "url": "https://www.kaggle.com"
+      },
+      {
+        "name": "Coursera Machine Learning",
+        "type": "Course",
+        "logo": "assets/logos/coursera.png",
+        "url": "https://www.coursera.org"
+      }
+    ],
+    "certifications": [
+      "Google Professional Machine Learning Engineer",
+      "IBM Machine Learning Professional Certificate",
+      "Microsoft Azure AI Engineer Associate",
+      "DeepLearning.AI Machine Learning Specialization"
+    ],
+    "relatedCareers": [
+      {
+        "name": "AI Engineer",
+        "slug": "ai-engineer"
+      },
+      {
+        "name": "Data Scientist",
+        "slug": "data-scientist"
+      },
+      {
+        "name": "Data Engineer",
+        "slug": "data-engineer"
+      },
+      {
+        "name": "Computer Vision Engineer",
+        "slug": "computer-vision-engineer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Machine Learning Engineering a good career?",
+        "answer": "Yes. Machine Learning Engineers are among the most in-demand professionals due to the rapid adoption of AI across industries."
+      },
+      {
+        "question": "Do I need mathematics for Machine Learning?",
+        "answer": "Yes. A strong understanding of Linear Algebra, Probability, Statistics, and Calculus is highly beneficial."
+      },
+      {
+        "question": "What is the difference between an AI Engineer and a Machine Learning Engineer?",
+        "answer": "Machine Learning Engineers primarily build and optimize predictive models, while AI Engineers develop broader intelligent systems that may include machine learning, deep learning, NLP, and computer vision."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "data-scientist",
+    "title": "Data Scientist",
+    "category": "AI & Data",
+    "icon": "ri-bar-chart-box-line",
+    "color": "#0EA5E9",
+    "image": "data-scientist.png",
+    "featured": true,
+    "shortDescription": "Analyzes complex data to discover insights, build predictive models, and support data-driven business decisions.",
+    "fullDescription": "A Data Scientist collects, processes, and analyzes structured and unstructured data to solve real-world business problems. They use statistics, machine learning, data visualization, and programming to identify trends, build predictive models, and generate actionable insights. Data Scientists collaborate with business analysts, AI engineers, data engineers, and product teams to improve decision-making across industries.",
+    "salary": {
+      "min": 7,
+      "max": 22
+    },
+    "demand": "Very High",
+    "experience": "Intermediate",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "Very High",
+      "futureScope": "Excellent",
+      "industry": "Artificial Intelligence, Finance, Healthcare, E-commerce, Consulting, Product Companies"
+    },
+    "skills": [
+      {
+        "name": "Python",
+        "logo": "assets/logos/python.png",
+        "url": "https://docs.python.org/3/tutorial/"
+      },
+      {
+        "name": "Statistics",
+        "logo": "assets/logos/statistics.png",
+        "url": "https://www.khanacademy.org/math/statistics-probability"
+      },
+      {
+        "name": "SQL",
+        "logo": "assets/logos/sql.png",
+        "url": "https://www.w3schools.com/sql/"
+      },
+      {
+        "name": "Pandas",
+        "logo": "assets/logos/pandas.png",
+        "url": "https://pandas.pydata.org/docs/getting_started/index.html"
+      },
+      {
+        "name": "NumPy",
+        "logo": "assets/logos/numpy.png",
+        "url": "https://numpy.org/learn/"
+      },
+      {
+        "name": "Machine Learning",
+        "logo": "assets/logos/machine-learning.png",
+        "url": "https://developers.google.com/machine-learning/crash-course"
+      },
+      {
+        "name": "Data Visualization",
+        "logo": "assets/logos/data-visualization.png",
+        "url": "https://www.tableau.com/learn/training"
+      },
+      {
+        "name": "Git",
+        "logo": "assets/logos/git.png",
+        "url": "https://git-scm.com/doc"
+      }
+    ],
+    "tools": [
+      "Jupyter Notebook",
+      "Google Colab",
+      "VS Code",
+      "Tableau",
+      "Power BI",
+      "Excel",
+      "Git",
+      "Apache Spark"
+    ],
+    "responsibilities": [
+      "Collect and clean datasets",
+      "Analyze structured and unstructured data",
+      "Build predictive machine learning models",
+      "Create dashboards and visualizations",
+      "Identify business trends and patterns",
+      "Communicate insights to stakeholders",
+      "Evaluate model performance",
+      "Collaborate with engineering and business teams"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Python & SQL"
+      },
+      {
+        "step": 2,
+        "title": "Master Statistics & Mathematics"
+      },
+      {
+        "step": 3,
+        "title": "Learn Data Analysis"
+      },
+      {
+        "step": 4,
+        "title": "Master Machine Learning"
+      },
+      {
+        "step": 5,
+        "title": "Build Data Science Projects"
+      },
+      {
+        "step": 6,
+        "title": "Learn Data Visualization"
+      },
+      {
+        "step": 7,
+        "title": "Apply for Data Scientist Roles"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "Amazon",
+        "logo": "assets/logos/amazon.png",
+        "url": "https://www.amazon.com"
+      },
+      {
+        "name": "IBM",
+        "logo": "assets/logos/ibm.png",
+        "url": "https://www.ibm.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      },
+      {
+        "name": "Deloitte",
+        "logo": "assets/logos/deloitte.png",
+        "url": "https://www.deloitte.com"
+      },
+      {
+        "name": "Flipkart",
+        "logo": "assets/logos/flipkart.png",
+        "url": "https://www.flipkart.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹7 - ₹22 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Intermediate",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.8 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Kaggle",
+        "type": "Practice",
+        "logo": "assets/logos/kaggle.png",
+        "url": "https://www.kaggle.com"
+      },
+      {
+        "name": "Pandas Documentation",
+        "type": "Documentation",
+        "logo": "assets/logos/pandas.png",
+        "url": "https://pandas.pydata.org/docs/"
+      },
+      {
+        "name": "DataCamp",
+        "type": "Course",
+        "logo": "assets/logos/data-camp.png",
+        "url": "https://www.datacamp.com"
+      },
+      {
+        "name": "Coursera Data Science",
+        "type": "Course",
+        "logo": "assets/logos/coursera.png",
+        "url": "https://www.coursera.org"
+      }
+    ],
+    "certifications": [
+      "IBM Data Science Professional Certificate",
+      "Google Advanced Data Analytics Certificate",
+      "Microsoft Certified: Azure Data Scientist Associate",
+      "TensorFlow Developer Certificate"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Machine Learning Engineer",
+        "slug": "machine-learning-engineer"
+      },
+      {
+        "name": "AI Engineer",
+        "slug": "ai-engineer"
+      },
+      {
+        "name": "Data Engineer",
+        "slug": "data-engineer"
+      },
+      {
+        "name": "Business Intelligence Analyst",
+        "slug": "business-intelligence-analyst"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Data Science a good career?",
+        "answer": "Yes. Data Science is one of the fastest-growing careers with excellent salaries and opportunities across almost every industry."
+      },
+      {
+        "question": "Do I need programming for Data Science?",
+        "answer": "Yes. Python and SQL are the most important programming languages for data analysis, visualization, and machine learning."
+      },
+      {
+        "question": "What is the difference between a Data Scientist and a Data Analyst?",
+        "answer": "Data Analysts primarily analyze historical data and create reports, while Data Scientists build predictive models and apply machine learning to solve complex business problems."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "data-analyst",
+    "title": "Data Analyst",
+    "category": "AI & Data",
+    "icon": "ri-line-chart-line",
+    "color": "#14B8A6",
+    "image": "data-analyst.png",
+    "featured": true,
+    "shortDescription": "Collects, analyzes, and visualizes data to help organizations make informed business decisions.",
+    "fullDescription": "A Data Analyst gathers, cleans, and analyzes data to identify trends, generate reports, and support business decision-making. They use SQL, Excel, Python, and visualization tools to transform raw data into meaningful insights. Data Analysts work closely with business teams, product managers, and executives to improve operations, customer experience, and overall business performance.",
+    "salary": {
+      "min": 4,
+      "max": 12
+    },
+    "demand": "High",
+    "experience": "Beginner",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "High",
+      "futureScope": "Excellent",
+      "industry": "Finance, Healthcare, E-commerce, IT Services, Consulting, Product Companies"
+    },
+    "skills": [
+      {
+        "name": "SQL",
+        "logo": "assets/logos/sql.png",
+        "url": "https://www.w3schools.com/sql/"
+      },
+      {
+        "name": "Microsoft Excel",
+        "logo": "assets/logos/excel.png",
+        "url": "https://support.microsoft.com/en-us/excel"
+      },
+      {
+        "name": "Power BI",
+        "logo": "assets/logos/powerbi.png",
+        "url": "https://learn.microsoft.com/power-bi/"
+      },
+      {
+        "name": "Tableau",
+        "logo": "assets/logos/tableau.png",
+        "url": "https://www.tableau.com/learn/training"
+      },
+      {
+        "name": "Python",
+        "logo": "assets/logos/python.png",
+        "url": "https://docs.python.org/3/tutorial/"
+      },
+      {
+        "name": "Statistics",
+        "logo": "assets/logos/statistics.png",
+        "url": "https://www.khanacademy.org/math/statistics-probability"
+      },
+      {
+        "name": "Data Visualization",
+        "logo": "assets/logos/data-visualization.png",
+        "url": "https://learn.microsoft.com/training/modules/visuals-power-bi/"
+      },
+      {
+        "name": "Git",
+        "logo": "assets/logos/git.png",
+        "url": "https://git-scm.com/doc"
+      }
+    ],
+    "tools": [
+      "Microsoft Excel",
+      "SQL Server",
+      "Power BI",
+      "Tableau",
+      "Jupyter Notebook",
+      "Google Sheets",
+      "VS Code",
+      "Git"
+    ],
+    "responsibilities": [
+      "Collect and organize business data",
+      "Clean and preprocess datasets",
+      "Write SQL queries for data extraction",
+      "Create dashboards and reports",
+      "Identify business trends and patterns",
+      "Present insights to stakeholders",
+      "Support data-driven decision making",
+      "Collaborate with business and technical teams"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Excel & SQL"
+      },
+      {
+        "step": 2,
+        "title": "Learn Statistics"
+      },
+      {
+        "step": 3,
+        "title": "Master Python for Data Analysis"
+      },
+      {
+        "step": 4,
+        "title": "Learn Power BI & Tableau"
+      },
+      {
+        "step": 5,
+        "title": "Build Data Analysis Projects"
+      },
+      {
+        "step": 6,
+        "title": "Create a Data Portfolio"
+      },
+      {
+        "step": 7,
+        "title": "Apply for Data Analyst Roles"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Amazon",
+        "logo": "assets/logos/amazon.png",
+        "url": "https://www.amazon.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      },
+      {
+        "name": "Deloitte",
+        "logo": "assets/logos/deloitte.png",
+        "url": "https://www.deloitte.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      },
+      {
+        "name": "TCS",
+        "logo": "assets/logos/tcs.png",
+        "url": "https://www.tcs.com"
+      },
+      {
+        "name": "Flipkart",
+        "logo": "assets/logos/flipkart.png",
+        "url": "https://www.flipkart.com"
+      },
+      {
+        "name": "Wipro",
+        "logo": "assets/logos/wipro.png",
+        "url": "https://www.wipro.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹4 - ₹12 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Beginner",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.5 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Very Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Microsoft Learn",
+        "type": "Course",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://learn.microsoft.com"
+      },
+      {
+        "name": "Kaggle",
+        "type": "Practice",
+        "logo": "assets/logos/kaggle.png",
+        "url": "https://www.kaggle.com"
+      },
+      {
+        "name": "DataCamp",
+        "type": "Course",
+        "logo": "assets/logos/data-camp.png",
+        "url": "https://www.datacamp.com"
+      },
+      {
+        "name": "Tableau Learning",
+        "type": "Documentation",
+        "logo": "assets/logos/tableau.png",
+        "url": "https://www.tableau.com/learn"
+      }
+    ],
+    "certifications": [
+      "Google Data Analytics Professional Certificate",
+      "Microsoft Certified: Power BI Data Analyst Associate",
+      "Tableau Certified Data Analyst",
+      "IBM Data Analyst Professional Certificate"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Data Scientist",
+        "slug": "data-scientist"
+      },
+      {
+        "name": "Business Intelligence Analyst",
+        "slug": "business-intelligence-analyst"
+      },
+      {
+        "name": "Data Engineer",
+        "slug": "data-engineer"
+      },
+      {
+        "name": "Machine Learning Engineer",
+        "slug": "machine-learning-engineer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Data Analysis a good career for beginners?",
+        "answer": "Yes. Data Analysis is one of the best entry-level careers in technology, offering strong demand, competitive salaries, and opportunities to transition into advanced roles like Data Scientist or Data Engineer."
+      },
+      {
+        "question": "Do I need coding to become a Data Analyst?",
+        "answer": "Basic programming knowledge is helpful. SQL is essential, while Python is widely used for data analysis and automation."
+      },
+      {
+        "question": "What is the difference between a Data Analyst and a Data Scientist?",
+        "answer": "Data Analysts focus on analyzing historical data and creating reports, while Data Scientists develop predictive models using machine learning and advanced statistical techniques."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "data-engineer",
+    "title": "Data Engineer",
+    "category": "AI & Data",
+    "icon": "ri-database-2-line",
+    "color": "#2563EB",
+    "image": "data-engineer.png",
+    "featured": true,
+    "shortDescription": "Builds and maintains scalable data pipelines, storage systems, and infrastructure for analytics and machine learning.",
+    "fullDescription": "A Data Engineer designs, builds, and manages data pipelines and architectures that collect, process, and store large volumes of data. They ensure data is reliable, secure, and readily available for Data Scientists, Data Analysts, and AI Engineers. Data Engineers work with databases, cloud platforms, ETL tools, and big data technologies to create scalable data solutions for modern organizations.",
+    "salary": {
+      "min": 7,
+      "max": 20
+    },
+    "demand": "Very High",
+    "experience": "Intermediate",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "Very High",
+      "futureScope": "Excellent",
+      "industry": "Big Data, Cloud Computing, Finance, Healthcare, E-commerce, Product Companies"
+    },
+    "skills": [
+      {
+        "name": "Python",
+        "logo": "assets/logos/python.png",
+        "url": "https://docs.python.org/3/tutorial/"
+      },
+      {
+        "name": "SQL",
+        "logo": "assets/logos/sql.png",
+        "url": "https://www.w3schools.com/sql/"
+      },
+      {
+        "name": "Apache Spark",
+        "logo": "assets/logos/apache-spark.png",
+        "url": "https://spark.apache.org/docs/latest/"
+      },
+      {
+        "name": "Apache Kafka",
+        "logo": "assets/logos/apache-kafka.png",
+        "url": "https://developer.confluent.io/learn-kafka/"
+      },
+      {
+        "name": "Data Warehousing",
+        "logo": "assets/logos/data-warehouse.png",
+        "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/"
+      },
+      {
+        "name": "ETL",
+        "logo": "assets/logos/etl.png",
+        "url": "https://www.ibm.com/think/topics/etl"
+      },
+      {
+        "name": "AWS",
+        "logo": "assets/logos/aws.png",
+        "url": "https://explore.skillbuilder.aws/learn"
+      },
+      {
+        "name": "Git",
+        "logo": "assets/logos/git.png",
+        "url": "https://git-scm.com/doc"
+      }
+    ],
+    "tools": [
+      "Apache Spark",
+      "Apache Kafka",
+      "Apache Airflow",
+      "Snowflake",
+      "AWS",
+      "Docker",
+      "Git",
+      "VS Code"
+    ],
+    "responsibilities": [
+      "Design and develop data pipelines",
+      "Build ETL and ELT workflows",
+      "Manage data warehouses and databases",
+      "Optimize data storage and processing",
+      "Ensure data quality and reliability",
+      "Integrate data from multiple sources",
+      "Support analytics and machine learning teams",
+      "Monitor and troubleshoot data infrastructure"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn SQL & Database Fundamentals"
+      },
+      {
+        "step": 2,
+        "title": "Master Python Programming"
+      },
+      {
+        "step": 3,
+        "title": "Learn ETL & Data Warehousing"
+      },
+      {
+        "step": 4,
+        "title": "Master Big Data Technologies"
+      },
+      {
+        "step": 5,
+        "title": "Learn Cloud Platforms"
+      },
+      {
+        "step": 6,
+        "title": "Build End-to-End Data Pipelines"
+      },
+      {
+        "step": 7,
+        "title": "Apply for Data Engineer Roles"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Amazon",
+        "logo": "assets/logos/amazon.png",
+        "url": "https://www.amazon.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "IBM",
+        "logo": "assets/logos/ibm.png",
+        "url": "https://www.ibm.com"
+      },
+      {
+        "name": "Oracle",
+        "logo": "assets/logos/oracle.png",
+        "url": "https://www.oracle.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      },
+      {
+        "name": "Flipkart",
+        "logo": "assets/logos/flipkart.png",
+        "url": "https://www.flipkart.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹7 - ₹20 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Intermediate",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.7 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Apache Spark Documentation",
+        "type": "Documentation",
+        "logo": "assets/logos/apache-spark.png",
+        "url": "https://spark.apache.org/docs/latest/"
+      },
+      {
+        "name": "Apache Airflow Documentation",
+        "type": "Documentation",
+        "logo": "assets/logos/apache-airflow.png",
+        "url": "https://airflow.apache.org/docs/"
+      },
+      {
+        "name": "AWS Skill Builder",
+        "type": "Course",
+        "logo": "assets/logos/aws.png",
+        "url": "https://explore.skillbuilder.aws"
+      },
+      {
+        "name": "Data Engineering Zoomcamp",
+        "type": "Course",
+        "logo": "assets/logos/data-engineering.png",
+        "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp"
+      }
+    ],
+    "certifications": [
+      "Google Professional Data Engineer",
+      "AWS Certified Data Engineer – Associate",
+      "Microsoft Certified: Azure Data Engineer Associate",
+      "Snowflake SnowPro Core Certification"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Data Analyst",
+        "slug": "data-analyst"
+      },
+      {
+        "name": "Data Scientist",
+        "slug": "data-scientist"
+      },
+      {
+        "name": "Machine Learning Engineer",
+        "slug": "machine-learning-engineer"
+      },
+      {
+        "name": "Cloud Engineer",
+        "slug": "cloud-engineer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Data Engineering a good career?",
+        "answer": "Yes. Data Engineering is one of the fastest-growing careers, with high demand due to the increasing reliance on big data, cloud computing, and AI."
+      },
+      {
+        "question": "Do I need programming for Data Engineering?",
+        "answer": "Yes. SQL is essential, while Python is the most commonly used programming language for building and automating data pipelines."
+      },
+      {
+        "question": "What is the difference between a Data Engineer and a Data Scientist?",
+        "answer": "Data Engineers build and maintain the infrastructure and pipelines that prepare data, while Data Scientists use that data to analyze trends and build predictive machine learning models."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "cyber-security-analyst",
+    "title": "Cyber Security Analyst",
+    "category": "Cyber Security",
+    "icon": "ri-shield-check-line",
+    "color": "#DC2626",
+    "image": "cyber-security-analyst.png",
+    "featured": true,
+    "shortDescription": "Monitors, detects, and responds to cyber threats while protecting an organization's systems, networks, and sensitive data.",
+    "fullDescription": "A Cyber Security Analyst is responsible for monitoring security systems, identifying vulnerabilities, analyzing cyber threats, and responding to security incidents. They implement security controls, perform risk assessments, investigate suspicious activities, and help organizations maintain compliance with security standards. Cyber Security Analysts work with security engineers, network administrators, and incident response teams to ensure the confidentiality, integrity, and availability of digital assets.",
+    "salary": {
+      "min": 5,
+      "max": 15
+    },
+    "demand": "Very High",
+    "experience": "Beginner",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "Very High",
+      "futureScope": "Excellent",
+      "industry": "Cyber Security, Banking, Healthcare, Government, IT Services, Cloud Computing"
+    },
+    "skills": [
+      {
+        "name": "Networking",
+        "logo": "assets/logos/networking.png",
+        "url": "https://www.netacad.com/courses/networking"
+      },
+      {
+        "name": "Linux",
+        "logo": "assets/logos/linux.png",
+        "url": "https://linuxjourney.com/"
+      },
+      {
+        "name": "Cyber Security Fundamentals",
+        "logo": "assets/logos/cyber-security.png",
+        "url": "https://www.netacad.com/courses/cybersecurity"
+      },
+      {
+        "name": "SIEM",
+        "logo": "assets/logos/siem.png",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/"
+      },
+      {
+        "name": "Incident Response",
+        "logo": "assets/logos/incident-response.png",
+        "url": "https://www.sans.org/cyber-security-courses/incident-response/"
+      },
+      {
+        "name": "OWASP",
+        "logo": "assets/logos/owasp.png",
+        "url": "https://owasp.org/www-project-top-ten/"
+      },
+      {
+        "name": "Wireshark",
+        "logo": "assets/logos/wireshark.png",
+        "url": "https://www.wireshark.org/docs/"
+      },
+      {
+        "name": "Git",
+        "logo": "assets/logos/git.png",
+        "url": "https://git-scm.com/doc"
+      }
+    ],
+    "tools": [
+      "Splunk",
+      "Wireshark",
+      "Nmap",
+      "Microsoft Defender",
+      "Kali Linux",
+      "Nessus",
+      "Burp Suite",
+      "Microsoft Sentinel"
+    ],
+    "responsibilities": [
+      "Monitor security alerts and logs",
+      "Investigate suspicious activities",
+      "Perform vulnerability assessments",
+      "Respond to security incidents",
+      "Analyze malware and cyber threats",
+      "Maintain security policies and compliance",
+      "Generate security reports",
+      "Collaborate with IT and security teams"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Networking & Operating Systems"
+      },
+      {
+        "step": 2,
+        "title": "Master Cyber Security Fundamentals"
+      },
+      {
+        "step": 3,
+        "title": "Learn Linux & Security Tools"
+      },
+      {
+        "step": 4,
+        "title": "Study SIEM & Threat Detection"
+      },
+      {
+        "step": 5,
+        "title": "Practice Incident Response"
+      },
+      {
+        "step": 6,
+        "title": "Build Hands-on Security Labs"
+      },
+      {
+        "step": 7,
+        "title": "Earn Certifications & Apply for Jobs"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Cisco",
+        "logo": "assets/logos/cisco.png",
+        "url": "https://www.cisco.com"
+      },
+      {
+        "name": "Palo Alto Networks",
+        "logo": "assets/logos/palo-alto.png",
+        "url": "https://www.paloaltonetworks.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "IBM",
+        "logo": "assets/logos/ibm.png",
+        "url": "https://www.ibm.com"
+      },
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      },
+      {
+        "name": "TCS",
+        "logo": "assets/logos/tcs.png",
+        "url": "https://www.tcs.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹5 - ₹15 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Beginner",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.7 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "TryHackMe",
+        "type": "Practice",
+        "logo": "assets/logos/tryhackme.png",
+        "url": "https://tryhackme.com"
+      },
+      {
+        "name": "Hack The Box",
+        "type": "Practice",
+        "logo": "assets/logos/hackthebox.png",
+        "url": "https://www.hackthebox.com"
+      },
+      {
+        "name": "OWASP",
+        "type": "Documentation",
+        "logo": "assets/logos/owasp.png",
+        "url": "https://owasp.org"
+      },
+      {
+        "name": "Microsoft Learn Security",
+        "type": "Course",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://learn.microsoft.com/security"
+      }
+    ],
+    "certifications": [
+      "CompTIA Security+",
+      "Cisco Certified CyberOps Associate",
+      "Certified Ethical Hacker (CEH)",
+      "Microsoft Certified: Security Operations Analyst Associate (SC-200)"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Ethical Hacker",
+        "slug": "ethical-hacker"
+      },
+      {
+        "name": "Cloud Engineer",
+        "slug": "cloud-engineer"
+      },
+      {
+        "name": "DevOps Engineer",
+        "slug": "devops-engineer"
+      },
+      {
+        "name": "Network Engineer",
+        "slug": "network-engineer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Cyber Security Analyst a good career?",
+        "answer": "Yes. It is one of the fastest-growing IT careers with high demand across finance, healthcare, government, and technology sectors."
+      },
+      {
+        "question": "Do I need programming to become a Cyber Security Analyst?",
+        "answer": "Programming is not mandatory for entry-level roles, but knowledge of Python or scripting helps with automation and security analysis."
+      },
+      {
+        "question": "Is Cyber Security Analyst a beginner-friendly role?",
+        "answer": "Yes. Many professionals begin their cybersecurity careers as Security Analysts before specializing in penetration testing, cloud security, digital forensics, or security engineering."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "penetration-tester",
+    "title": "Penetration Tester",
+    "category": "Cyber Security",
+    "icon": "ri-bug-line",
+    "color": "#EF4444",
+    "image": "penetration-tester.png",
+    "featured": true,
+    "shortDescription": "Identifies and exploits security vulnerabilities through authorized simulated cyber attacks to improve system security.",
+    "fullDescription": "A Penetration Tester, also known as an Ethical Hacker, performs authorized security assessments by simulating real-world cyber attacks on applications, networks, and systems. Their goal is to identify vulnerabilities before malicious attackers can exploit them. They conduct penetration tests, prepare detailed security reports, recommend remediation strategies, and work closely with development and security teams to strengthen an organization's cybersecurity posture.",
+    "salary": {
+      "min": 6,
+      "max": 18
+    },
+    "demand": "High",
+    "experience": "Intermediate",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "High",
+      "futureScope": "Excellent",
+      "industry": "Cyber Security, Banking, Government, Healthcare, Consulting, Cloud Computing"
+    },
+    "skills": [
+      {
+        "name": "Ethical Hacking",
+        "logo": "assets/logos/ethical-hacking.png",
+        "url": "https://tryhackme.com/path/outline/presecurity"
+      },
+      {
+        "name": "Penetration Testing",
+        "logo": "assets/logos/penetration-testing.png",
+        "url": "https://portswigger.net/web-security"
+      },
+      {
+        "name": "Network Security",
+        "logo": "assets/logos/network-security.png",
+        "url": "https://www.netacad.com/courses/networking"
+      },
+      {
+        "name": "Web Application Security",
+        "logo": "assets/logos/web-security.png",
+        "url": "https://portswigger.net/web-security"
+      },
+      {
+        "name": "Linux",
+        "logo": "assets/logos/linux.png",
+        "url": "https://linuxjourney.com/"
+      },
+      {
+        "name": "Python",
+        "logo": "assets/logos/python.png",
+        "url": "https://docs.python.org/3/tutorial/"
+      },
+      {
+        "name": "OWASP Top 10",
+        "logo": "assets/logos/owasp.png",
+        "url": "https://owasp.org/www-project-top-ten/"
+      },
+      {
+        "name": "Cryptography",
+        "logo": "assets/logos/cryptography.png",
+        "url": "https://www.cryptool.org/en/cto/"
+      }
+    ],
+    "tools": [
+      "Kali Linux",
+      "Burp Suite",
+      "Metasploit",
+      "Nmap",
+      "Wireshark",
+      "OWASP ZAP",
+      "John the Ripper",
+      "Nikto"
+    ],
+    "responsibilities": [
+      "Conduct authorized penetration tests",
+      "Identify and validate security vulnerabilities",
+      "Perform web application security assessments",
+      "Test network and wireless security",
+      "Prepare detailed vulnerability reports",
+      "Recommend remediation strategies",
+      "Collaborate with development and security teams",
+      "Stay updated on emerging cyber threats and attack techniques"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Networking & Linux"
+      },
+      {
+        "step": 2,
+        "title": "Master Cyber Security Fundamentals"
+      },
+      {
+        "step": 3,
+        "title": "Learn Web & Network Security"
+      },
+      {
+        "step": 4,
+        "title": "Practice Penetration Testing Tools"
+      },
+      {
+        "step": 5,
+        "title": "Complete Hands-on Security Labs"
+      },
+      {
+        "step": 6,
+        "title": "Earn Ethical Hacking Certifications"
+      },
+      {
+        "step": 7,
+        "title": "Apply for Penetration Tester Roles"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Palo Alto Networks",
+        "logo": "assets/logos/palo-alto.",
+        "url": "https://www.paloaltonetworks.com"
+      },
+      {
+        "name": "Cisco",
+        "logo": "assets/logos/cisco.",
+        "url": "https://www.cisco.com"
+      },
+      {
+        "name": "IBM",
+        "logo": "assets/logos/ibm.",
+        "url": "https://www.ibm.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.",
+        "url": "https://www.accenture.com"
+      },
+      {
+        "name": "Deloitte",
+        "logo": "assets/logos/deloitte.",
+        "url": "https://www.deloitte.com"
+      },
+      {
+        "name": "TCS",
+        "logo": "assets/logos/tcs.",
+        "url": "https://www.tcs.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹6 - ₹18 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Intermediate",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.8 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "PortSwigger Web Security Academy",
+        "type": "Course",
+        "logo": "assets/logos/portswigger.png",
+        "url": "https://portswigger.net/web-security"
+      },
+      {
+        "name": "TryHackMe",
+        "type": "Practice",
+        "logo": "assets/logos/tryhackme.png",
+        "url": "https://tryhackme.com"
+      },
+      {
+        "name": "Hack The Box",
+        "type": "Practice",
+        "logo": "assets/logos/hack-the-box.png",
+        "url": "https://www.hackthebox.com"
+      },
+      {
+        "name": "OWASP",
+        "type": "Documentation",
+        "logo": "assets/logos/owasp.png",
+        "url": "https://owasp.org"
+      }
+    ],
+    "certifications": [
+      "Certified Ethical Hacker (CEH)",
+      "Offensive Security Certified Professional (OSCP)",
+      "CompTIA PenTest+",
+      "eLearnSecurity Junior Penetration Tester (eJPT)"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Cyber Security Analyst",
+        "slug": "cyber-security-analyst"
+      },
+      {
+        "name": "Security Engineer",
+        "slug": "security-engineer"
+      },
+      {
+        "name": "Cloud Security Engineer",
+        "slug": "cloud-security-engineer"
+      },
+      {
+        "name": "Digital Forensics Analyst",
+        "slug": "digital-forensics-analyst"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Penetration Testing a good career?",
+        "answer": "Yes. Penetration Testing is a highly respected cybersecurity career with strong demand, excellent salaries, and opportunities to work across various industries."
+      },
+      {
+        "question": "Do I need programming for Penetration Testing?",
+        "answer": "Basic programming and scripting knowledge, especially in Python, Bash, and JavaScript, is highly beneficial for automation and exploit development."
+      },
+      {
+        "question": "What is the difference between a Cyber Security Analyst and a Penetration Tester?",
+        "answer": "Cyber Security Analysts primarily monitor, detect, and respond to threats, while Penetration Testers proactively simulate attacks to identify and report security vulnerabilities before attackers can exploit them."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "security-engineer",
+    "title": "Security Engineer",
+    "category": "Cyber Security",
+    "icon": "ri-shield-star-line",
+    "color": "#B91C1C",
+    "image": "security-engineer.png",
+    "featured": true,
+    "shortDescription": "Designs, implements, and maintains secure systems, networks, and applications to protect organizations from cyber threats.",
+    "fullDescription": "A Security Engineer develops and manages an organization's security infrastructure to prevent cyber attacks and protect sensitive data. They design security architectures, implement security controls, configure firewalls, manage identity and access systems, monitor threats, and work closely with developers and IT teams to ensure systems remain secure. Security Engineers play a vital role in building resilient infrastructures across cloud, enterprise, and on-premise environments.",
+    "salary": {
+      "min": 7,
+      "max": 20
+    },
+    "demand": "Very High",
+    "experience": "Intermediate",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "Very High",
+      "futureScope": "Excellent",
+      "industry": "Cyber Security, Cloud Computing, Banking, Government, Healthcare, IT Services"
+    },
+    "skills": [
+      {
+        "name": "Network Security",
+        "logo": "assets/logos/network-security.png",
+        "url": "https://www.netacad.com/courses/networking"
+      },
+      {
+        "name": "Linux",
+        "logo": "assets/logos/linux.png",
+        "url": "https://linuxjourney.com/"
+      },
+      {
+        "name": "Cloud Security",
+        "logo": "assets/logos/cloud-security.png",
+        "url": "https://learn.microsoft.com/en-us/training/career-paths/security-engineer"
+      },
+      {
+        "name": "Identity & Access Management",
+        "logo": "assets/logos/iam.png",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+      },
+      {
+        "name": "Firewalls",
+        "logo": "assets/logos/firewall.png",
+        "url": "https://www.fortinet.com/resources/cyberglossary/firewall"
+      },
+      {
+        "name": "Python",
+        "logo": "assets/logos/python.png",
+        "url": "https://docs.python.org/3/tutorial/"
+      },
+      {
+        "name": "SIEM",
+        "logo": "assets/logos/siem.png",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/"
+      },
+      {
+        "name": "Risk Assessment",
+        "logo": "assets/logos/risk-assessment.png",
+        "url": "https://www.cisa.gov/resources-tools/resources/risk-management-essentials-guide"
+      }
+    ],
+    "tools": [
+      "Splunk",
+      "Wireshark",
+      "Microsoft Sentinel",
+      "Cisco Secure Firewall",
+      "Palo Alto Networks",
+      "Nessus",
+      "AWS Security Hub",
+      "Burp Suite"
+    ],
+    "responsibilities": [
+      "Design and implement security architectures",
+      "Configure and maintain security tools",
+      "Secure networks, servers, and applications",
+      "Monitor and respond to security incidents",
+      "Perform risk and vulnerability assessments",
+      "Implement identity and access management policies",
+      "Collaborate with development and DevOps teams",
+      "Ensure compliance with security standards and regulations"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Networking & Linux"
+      },
+      {
+        "step": 2,
+        "title": "Master Security Fundamentals"
+      },
+      {
+        "step": 3,
+        "title": "Learn System & Cloud Security"
+      },
+      {
+        "step": 4,
+        "title": "Practice Security Engineering Tools"
+      },
+      {
+        "step": 5,
+        "title": "Study IAM & Security Frameworks"
+      },
+      {
+        "step": 6,
+        "title": "Build Security Projects"
+      },
+      {
+        "step": 7,
+        "title": "Earn Certifications & Apply for Jobs"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Cisco",
+        "logo": "assets/logos/cisco.png",
+        "url": "https://www.cisco.com"
+      },
+      {
+        "name": "Palo Alto Networks",
+        "logo": "assets/logos/palo-alto.png",
+        "url": "https://www.paloaltonetworks.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Amazon",
+        "logo": "assets/logos/amazon.png",
+        "url": "https://www.amazon.com"
+      },
+      {
+        "name": "IBM",
+        "logo": "assets/logos/ibm.png",
+        "url": "https://www.ibm.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹7 - ₹20 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Intermediate",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.8 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Microsoft Learn Security",
+        "type": "Course",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://learn.microsoft.com/security"
+      },
+      {
+        "name": "AWS Security Documentation",
+        "type": "Documentation",
+        "logo": "assets/logos/aws.png",
+        "url": "https://docs.aws.amazon.com/security/"
+      },
+      {
+        "name": "OWASP",
+        "type": "Documentation",
+        "logo": "assets/logos/owasp.png",
+        "url": "https://owasp.org"
+      },
+      {
+        "name": "Cisco Networking Academy",
+        "type": "Course",
+        "logo": "assets/logos/cisco.png",
+        "url": "https://www.netacad.com"
+      }
+    ],
+    "certifications": [
+      "CompTIA Security+",
+      "Certified Information Systems Security Professional (CISSP)",
+      "Microsoft Certified: Security Operations Analyst Associate (SC-200)",
+      "AWS Certified Security – Specialty"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Cyber Security Analyst",
+        "slug": "cyber-security-analyst"
+      },
+      {
+        "name": "Penetration Tester",
+        "slug": "penetration-tester"
+      },
+      {
+        "name": "Cloud Security Engineer",
+        "slug": "cloud-security-engineer"
+      },
+      {
+        "name": "DevOps Engineer",
+        "slug": "devops-engineer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Security Engineering a good career?",
+        "answer": "Yes. Security Engineers are in high demand as organizations invest heavily in protecting their infrastructure, applications, and cloud environments."
+      },
+      {
+        "question": "What is the difference between a Security Engineer and a Cyber Security Analyst?",
+        "answer": "Security Engineers design and implement security systems and controls, while Cyber Security Analysts primarily monitor, detect, and respond to security incidents."
+      },
+      {
+        "question": "Do Security Engineers need cloud knowledge?",
+        "answer": "Yes. Understanding cloud platforms like AWS, Azure, and Google Cloud is increasingly important because many organizations now operate in cloud environments."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "cloud-engineer",
+    "title": "Cloud Engineer",
+    "category": "Cloud",
+    "icon": "ri-cloud-line",
+    "color": "#3B82F6",
+    "image": "cloud-engineer.png",
+    "featured": true,
+    "shortDescription": "Designs, deploys, and manages cloud infrastructure and services to build scalable, secure, and reliable applications.",
+    "fullDescription": "A Cloud Engineer is responsible for designing, deploying, maintaining, and optimizing cloud-based infrastructure. They work with cloud platforms such as AWS, Microsoft Azure, and Google Cloud Platform (GCP) to build secure, scalable, and highly available systems. Cloud Engineers collaborate with software developers, DevOps engineers, security teams, and system administrators to migrate applications, automate infrastructure, and ensure reliable cloud operations.",
+    "salary": {
+      "min": 7,
+      "max": 20
+    },
+    "demand": "Very High",
+    "experience": "Intermediate",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "Very High",
+      "futureScope": "Excellent",
+      "industry": "Cloud Computing, IT Services, SaaS, Banking, Healthcare, Product Companies"
+    },
+    "skills": [
+      {
+        "name": "AWS",
+        "logo": "assets/logos/aws.png",
+        "url": "https://explore.skillbuilder.aws/learn"
+      },
+      {
+        "name": "Microsoft Azure",
+        "logo": "assets/logos/azure.png",
+        "url": "https://learn.microsoft.com/en-us/training/azure/"
+      },
+      {
+        "name": "Google Cloud Platform",
+        "logo": "assets/logos/gcp.png",
+        "url": "https://www.cloudskillsboost.google/"
+      },
+      {
+        "name": "Linux",
+        "logo": "assets/logos/linux.png",
+        "url": "https://linuxjourney.com/"
+      },
+      {
+        "name": "Docker",
+        "logo": "assets/logos/docker.png",
+        "url": "https://docs.docker.com/get-started/"
+      },
+      {
+        "name": "Kubernetes",
+        "logo": "assets/logos/kubernetes.png",
+        "url": "https://kubernetes.io/docs/home/"
+      },
+      {
+        "name": "Terraform",
+        "logo": "assets/logos/terraform.png",
+        "url": "https://developer.hashicorp.com/terraform/tutorials"
+      },
+      {
+        "name": "Networking",
+        "logo": "assets/logos/networking.png",
+        "url": "https://www.netacad.com/courses/networking"
+      }
+    ],
+    "tools": [
+      "AWS Management Console",
+      "Microsoft Azure Portal",
+      "Google Cloud Console",
+      "Terraform",
+      "Docker",
+      "Kubernetes",
+      "GitHub Actions",
+      "Prometheus"
+    ],
+    "responsibilities": [
+      "Design and deploy cloud infrastructure",
+      "Manage cloud resources and networking",
+      "Automate infrastructure provisioning",
+      "Monitor cloud performance and availability",
+      "Implement cloud security best practices",
+      "Optimize cloud costs and resource utilization",
+      "Troubleshoot cloud infrastructure issues",
+      "Collaborate with DevOps and development teams"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Linux & Networking"
+      },
+      {
+        "step": 2,
+        "title": "Master One Cloud Platform"
+      },
+      {
+        "step": 3,
+        "title": "Learn Cloud Storage & Networking"
+      },
+      {
+        "step": 4,
+        "title": "Master Docker & Kubernetes"
+      },
+      {
+        "step": 5,
+        "title": "Learn Infrastructure as Code"
+      },
+      {
+        "step": 6,
+        "title": "Build Cloud Deployment Projects"
+      },
+      {
+        "step": 7,
+        "title": "Earn Certifications & Apply for Jobs"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Amazon Web Services",
+        "logo": "assets/logos/aws.png",
+        "url": "https://aws.amazon.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Oracle",
+        "logo": "assets/logos/oracle.png",
+        "url": "https://www.oracle.com"
+      },
+      {
+        "name": "IBM",
+        "logo": "assets/logos/ibm.png",
+        "url": "https://www.ibm.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      },
+      {
+        "name": "TCS",
+        "logo": "assets/logos/tcs.png",
+        "url": "https://www.tcs.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹7 - ₹20 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Intermediate",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.7 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "AWS Skill Builder",
+        "type": "Course",
+        "logo": "assets/logos/aws.png",
+        "url": "https://explore.skillbuilder.aws"
+      },
+      {
+        "name": "Microsoft Learn Azure",
+        "type": "Course",
+        "logo": "assets/logos/azure.png",
+        "url": "https://learn.microsoft.com/azure"
+      },
+      {
+        "name": "Google Cloud Skills Boost",
+        "type": "Course",
+        "logo": "assets/logos/gcp.png",
+        "url": "https://www.cloudskillsboost.google"
+      },
+      {
+        "name": "Terraform Documentation",
+        "type": "Documentation",
+        "logo": "assets/logos/terraform.png",
+        "url": "https://developer.hashicorp.com/terraform/docs"
+      }
+    ],
+    "certifications": [
+      "AWS Certified Solutions Architect – Associate",
+      "Microsoft Certified: Azure Administrator Associate",
+      "Google Associate Cloud Engineer",
+      "HashiCorp Certified: Terraform Associate"
+    ],
+    "relatedCareers": [
+      {
+        "name": "DevOps Engineer",
+        "slug": "devops-engineer"
+      },
+      {
+        "name": "Security Engineer",
+        "slug": "security-engineer"
+      },
+      {
+        "name": "Cloud Security Engineer",
+        "slug": "cloud-security-engineer"
+      },
+      {
+        "name": "Data Engineer",
+        "slug": "data-engineer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Cloud Engineering a good career?",
+        "answer": "Yes. Cloud Engineering is one of the fastest-growing technology careers, with high demand as organizations continue migrating infrastructure and applications to the cloud."
+      },
+      {
+        "question": "Which cloud platform should I learn first?",
+        "answer": "AWS is the most widely adopted cloud platform globally, making it a great starting point. Azure and Google Cloud are also valuable depending on your career goals."
+      },
+      {
+        "question": "Do Cloud Engineers need coding skills?",
+        "answer": "Basic programming and scripting knowledge, especially in Python or Bash, along with Infrastructure as Code tools like Terraform, is highly beneficial for automation and cloud management."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "slug": "cloud-architect",
+    "title": "Cloud Architect",
+    "category": "Cloud",
+    "icon": "ri-cloud-fill",
+    "color": "#2563EB",
+    "image": "cloud-architect.png",
+    "featured": true,
+    "shortDescription": "Designs scalable, secure, and cost-efficient cloud architectures while guiding organizations in adopting modern cloud solutions.",
+    "fullDescription": "A Cloud Architect is responsible for designing and planning cloud infrastructure that is scalable, secure, reliable, and cost-effective. They evaluate business requirements, choose the right cloud services, define cloud architecture, and ensure best practices for security, networking, disaster recovery, and performance. Cloud Architects collaborate with software developers, DevOps engineers, security teams, and business stakeholders to build cloud-native solutions and drive successful cloud transformation initiatives.",
+    "salary": {
+      "min": 15,
+      "max": 40
+    },
+    "demand": "Very High",
+    "experience": "Advanced",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "High",
+      "futureScope": "Excellent",
+      "industry": "Cloud Computing, IT Services, SaaS, Banking, Healthcare, E-commerce, Enterprise Solutions"
+    },
+    "skills": [
+      {
+        "name": "AWS",
+        "logo": "assets/logos/aws.png",
+        "url": "https://explore.skillbuilder.aws/learn"
+      },
+      {
+        "name": "Microsoft Azure",
+        "logo": "assets/logos/azure.png",
+        "url": "https://learn.microsoft.com/en-us/training/azure/"
+      },
+      {
+        "name": "Google Cloud Platform",
+        "logo": "assets/logos/gcp.png",
+        "url": "https://www.cloudskillsboost.google/"
+      },
+      {
+        "name": "Cloud Architecture",
+        "logo": "assets/logos/cloud-architecture.png",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/"
+      },
+      {
+        "name": "Infrastructure as Code",
+        "logo": "assets/logos/iac.png",
+        "url": "https://developer.hashicorp.com/terraform/tutorials"
+      },
+      {
+        "name": "Docker",
+        "logo": "assets/logos/docker.png",
+        "url": "https://docs.docker.com/get-started/"
+      },
+      {
+        "name": "Kubernetes",
+        "logo": "assets/logos/kubernetes.png",
+        "url": "https://kubernetes.io/docs/home/"
+      },
+      {
+        "name": "Networking",
+        "logo": "assets/logos/networking.png",
+        "url": "https://www.netacad.com/courses/networking"
+      }
+    ],
+    "tools": [
+      "AWS Management Console",
+      "Microsoft Azure Portal",
+      "Google Cloud Console",
+      "Terraform",
+      "Docker",
+      "Kubernetes",
+      "CloudFormation",
+      "Lucidchart"
+    ],
+    "responsibilities": [
+      "Design enterprise-grade cloud architectures",
+      "Choose appropriate cloud services and technologies",
+      "Ensure cloud security and compliance",
+      "Plan scalable and highly available infrastructure",
+      "Optimize cloud performance and costs",
+      "Define disaster recovery and backup strategies",
+      "Guide cloud migration projects",
+      "Collaborate with DevOps and development teams"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Master Linux & Networking"
+      },
+      {
+        "step": 2,
+        "title": "Learn One Major Cloud Platform"
+      },
+      {
+        "step": 3,
+        "title": "Understand Cloud Architecture Patterns"
+      },
+      {
+        "step": 4,
+        "title": "Learn Docker & Kubernetes"
+      },
+      {
+        "step": 5,
+        "title": "Master Infrastructure as Code"
+      },
+      {
+        "step": 6,
+        "title": "Design Real Cloud Solutions"
+      },
+      {
+        "step": 7,
+        "title": "Earn Cloud Certifications & Apply"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Amazon Web Services",
+        "logo": "assets/logos/aws.png",
+        "url": "https://aws.amazon.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Oracle",
+        "logo": "assets/logos/oracle.png",
+        "url": "https://www.oracle.com"
+      },
+      {
+        "name": "IBM",
+        "logo": "assets/logos/ibm.png",
+        "url": "https://www.ibm.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      },
+      {
+        "name": "TCS",
+        "logo": "assets/logos/tcs.png",
+        "url": "https://www.tcs.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹15 - ₹40 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Advanced",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.8 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "AWS Skill Builder",
+        "type": "Course",
+        "logo": "assets/logos/aws.png",
+        "url": "https://explore.skillbuilder.aws"
+      },
+      {
+        "name": "Microsoft Learn",
+        "type": "Course",
+        "logo": "assets/logos/azure.png",
+        "url": "https://learn.microsoft.com/azure"
+      },
+      {
+        "name": "Google Cloud Skills Boost",
+        "type": "Course",
+        "logo": "assets/logos/gcp.png",
+        "url": "https://www.cloudskillsboost.google"
+      },
+      {
+        "name": "AWS Architecture Center",
+        "type": "Documentation",
+        "logo": "assets/logos/aws.png",
+        "url": "https://aws.amazon.com/architecture/"
+      }
+    ],
+    "certifications": [
+      "AWS Certified Solutions Architect – Professional",
+      "Microsoft Certified: Azure Solutions Architect Expert",
+      "Google Professional Cloud Architect",
+      "HashiCorp Certified: Terraform Associate"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Cloud Engineer",
+        "slug": "cloud-engineer"
+      },
+      {
+        "name": "DevOps Engineer",
+        "slug": "devops-engineer"
+      },
+      {
+        "name": "Cloud Security Engineer",
+        "slug": "cloud-security-engineer"
+      },
+      {
+        "name": "Site Reliability Engineer",
+        "slug": "site-reliability-engineer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Cloud Architect a good career?",
+        "answer": "Yes. Cloud Architects are among the highest-paid professionals in cloud computing because they design large-scale cloud solutions that businesses rely on."
+      },
+      {
+        "question": "Do I need experience before becoming a Cloud Architect?",
+        "answer": "Yes. Most Cloud Architects start as Cloud Engineers, DevOps Engineers, or System Administrators before moving into architecture roles."
+      },
+      {
+        "question": "Which certification is best for Cloud Architects?",
+        "answer": "AWS Certified Solutions Architect – Professional, Google Professional Cloud Architect, and Microsoft Azure Solutions Architect Expert are among the most respected certifications."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "site-reliability-engineer",
+    "title": "Site Reliability Engineer",
+    "category": "Cloud",
+    "icon": "ri-server-line",
+    "color": "#14B8A6",
+    "image": "site-reliability-engineer.png",
+    "featured": true,
+    "shortDescription": "Ensures applications and infrastructure remain reliable, scalable, secure, and highly available through automation and monitoring.",
+    "fullDescription": "A Site Reliability Engineer (SRE) is responsible for maintaining the reliability, scalability, performance, and availability of software systems. SREs combine software engineering with IT operations to automate infrastructure, reduce manual work, monitor production environments, and quickly resolve incidents. They collaborate with developers, DevOps engineers, cloud engineers, and security teams to build resilient systems that can handle large-scale traffic while minimizing downtime.",
+    "salary": {
+      "min": 12,
+      "max": 35
+    },
+    "demand": "Very High",
+    "experience": "Advanced",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "High",
+      "futureScope": "Excellent",
+      "industry": "Cloud Computing, SaaS, Product Companies, FinTech, E-commerce, IT Services"
+    },
+    "skills": [
+      {
+        "name": "Linux",
+        "logo": "assets/logos/linux.png",
+        "url": "https://linuxjourney.com/"
+      },
+      {
+        "name": "Docker",
+        "logo": "assets/logos/docker.png",
+        "url": "https://docs.docker.com/get-started/"
+      },
+      {
+        "name": "Kubernetes",
+        "logo": "assets/logos/kubernetes.png",
+        "url": "https://kubernetes.io/docs/home/"
+      },
+      {
+        "name": "Python",
+        "logo": "assets/logos/python.png",
+        "url": "https://docs.python.org/3/tutorial/"
+      },
+      {
+        "name": "Terraform",
+        "logo": "assets/logos/terraform.png",
+        "url": "https://developer.hashicorp.com/terraform/tutorials"
+      },
+      {
+        "name": "CI/CD",
+        "logo": "assets/logos/cicd.png",
+        "url": "https://www.redhat.com/en/topics/devops/what-is-ci-cd"
+      },
+      {
+        "name": "Monitoring & Observability",
+        "logo": "assets/logos/monitoring.png",
+        "url": "https://prometheus.io/docs/introduction/overview/"
+      },
+      {
+        "name": "Networking",
+        "logo": "assets/logos/networking.png",
+        "url": "https://www.netacad.com/courses/networking"
+      }
+    ],
+    "tools": [
+      "Prometheus",
+      "Grafana",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins",
+      "GitHub Actions",
+      "PagerDuty"
+    ],
+    "responsibilities": [
+      "Maintain high system availability and reliability",
+      "Automate operational tasks and deployments",
+      "Monitor infrastructure and application performance",
+      "Respond to production incidents and outages",
+      "Improve system scalability and fault tolerance",
+      "Implement disaster recovery strategies",
+      "Optimize infrastructure performance",
+      "Collaborate with development and DevOps teams"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Linux & Networking"
+      },
+      {
+        "step": 2,
+        "title": "Master Cloud Computing Basics"
+      },
+      {
+        "step": 3,
+        "title": "Learn Docker & Kubernetes"
+      },
+      {
+        "step": 4,
+        "title": "Study Infrastructure Automation"
+      },
+      {
+        "step": 5,
+        "title": "Master Monitoring & Incident Management"
+      },
+      {
+        "step": 6,
+        "title": "Build Scalable Production Projects"
+      },
+      {
+        "step": 7,
+        "title": "Earn Certifications & Apply for SRE Roles"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Amazon",
+        "logo": "assets/logos/amazon.png",
+        "url": "https://www.amazon.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "Netflix",
+        "logo": "assets/logos/netflix.png",
+        "url": "https://www.netflix.com"
+      },
+      {
+        "name": "Adobe",
+        "logo": "assets/logos/adobe.png",
+        "url": "https://www.adobe.com"
+      },
+      {
+        "name": "Atlassian",
+        "logo": "assets/logos/atlassian.png",
+        "url": "https://www.atlassian.com"
+      },
+      {
+        "name": "Oracle",
+        "logo": "assets/logos/oracle.png",
+        "url": "https://www.oracle.com"
+      },
+      {
+        "name": "Salesforce",
+        "logo": "assets/logos/salesforce.png",
+        "url": "https://www.salesforce.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹12 - ₹35 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Advanced",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.8 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Google SRE Book",
+        "type": "Book",
+        "logo": "assets/logos/google.png",
+        "url": "https://sre.google/books/"
+      },
+      {
+        "name": "Kubernetes Documentation",
+        "type": "Documentation",
+        "logo": "assets/logos/kubernetes.png",
+        "url": "https://kubernetes.io/docs/home/"
+      },
+      {
+        "name": "Prometheus Documentation",
+        "type": "Documentation",
+        "logo": "assets/logos/prometheus.png",
+        "url": "https://prometheus.io/docs/"
+      },
+      {
+        "name": "Linux Journey",
+        "type": "Course",
+        "logo": "assets/logos/linux.png",
+        "url": "https://linuxjourney.com/"
+      }
+    ],
+    "certifications": [
+      "Google Professional Cloud DevOps Engineer",
+      "Certified Kubernetes Administrator (CKA)",
+      "AWS Certified DevOps Engineer – Professional",
+      "HashiCorp Certified: Terraform Associate"
+    ],
+    "relatedCareers": [
+      {
+        "name": "DevOps Engineer",
+        "slug": "devops-engineer"
+      },
+      {
+        "name": "Cloud Engineer",
+        "slug": "cloud-engineer"
+      },
+      {
+        "name": "Cloud Architect",
+        "slug": "cloud-architect"
+      },
+      {
+        "name": "Platform Engineer",
+        "slug": "platform-engineer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Site Reliability Engineering a good career?",
+        "answer": "Yes. SRE is one of the highest-paying infrastructure careers with excellent demand in cloud-first and product-based companies."
+      },
+      {
+        "question": "Do SREs need programming skills?",
+        "answer": "Yes. SREs commonly use Python, Go, or Bash to automate infrastructure, monitoring, and operational tasks."
+      },
+      {
+        "question": "What's the difference between DevOps Engineer and SRE?",
+        "answer": "DevOps focuses on improving collaboration and delivery pipelines, while SRE emphasizes system reliability, availability, monitoring, and incident response using engineering practices."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "slug": "ui-designer",
+    "title": "UI Designer",
+    "category": "Design",
+    "icon": "ri-palette-line",
+    "color": "#EC4899",
+    "image": "ui-designer.png",
+    "featured": true,
+    "shortDescription": "Designs visually appealing, intuitive, and user-friendly interfaces for websites, mobile apps, and digital products.",
+    "fullDescription": "A UI (User Interface) Designer is responsible for creating visually engaging and interactive interfaces for digital products. They focus on layouts, typography, colors, icons, buttons, and overall visual consistency to deliver an attractive and seamless user experience. UI Designers collaborate closely with UX Designers, Product Managers, Developers, and stakeholders to transform ideas and wireframes into polished, responsive, and accessible user interfaces.",
+    "salary": {
+      "min": 5,
+      "max": 16
+    },
+    "demand": "High",
+    "experience": "Beginner",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "High",
+      "futureScope": "Excellent",
+      "industry": "UI/UX Design, Product Design, SaaS, IT Services, E-commerce, Digital Agencies"
+    },
+    "skills": [
+      {
+        "name": "Figma",
+        "logo": "assets/logos/figma.png",
+        "url": "https://help.figma.com/hc/en-us/categories/360002051613"
+      },
+      {
+        "name": "Color Theory",
+        "logo": "assets/logos/color-theory.png",
+        "url": "https://www.interaction-design.org/literature/topics/color-theory"
+      },
+      {
+        "name": "Typography",
+        "logo": "assets/logos/typography.png",
+        "url": "https://www.interaction-design.org/literature/topics/typography"
+      },
+      {
+        "name": "Design Systems",
+        "logo": "assets/logos/design-system.png",
+        "url": "https://m3.material.io/"
+      },
+      {
+        "name": "Wireframing",
+        "logo": "assets/logos/wireframe.png",
+        "url": "https://www.figma.com/resource-library/design-basics/"
+      },
+      {
+        "name": "Prototyping",
+        "logo": "assets/logos/prototype.png",
+        "url": "https://help.figma.com/hc/en-us/articles/360040314193-Guide-to-prototyping-in-Figma"
+      },
+      {
+        "name": "Responsive Design",
+        "logo": "assets/logos/responsive-design.png",
+        "url": "https://web.dev/learn/design"
+      },
+      {
+        "name": "Accessibility",
+        "logo": "assets/logos/accessibility.png",
+        "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/"
+      }
+    ],
+    "tools": [
+      "Figma",
+      "Adobe XD",
+      "Sketch",
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Canva",
+      "Maze",
+      "Zeplin"
+    ],
+    "responsibilities": [
+      "Design attractive and intuitive user interfaces",
+      "Create wireframes, mockups, and prototypes",
+      "Maintain visual consistency across products",
+      "Build and maintain design systems",
+      "Collaborate with UX designers and developers",
+      "Ensure responsive and accessible designs",
+      "Improve existing interfaces using user feedback",
+      "Present design concepts to stakeholders"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn UI Design Fundamentals"
+      },
+      {
+        "step": 2,
+        "title": "Master Figma"
+      },
+      {
+        "step": 3,
+        "title": "Learn Color Theory & Typography"
+      },
+      {
+        "step": 4,
+        "title": "Create Wireframes & Prototypes"
+      },
+      {
+        "step": 5,
+        "title": "Learn Design Systems & Accessibility"
+      },
+      {
+        "step": 6,
+        "title": "Build a Strong UI Portfolio"
+      },
+      {
+        "step": 7,
+        "title": "Apply for UI Designer Roles"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "Adobe",
+        "logo": "assets/logos/adobe.png",
+        "url": "https://www.adobe.com"
+      },
+      {
+        "name": "Figma",
+        "logo": "assets/logos/figma.png",
+        "url": "https://www.figma.com"
+      },
+      {
+        "name": "Swiggy",
+        "logo": "assets/logos/swiggy.png",
+        "url": "https://www.swiggy.com"
+      },
+      {
+        "name": "Zomato",
+        "logo": "assets/logos/zomato.png",
+        "url": "https://www.zomato.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹5 - ₹16 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Beginner",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.7 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Excellent",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Figma Learn",
+        "type": "Course",
+        "logo": "assets/logos/figma.png",
+        "url": "https://help.figma.com/"
+      },
+      {
+        "name": "Material Design",
+        "type": "Documentation",
+        "logo": "assets/logos/material-design.png",
+        "url": "https://m3.material.io/"
+      },
+      {
+        "name": "Interaction Design Foundation",
+        "type": "Course",
+        "logo": "assets/logos/idf.png",
+        "url": "https://www.interaction-design.org/"
+      },
+      {
+        "name": "Google UX Design",
+        "type": "Course",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.coursera.org/professional-certificates/google-ux-design"
+      }
+    ],
+    "certifications": [
+      "Google UX Design Professional Certificate",
+      "Figma Certified Professional",
+      "Adobe Certified Professional",
+      "Interaction Design Foundation Certificate"
+    ],
+    "relatedCareers": [
+      {
+        "name": "UX Designer",
+        "slug": "ux-designer"
+      },
+      {
+        "name": "Product Designer",
+        "slug": "product-designer"
+      },
+      {
+        "name": "Frontend Developer",
+        "slug": "frontend-developer"
+      },
+      {
+        "name": "Graphic Designer",
+        "slug": "graphic-designer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is UI Design a good career?",
+        "answer": "Yes. UI Design is a highly creative and in-demand career with opportunities in startups, product companies, agencies, and multinational organizations."
+      },
+      {
+        "question": "Do I need coding to become a UI Designer?",
+        "answer": "No. Coding is not mandatory for UI Designers, but understanding HTML and CSS can improve collaboration with developers."
+      },
+      {
+        "question": "Which tool should I learn first?",
+        "answer": "Figma is the most popular UI design tool today and is the best starting point for beginners."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "ux-designer",
+    "title": "UX Designer",
+    "category": "Design",
+    "icon": "ri-user-heart-line",
+    "color": "#8B5CF6",
+    "image": "ux-designer.png",
+    "featured": true,
+    "shortDescription": "Researches user behavior and designs intuitive, accessible, and meaningful digital experiences that solve real user problems.",
+    "fullDescription": "A UX (User Experience) Designer focuses on understanding user needs, behaviors, and pain points to create products that are intuitive, efficient, and enjoyable to use. They conduct user research, create user personas, map user journeys, design information architecture, build wireframes and prototypes, and perform usability testing. UX Designers work closely with UI Designers, Product Managers, Developers, and stakeholders to ensure products provide exceptional user experiences.",
+    "salary": {
+      "min": 6,
+      "max": 18
+    },
+    "demand": "High",
+    "experience": "Beginner",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "High",
+      "futureScope": "Excellent",
+      "industry": "Product Design, SaaS, IT Services, E-commerce, FinTech, Healthcare, Digital Agencies"
+    },
+    "skills": [
+      {
+        "name": "User Research",
+        "logo": "assets/logos/user-research.png",
+        "url": "https://www.nngroup.com/articles/which-ux-research-methods/"
+      },
+      {
+        "name": "User Personas",
+        "logo": "assets/logos/user-persona.png",
+        "url": "https://www.interaction-design.org/literature/topics/personas"
+      },
+      {
+        "name": "Information Architecture",
+        "logo": "assets/logos/information-architecture.png",
+        "url": "https://www.interaction-design.org/literature/topics/information-architecture"
+      },
+      {
+        "name": "Wireframing",
+        "logo": "assets/logos/wireframe.png",
+        "url": "https://www.figma.com/resource-library/design-basics/"
+      },
+      {
+        "name": "Prototyping",
+        "logo": "assets/logos/prototype.png",
+        "url": "https://help.figma.com/hc/en-us/articles/360040314193-Guide-to-prototyping-in-Figma"
+      },
+      {
+        "name": "Usability Testing",
+        "logo": "assets/logos/usability-testing.png",
+        "url": "https://www.nngroup.com/articles/usability-testing-101/"
+      },
+      {
+        "name": "Figma",
+        "logo": "assets/logos/figma.png",
+        "url": "https://help.figma.com/hc/en-us/categories/360002051613"
+      },
+      {
+        "name": "Accessibility",
+        "logo": "assets/logos/accessibility.png",
+        "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/"
+      }
+    ],
+    "tools": [
+      "Figma",
+      "FigJam",
+      "Miro",
+      "Maze",
+      "Hotjar",
+      "Adobe XD",
+      "Optimal Workshop",
+      "Google Analytics"
+    ],
+    "responsibilities": [
+      "Conduct user research and interviews",
+      "Create user personas and empathy maps",
+      "Design user journeys and task flows",
+      "Develop wireframes and interactive prototypes",
+      "Conduct usability testing and analyze feedback",
+      "Improve product usability and accessibility",
+      "Collaborate with UI designers and developers",
+      "Present design recommendations to stakeholders"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn UX Design Fundamentals"
+      },
+      {
+        "step": 2,
+        "title": "Study User Research Methods"
+      },
+      {
+        "step": 3,
+        "title": "Learn Information Architecture & User Flows"
+      },
+      {
+        "step": 4,
+        "title": "Master Figma & Prototyping"
+      },
+      {
+        "step": 5,
+        "title": "Conduct Usability Testing"
+      },
+      {
+        "step": 6,
+        "title": "Build UX Case Studies & Portfolio"
+      },
+      {
+        "step": 7,
+        "title": "Apply for UX Designer Roles"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "Adobe",
+        "logo": "assets/logos/adobe.png",
+        "url": "https://www.adobe.com"
+      },
+      {
+        "name": "Figma",
+        "logo": "assets/logos/figma.png",
+        "url": "https://www.figma.com"
+      },
+      {
+        "name": "Atlassian",
+        "logo": "assets/logos/atlassian.png",
+        "url": "https://www.atlassian.com"
+      },
+      {
+        "name": "Flipkart",
+        "logo": "assets/logos/flipkart.png",
+        "url": "https://www.flipkart.com"
+      },
+      {
+        "name": "Swiggy",
+        "logo": "assets/logos/swiggy.png",
+        "url": "https://www.swiggy.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹6 - ₹18 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Beginner",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.8 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Excellent",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Nielsen Norman Group",
+        "type": "Course",
+        "logo": "assets/logos/nng.png",
+        "url": "https://www.nngroup.com/"
+      },
+      {
+        "name": "Interaction Design Foundation",
+        "type": "Course",
+        "logo": "assets/logos/idf.png",
+        "url": "https://www.interaction-design.org/"
+      },
+      {
+        "name": "Google UX Design Professional Certificate",
+        "type": "Course",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.coursera.org/professional-certificates/google-ux-design"
+      },
+      {
+        "name": "Figma Learn",
+        "type": "Documentation",
+        "logo": "assets/logos/figma.png",
+        "url": "https://help.figma.com/"
+      }
+    ],
+    "certifications": [
+      "Google UX Design Professional Certificate",
+      "Interaction Design Foundation UX Certificate",
+      "Nielsen Norman Group UX Certification",
+      "Adobe Certified Professional"
+    ],
+    "relatedCareers": [
+      {
+        "name": "UI/UX Designer",
+        "slug": "ui-ux-designer"
+      },
+      {
+        "name": "UI Designer",
+        "slug": "ui-designer"
+      },
+      {
+        "name": "Product Designer",
+        "slug": "product-designer"
+      },
+      {
+        "name": "Frontend Developer",
+        "slug": "frontend-developer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is UX Design a good career?",
+        "answer": "Yes. UX Design is a rapidly growing field with strong demand across startups, product companies, and global enterprises."
+      },
+      {
+        "question": "Do UX Designers need coding skills?",
+        "answer": "No. Coding isn't required, but understanding HTML, CSS, and frontend development concepts helps when collaborating with developers."
+      },
+      {
+        "question": "What is the most important skill for a UX Designer?",
+        "answer": "User research and problem-solving are the foundation of UX design, as they help create products that genuinely meet users' needs."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "slug": "ui-ux-designer",
+    "title": "UI/UX Designer",
+    "category": "Design",
+    "icon": "ri-layout-4-line",
+    "color": "#EC4899",
+    "image": "ui-ux-designer.png",
+    "featured": true,
+    "shortDescription": "Designs intuitive, user-friendly, and visually appealing digital experiences by combining user research, usability, and interface design.",
+    "fullDescription": "A UI/UX Designer is responsible for creating digital products that are both visually attractive and easy to use. They research user behavior, identify pain points, create user flows, wireframes, prototypes, and polished interfaces to improve the overall user experience. UI/UX Designers collaborate with product managers, developers, researchers, and stakeholders to build user-centered products that are functional, accessible, and engaging across web and mobile platforms.",
+    "salary": {
+      "min": 6,
+      "max": 18
+    },
+    "demand": "High",
+    "experience": "Beginner",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "High",
+      "futureScope": "Excellent",
+      "industry": "Product Design, SaaS, IT Services, E-commerce, FinTech, Digital Agencies, Startups"
+    },
+    "skills": [
+      {
+        "name": "Figma",
+        "logo": "assets/logos/figma.png",
+        "url": "https://help.figma.com/hc/en-us/categories/360002051613"
+      },
+      {
+        "name": "User Research",
+        "logo": "assets/logos/user-research.png",
+        "url": "https://www.nngroup.com/articles/which-ux-research-methods/"
+      },
+      {
+        "name": "Wireframing",
+        "logo": "assets/logos/wireframe.png",
+        "url": "https://www.figma.com/resource-library/design-basics/"
+      },
+      {
+        "name": "Prototyping",
+        "logo": "assets/logos/prototype.png",
+        "url": "https://help.figma.com/hc/en-us/articles/360040314193-Guide-to-prototyping-in-Figma"
+      },
+      {
+        "name": "User Experience Design",
+        "logo": "assets/logos/ux-design.png",
+        "url": "https://www.interaction-design.org/literature/topics/ux-design"
+      },
+      {
+        "name": "Design Systems",
+        "logo": "assets/logos/design-system.png",
+        "url": "https://m3.material.io/"
+      },
+      {
+        "name": "Responsive Design",
+        "logo": "assets/logos/responsive-design.png",
+        "url": "https://web.dev/learn/design"
+      },
+      {
+        "name": "Accessibility",
+        "logo": "assets/logos/accessibility.png",
+        "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/"
+      }
+    ],
+    "tools": [
+      "Figma",
+      "FigJam",
+      "Adobe XD",
+      "Sketch",
+      "Miro",
+      "Maze",
+      "Hotjar",
+      "Zeplin"
+    ],
+    "responsibilities": [
+      "Conduct user research and competitor analysis",
+      "Create user personas and user journeys",
+      "Design information architecture and user flows",
+      "Create wireframes and interactive prototypes",
+      "Design visually appealing and accessible interfaces",
+      "Maintain design systems and UI consistency",
+      "Conduct usability testing and iterate designs",
+      "Collaborate with developers, product managers, and stakeholders"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn UI & UX Design Fundamentals"
+      },
+      {
+        "step": 2,
+        "title": "Master Figma & Design Tools"
+      },
+      {
+        "step": 3,
+        "title": "Learn User Research & Information Architecture"
+      },
+      {
+        "step": 4,
+        "title": "Create Wireframes & Interactive Prototypes"
+      },
+      {
+        "step": 5,
+        "title": "Learn Design Systems & Accessibility"
+      },
+      {
+        "step": 6,
+        "title": "Build Real-World Case Studies & Portfolio"
+      },
+      {
+        "step": 7,
+        "title": "Apply for UI/UX Designer Roles"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "Adobe",
+        "logo": "assets/logos/adobe.png",
+        "url": "https://www.adobe.com"
+      },
+      {
+        "name": "Figma",
+        "logo": "assets/logos/figma.png",
+        "url": "https://www.figma.com"
+      },
+      {
+        "name": "Atlassian",
+        "logo": "assets/logos/atlassian.png",
+        "url": "https://www.atlassian.com"
+      },
+      {
+        "name": "Swiggy",
+        "logo": "assets/logos/swiggy.png",
+        "url": "https://www.swiggy.com"
+      },
+      {
+        "name": "Zomato",
+        "logo": "assets/logos/zomato.png",
+        "url": "https://www.zomato.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹6 - ₹18 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Beginner",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.8 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Excellent",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Figma Learn",
+        "type": "Course",
+        "logo": "assets/logos/figma.png",
+        "url": "https://help.figma.com/"
+      },
+      {
+        "name": "Nielsen Norman Group",
+        "type": "Course",
+        "logo": "assets/logos/nng.png",
+        "url": "https://www.nngroup.com/"
+      },
+      {
+        "name": "Material Design",
+        "type": "Documentation",
+        "logo": "assets/logos/material-design.png",
+        "url": "https://m3.material.io/"
+      },
+      {
+        "name": "Google UX Design Professional Certificate",
+        "type": "Course",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.coursera.org/professional-certificates/google-ux-design"
+      }
+    ],
+    "certifications": [
+      "Google UX Design Professional Certificate",
+      "Interaction Design Foundation UX Certificate",
+      "Adobe Certified Professional",
+      "Figma Certified Professional"
+    ],
+    "relatedCareers": [
+      {
+        "name": "UX Designer",
+        "slug": "ux-designer"
+      },
+      {
+        "name": "UI Designer",
+        "slug": "ui-designer"
+      },
+      {
+        "name": "Product Designer",
+        "slug": "product-designer"
+      },
+      {
+        "name": "Frontend Developer",
+        "slug": "frontend-developer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is UI/UX Design a good career?",
+        "answer": "Yes. UI/UX Design is one of the fastest-growing technology careers, with opportunities in startups, product companies, agencies, and enterprises."
+      },
+      {
+        "question": "Do I need coding to become a UI/UX Designer?",
+        "answer": "No. Coding isn't mandatory, but basic knowledge of HTML and CSS helps you communicate better with developers and create more practical designs."
+      },
+      {
+        "question": "Which tool should I learn first?",
+        "answer": "Figma is the industry-standard design tool and the best place for beginners to start learning UI/UX design."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "slug": "product-manager",
+    "title": "Product Manager",
+    "category": "Business",
+    "icon": "ri-briefcase-4-line",
+    "color": "#F97316",
+    "image": "product-manager.png",
+    "featured": true,
+    "shortDescription": "Leads the strategy, planning, and execution of digital products by aligning business goals, user needs, and engineering efforts.",
+    "fullDescription": "A Product Manager (PM) is responsible for defining the vision, strategy, and roadmap of a product. They identify customer needs, analyze market trends, prioritize features, and coordinate with designers, developers, marketers, and stakeholders to build successful products. Product Managers act as the bridge between business, technology, and users to ensure products deliver value while meeting business objectives.",
+    "salary": {
+      "min": 10,
+      "max": 35
+    },
+    "demand": "Very High",
+    "experience": "Intermediate",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "High",
+      "futureScope": "Excellent",
+      "industry": "Product Companies, SaaS, FinTech, E-commerce, Healthcare, IT Services, Startups"
+    },
+    "skills": [
+      {
+        "name": "Product Strategy",
+        "logo": "assets/logos/product-strategy.png",
+        "url": "https://www.atlassian.com/agile/product-management"
+      },
+      {
+        "name": "Market Research",
+        "logo": "assets/logos/market-research.png",
+        "url": "https://www.coursera.org/learn/market-research"
+      },
+      {
+        "name": "User Research",
+        "logo": "assets/logos/user-research.png",
+        "url": "https://www.nngroup.com/articles/which-ux-research-methods/"
+      },
+      {
+        "name": "Agile & Scrum",
+        "logo": "assets/logos/agile.png",
+        "url": "https://www.scrum.org/resources/what-is-scrum"
+      },
+      {
+        "name": "Roadmapping",
+        "logo": "assets/logos/roadmap.png",
+        "url": "https://www.atlassian.com/agile/product-management/product-roadmaps"
+      },
+      {
+        "name": "Data Analysis",
+        "logo": "assets/logos/data-analysis.png",
+        "url": "https://www.coursera.org/professional-certificates/google-data-analytics"
+      },
+      {
+        "name": "Communication",
+        "logo": "assets/logos/communication.png",
+        "url": "https://www.coursera.org/learn/wharton-communication-skills"
+      },
+      {
+        "name": "Stakeholder Management",
+        "logo": "assets/logos/stakeholder-management.png",
+        "url": "https://www.atlassian.com/work-management/project-management/stakeholder-management"
+      }
+    ],
+    "tools": [
+      "Jira",
+      "Confluence",
+      "Figma",
+      "Miro",
+      "Notion",
+      "Google Analytics",
+      "Productboard",
+      "Microsoft Excel"
+    ],
+    "responsibilities": [
+      "Define product vision and strategy",
+      "Gather and prioritize product requirements",
+      "Conduct market and competitor research",
+      "Create and maintain product roadmaps",
+      "Coordinate with design and engineering teams",
+      "Analyze product performance using data",
+      "Communicate with stakeholders and customers",
+      "Drive product launches and continuous improvements"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Product Management Fundamentals"
+      },
+      {
+        "step": 2,
+        "title": "Understand User Research & Market Analysis"
+      },
+      {
+        "step": 3,
+        "title": "Learn Agile & Scrum Methodologies"
+      },
+      {
+        "step": 4,
+        "title": "Master Product Roadmapping & Prioritization"
+      },
+      {
+        "step": 5,
+        "title": "Learn Product Analytics & Metrics"
+      },
+      {
+        "step": 6,
+        "title": "Build Product Case Studies & Projects"
+      },
+      {
+        "step": 7,
+        "title": "Earn Certifications & Apply for Product Manager Roles"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "Amazon",
+        "logo": "assets/logos/amazon.png",
+        "url": "https://www.amazon.com"
+      },
+      {
+        "name": "Atlassian",
+        "logo": "assets/logos/atlassian.png",
+        "url": "https://www.atlassian.com"
+      },
+      {
+        "name": "Adobe",
+        "logo": "assets/logos/adobe.png",
+        "url": "https://www.adobe.com"
+      },
+      {
+        "name": "Flipkart",
+        "logo": "assets/logos/flipkart.png",
+        "url": "https://www.flipkart.com"
+      },
+      {
+        "name": "Swiggy",
+        "logo": "assets/logos/swiggy.png",
+        "url": "https://www.swiggy.com"
+      },
+      {
+        "name": "Razorpay",
+        "logo": "assets/logos/razorpay.png",
+        "url": "https://razorpay.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹10 - ₹35 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Intermediate",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.7 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Atlassian Product Management Guide",
+        "type": "Documentation",
+        "logo": "assets/logos/atlassian.png",
+        "url": "https://www.atlassian.com/agile/product-management"
+      },
+      {
+        "name": "Google Project Management",
+        "type": "Course",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.coursera.org/professional-certificates/google-project-management"
+      },
+      {
+        "name": "Product School",
+        "type": "Course",
+        "logo": "assets/logos/product-school.png",
+        "url": "https://productschool.com"
+      },
+      {
+        "name": "Mind the Product",
+        "type": "Course",
+        "logo": "assets/logos/mind-the-product.png",
+        "url": "https://www.mindtheproduct.com"
+      }
+    ],
+    "certifications": [
+      "Product School Product Manager Certificate",
+      "Certified Scrum Product Owner (CSPO)",
+      "Professional Scrum Product Owner (PSPO I)",
+      "Google Project Management Professional Certificate"
+    ],
+    "relatedCareers": [
+      {
+        "name": "UI/UX Designer",
+        "slug": "ui-ux-designer"
+      },
+      {
+        "name": "Business Analyst",
+        "slug": "business-analyst"
+      },
+      {
+        "name": "Project Manager",
+        "slug": "project-manager"
+      },
+      {
+        "name": "Product Designer",
+        "slug": "product-designer"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Product Management a good career?",
+        "answer": "Yes. Product Management is one of the highest-paying and fastest-growing careers in technology, offering opportunities across startups and global product companies."
+      },
+      {
+        "question": "Do Product Managers need coding skills?",
+        "answer": "No. Coding isn't mandatory, but understanding software development concepts helps Product Managers communicate effectively with engineering teams."
+      },
+      {
+        "question": "What skills are most important for a Product Manager?",
+        "answer": "Strategic thinking, communication, user empathy, market research, data analysis, prioritization, and leadership are among the most important skills for successful Product Managers."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "business-analyst",
+    "title": "Business & Analytics",
+    "category": "Business",
+    "icon": "ri-bar-chart-box-line",
+    "color": "#0EA5E9",
+    "image": "business-analyst.png",
+    "featured": true,
+    "shortDescription": "Analyzes business processes, gathers requirements, and bridges the gap between business stakeholders and technical teams to deliver effective solutions.",
+    "fullDescription": "A Business Analyst (BA) helps organizations improve processes, products, services, and software by analyzing business needs and recommending data-driven solutions. They gather and document requirements, communicate with stakeholders, create process models, and collaborate with developers, designers, testers, and project managers to ensure business objectives are successfully translated into technical solutions.",
+    "salary": {
+      "min": 6,
+      "max": 18
+    },
+    "demand": "High",
+    "experience": "Beginner",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "High",
+      "futureScope": "Excellent",
+      "industry": "IT Services, Banking, Healthcare, FinTech, Consulting, E-commerce, Product Companies"
+    },
+    "skills": [
+      {
+        "name": "Business Analysis",
+        "logo": "assets/logos/business-analysis.png",
+        "url": "https://www.iiba.org/business-analysis-standards-and-publications/business-analysis-body-of-knowledge-babok/"
+      },
+      {
+        "name": "Requirement Gathering",
+        "logo": "assets/logos/requirement-gathering.png",
+        "url": "https://www.atlassian.com/work-management/project-management/requirements-management"
+      },
+      {
+        "name": "SQL",
+        "logo": "assets/logos/sql.png",
+        "url": "https://www.w3schools.com/sql/"
+      },
+      {
+        "name": "Microsoft Excel",
+        "logo": "assets/logos/excel.png",
+        "url": "https://support.microsoft.com/excel"
+      },
+      {
+        "name": "Power BI",
+        "logo": "assets/logos/powerbi.png",
+        "url": "https://learn.microsoft.com/power-bi/"
+      },
+      {
+        "name": "Data Visualization",
+        "logo": "assets/logos/data-visualization.png",
+        "url": "https://learn.microsoft.com/training/modules/visuals-power-bi/"
+      },
+      {
+        "name": "Agile & Scrum",
+        "logo": "assets/logos/agile.png",
+        "url": "https://www.scrum.org/resources/what-is-scrum"
+      },
+      {
+        "name": "Communication",
+        "logo": "assets/logos/communication.png",
+        "url": "https://www.coursera.org/learn/wharton-communication-skills"
+      }
+    ],
+    "tools": [
+      "Microsoft Excel",
+      "Power BI",
+      "SQL Server",
+      "Jira",
+      "Confluence",
+      "Microsoft Visio",
+      "Lucidchart",
+      "Tableau"
+    ],
+    "responsibilities": [
+      "Gather and analyze business requirements",
+      "Communicate with stakeholders and clients",
+      "Document functional and technical requirements",
+      "Analyze business processes and identify improvements",
+      "Create reports and dashboards",
+      "Collaborate with development and QA teams",
+      "Support project planning and implementation",
+      "Ensure delivered solutions meet business objectives"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Business Analysis Fundamentals"
+      },
+      {
+        "step": 2,
+        "title": "Master Excel & SQL"
+      },
+      {
+        "step": 3,
+        "title": "Learn Requirement Gathering & Documentation"
+      },
+      {
+        "step": 4,
+        "title": "Study Agile & Scrum"
+      },
+      {
+        "step": 5,
+        "title": "Learn Power BI & Data Visualization"
+      },
+      {
+        "step": 6,
+        "title": "Build Real Business Case Studies"
+      },
+      {
+        "step": 7,
+        "title": "Earn Certifications & Apply for Jobs"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      },
+      {
+        "name": "TCS",
+        "logo": "assets/logos/tcs.png",
+        "url": "https://www.tcs.com"
+      },
+      {
+        "name": "Capgemini",
+        "logo": "assets/logos/capgemini.png",
+        "url": "https://www.capgemini.com"
+      },
+      {
+        "name": "Deloitte",
+        "logo": "assets/logos/deloitte.png",
+        "url": "https://www.deloitte.com"
+      },
+      {
+        "name": "IBM",
+        "logo": "assets/logos/ibm.png",
+        "url": "https://www.ibm.com"
+      },
+      {
+        "name": "Cognizant",
+        "logo": "assets/logos/cognizant.png",
+        "url": "https://www.cognizant.com"
+      },
+      {
+        "name": "Wipro",
+        "logo": "assets/logos/wipro.png",
+        "url": "https://www.wipro.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹6 - ₹18 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Beginner",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.5 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "IIBA BABOK Guide",
+        "type": "Documentation",
+        "logo": "assets/logos/iiba.png",
+        "url": "https://www.iiba.org/business-analysis-standards-and-publications/business-analysis-body-of-knowledge-babok/"
+      },
+      {
+        "name": "Microsoft Learn Power BI",
+        "type": "Course",
+        "logo": "assets/logos/powerbi.png",
+        "url": "https://learn.microsoft.com/power-bi/"
+      },
+      {
+        "name": "Google Data Analytics Professional Certificate",
+        "type": "Course",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.coursera.org/professional-certificates/google-data-analytics"
+      },
+      {
+        "name": "Atlassian Agile Guide",
+        "type": "Documentation",
+        "logo": "assets/logos/atlassian.png",
+        "url": "https://www.atlassian.com/agile"
+      }
+    ],
+    "certifications": [
+      "ECBA (Entry Certificate in Business Analysis)",
+      "CCBA (Certification of Capability in Business Analysis)",
+      "CBAP (Certified Business Analysis Professional)",
+      "Microsoft Certified: Power BI Data Analyst Associate"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Data Analyst",
+        "slug": "data-analyst"
+      },
+      {
+        "name": "Product Manager",
+        "slug": "product-manager"
+      },
+      {
+        "name": "Project Manager",
+        "slug": "project-manager"
+      },
+      {
+        "name": "Data Scientist",
+        "slug": "data-scientist"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Business Analyst a good career?",
+        "answer": "Yes. Business Analysts are in high demand across IT, consulting, finance, healthcare, and product companies because they help organizations make better business and technology decisions."
+      },
+      {
+        "question": "Do Business Analysts need coding skills?",
+        "answer": "No. Coding isn't mandatory, but knowing SQL, Excel, and basic data analysis tools gives Business Analysts a significant advantage."
+      },
+      {
+        "question": "Which tools should a beginner Business Analyst learn?",
+        "answer": "Start with Excel, SQL, Power BI, Jira, Confluence, and basic process modeling tools like Visio or Lucidchart."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "digital-marketing-specialist",
+    "title": "Digital Marketing Specialist",
+    "category": "Business",
+    "icon": "ri-megaphone-line",
+    "color": "#F59E0B",
+    "image": "digital-marketing-specialist.png",
+    "featured": true,
+    "shortDescription": "Plans, executes, and optimizes digital marketing campaigns to increase brand awareness, website traffic, leads, and online sales.",
+    "fullDescription": "A Digital Marketing Specialist is responsible for promoting brands, products, and services through digital channels such as search engines, social media, email, websites, and paid advertising. They develop marketing strategies, manage campaigns, analyze performance metrics, optimize conversions, and collaborate with designers, content creators, and business teams to achieve marketing objectives and business growth.",
+    "salary": {
+      "min": 4,
+      "max": 15
+    },
+    "demand": "High",
+    "experience": "Beginner",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "High",
+      "futureScope": "Excellent",
+      "industry": "Digital Marketing, E-commerce, IT Services, Advertising, Media, SaaS, Startups"
+    },
+    "skills": [
+      {
+        "name": "Search Engine Optimization (SEO)",
+        "logo": "assets/logos/seo.png",
+        "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      },
+      {
+        "name": "Search Engine Marketing (SEM)",
+        "logo": "assets/logos/sem.png",
+        "url": "https://skillshop.withgoogle.com/"
+      },
+      {
+        "name": "Social Media Marketing",
+        "logo": "assets/logos/social-media.png",
+        "url": "https://www.facebook.com/business/learn"
+      },
+      {
+        "name": "Google Analytics",
+        "logo": "assets/logos/google-analytics.png",
+        "url": "https://analytics.google.com/analytics/academy/"
+      },
+      {
+        "name": "Content Marketing",
+        "logo": "assets/logos/content-marketing.png",
+        "url": "https://academy.hubspot.com/courses/content-marketing"
+      },
+      {
+        "name": "Email Marketing",
+        "logo": "assets/logos/email-marketing.png",
+        "url": "https://mailchimp.com/resources/"
+      },
+      {
+        "name": "Google Ads",
+        "logo": "assets/logos/google-ads.png",
+        "url": "https://skillshop.withgoogle.com/"
+      },
+      {
+        "name": "Marketing Analytics",
+        "logo": "assets/logos/marketing-analytics.png",
+        "url": "https://academy.hubspot.com/courses/marketing-analytics"
+      }
+    ],
+    "tools": [
+      "Google Analytics",
+      "Google Ads",
+      "Google Search Console",
+      "Meta Ads Manager",
+      "HubSpot",
+      "Mailchimp",
+      "Canva",
+      "SEMrush"
+    ],
+    "responsibilities": [
+      "Plan and execute digital marketing campaigns",
+      "Improve website rankings using SEO",
+      "Manage paid advertising campaigns",
+      "Create and optimize content marketing strategies",
+      "Monitor campaign performance and KPIs",
+      "Analyze website traffic and user behavior",
+      "Manage social media marketing activities",
+      "Collaborate with content creators and designers"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Digital Marketing Fundamentals"
+      },
+      {
+        "step": 2,
+        "title": "Master SEO & SEM"
+      },
+      {
+        "step": 3,
+        "title": "Learn Social Media & Content Marketing"
+      },
+      {
+        "step": 4,
+        "title": "Master Google Analytics & Google Ads"
+      },
+      {
+        "step": 5,
+        "title": "Learn Email Marketing & Automation"
+      },
+      {
+        "step": 6,
+        "title": "Build Real Marketing Campaigns & Portfolio"
+      },
+      {
+        "step": 7,
+        "title": "Earn Certifications & Apply for Jobs"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Meta",
+        "logo": "assets/logos/meta.png",
+        "url": "https://about.meta.com"
+      },
+      {
+        "name": "HubSpot",
+        "logo": "assets/logos/hubspot.png",
+        "url": "https://www.hubspot.com"
+      },
+      {
+        "name": "Amazon",
+        "logo": "assets/logos/amazon.png",
+        "url": "https://www.amazon.com"
+      },
+      {
+        "name": "Flipkart",
+        "logo": "assets/logos/flipkart.png",
+        "url": "https://www.flipkart.com"
+      },
+      {
+        "name": "Swiggy",
+        "logo": "assets/logos/swiggy.png",
+        "url": "https://www.swiggy.com"
+      },
+      {
+        "name": "Nykaa",
+        "logo": "assets/logos/nykaa.png",
+        "url": "https://www.nykaa.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹4 - ₹15 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Beginner",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.5 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Google Skillshop",
+        "type": "Course",
+        "logo": "assets/logos/google.png",
+        "url": "https://skillshop.withgoogle.com/"
+      },
+      {
+        "name": "HubSpot Academy",
+        "type": "Course",
+        "logo": "assets/logos/hubspot.png",
+        "url": "https://academy.hubspot.com/"
+      },
+      {
+        "name": "Google Analytics Academy",
+        "type": "Course",
+        "logo": "assets/logos/google-analytics.png",
+        "url": "https://analytics.google.com/analytics/academy/"
+      },
+      {
+        "name": "Meta Blueprint",
+        "type": "Course",
+        "logo": "assets/logos/meta.png",
+        "url": "https://www.facebook.com/business/learn"
+      }
+    ],
+    "certifications": [
+      "Google Ads Search Certification",
+      "Google Analytics Certification",
+      "HubSpot Content Marketing Certification",
+      "Meta Certified Digital Marketing Associate"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Content Strategist",
+        "slug": "content-strategist"
+      },
+      {
+        "name": "SEO Specialist",
+        "slug": "seo-specialist"
+      },
+      {
+        "name": "Business Analyst",
+        "slug": "business-analyst"
+      },
+      {
+        "name": "Product Manager",
+        "slug": "product-manager"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Digital Marketing a good career?",
+        "answer": "Yes. Digital Marketing is one of the fastest-growing career fields with opportunities in agencies, startups, e-commerce companies, and global enterprises."
+      },
+      {
+        "question": "Do I need coding to become a Digital Marketing Specialist?",
+        "answer": "No. Coding isn't required, although basic knowledge of HTML, CSS, and website optimization can be helpful for SEO and landing page improvements."
+      },
+      {
+        "question": "Which certification should beginners pursue first?",
+        "answer": "Google Ads Certification, Google Analytics Certification, HubSpot Academy courses, and Meta Blueprint certifications are excellent starting points."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "project-manager",
+    "title": "Project Manager",
+    "category": "Business",
+    "icon": "ri-projector-2-line",
+    "color": "#14B8A6",
+    "image": "project-manager.png",
+    "featured": true,
+    "shortDescription": "Plans, coordinates, and manages projects from initiation to completion by leading teams, managing resources, and ensuring timely delivery within scope and budget.",
+    "fullDescription": "A Project Manager (PM) is responsible for planning, executing, monitoring, and successfully delivering projects while balancing scope, time, cost, and quality. They work closely with stakeholders, developers, designers, business teams, and clients to define project goals, allocate resources, manage risks, and ensure smooth collaboration. Project Managers use various methodologies such as Agile, Scrum, Kanban, and Waterfall to deliver projects efficiently across industries.",
+    "salary": {
+      "min": 8,
+      "max": 28
+    },
+    "demand": "Very High",
+    "experience": "Intermediate",
+    "snapshot": {
+      "workMode": "Remote / Hybrid / On-site",
+      "employmentType": "Full Time",
+      "education": "Bachelor's Degree",
+      "jobOpenings": "High",
+      "futureScope": "Excellent",
+      "industry": "IT Services, SaaS, Consulting, Construction, Healthcare, Finance, Manufacturing"
+    },
+    "skills": [
+      {
+        "name": "Project Management",
+        "logo": "assets/logos/project-management.png",
+        "url": "https://www.pmi.org/learning/library"
+      },
+      {
+        "name": "Agile & Scrum",
+        "logo": "assets/logos/agile.png",
+        "url": "https://www.scrum.org/resources/what-is-scrum"
+      },
+      {
+        "name": "Risk Management",
+        "logo": "assets/logos/risk-management.png",
+        "url": "https://www.pmi.org/learning/library"
+      },
+      {
+        "name": "Stakeholder Management",
+        "logo": "assets/logos/stakeholder-management.png",
+        "url": "https://www.atlassian.com/work-management/project-management/stakeholder-management"
+      },
+      {
+        "name": "Budget Planning",
+        "logo": "assets/logos/budget-planning.png",
+        "url": "https://asana.com/resources/project-budget"
+      },
+      {
+        "name": "Leadership",
+        "logo": "assets/logos/leadership.png",
+        "url": "https://www.coursera.org/learn/leading-people-teams"
+      },
+      {
+        "name": "Communication",
+        "logo": "assets/logos/communication.png",
+        "url": "https://www.coursera.org/learn/wharton-communication-skills"
+      },
+      {
+        "name": "Time Management",
+        "logo": "assets/logos/time-management.png",
+        "url": "https://asana.com/resources/time-management"
+      }
+    ],
+    "tools": [
+      "Jira",
+      "Asana",
+      "Trello",
+      "Microsoft Project",
+      "Monday.com",
+      "ClickUp",
+      "Confluence",
+      "Notion"
+    ],
+    "responsibilities": [
+      "Define project goals, scope, and deliverables",
+      "Develop project plans and timelines",
+      "Allocate resources and assign tasks",
+      "Coordinate cross-functional teams",
+      "Track project progress and milestones",
+      "Manage project risks and resolve issues",
+      "Communicate project status to stakeholders",
+      "Ensure projects are delivered on time and within budget"
+    ],
+    "roadmap": [
+      {
+        "step": 1,
+        "title": "Learn Project Management Fundamentals"
+      },
+      {
+        "step": 2,
+        "title": "Understand Agile, Scrum & Waterfall Methodologies"
+      },
+      {
+        "step": 3,
+        "title": "Learn Project Planning & Scheduling"
+      },
+      {
+        "step": 4,
+        "title": "Master Risk, Budget & Resource Management"
+      },
+      {
+        "step": 5,
+        "title": "Learn Project Management Tools"
+      },
+      {
+        "step": 6,
+        "title": "Manage Real or Simulated Projects"
+      },
+      {
+        "step": 7,
+        "title": "Earn Certifications & Apply for Project Manager Roles"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Google",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "assets/logos/microsoft.png",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "name": "Amazon",
+        "logo": "assets/logos/amazon.png",
+        "url": "https://www.amazon.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "assets/logos/infosys.png",
+        "url": "https://www.infosys.com"
+      },
+      {
+        "name": "TCS",
+        "logo": "assets/logos/tcs.png",
+        "url": "https://www.tcs.com"
+      },
+      {
+        "name": "Accenture",
+        "logo": "assets/logos/accenture.png",
+        "url": "https://www.accenture.com"
+      },
+      {
+        "name": "Capgemini",
+        "logo": "assets/logos/capgemini.png",
+        "url": "https://www.capgemini.com"
+      },
+      {
+        "name": "IBM",
+        "logo": "assets/logos/ibm.png",
+        "url": "https://www.ibm.com"
+      }
+    ],
+    "quickInfo": [
+      {
+        "label": "Average Salary",
+        "value": "₹8 - ₹28 LPA",
+        "icon": "ri-money-rupee-circle-line"
+      },
+      {
+        "label": "Experience Level",
+        "value": "Intermediate",
+        "icon": "ri-user-star-line"
+      },
+      {
+        "label": "Career Growth",
+        "value": "Excellent",
+        "icon": "ri-line-chart-line"
+      },
+      {
+        "label": "Job Satisfaction",
+        "value": "4.6 / 5",
+        "icon": "ri-emotion-happy-line"
+      },
+      {
+        "label": "Work-Life Balance",
+        "value": "Good",
+        "icon": "ri-scales-3-line"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Project Management Institute (PMI)",
+        "type": "Documentation",
+        "logo": "assets/logos/pmi.png",
+        "url": "https://www.pmi.org"
+      },
+      {
+        "name": "Google Project Management Professional Certificate",
+        "type": "Course",
+        "logo": "assets/logos/google.png",
+        "url": "https://www.coursera.org/professional-certificates/google-project-management"
+      },
+      {
+        "name": "Atlassian Agile Coach",
+        "type": "Documentation",
+        "logo": "assets/logos/atlassian.png",
+        "url": "https://www.atlassian.com/agile"
+      },
+      {
+        "name": "Scrum.org Learning",
+        "type": "Documentation",
+        "logo": "assets/logos/scrum.png",
+        "url": "https://www.scrum.org/resources"
+      }
+    ],
+    "certifications": [
+      "Project Management Professional (PMP)",
+      "Certified Associate in Project Management (CAPM)",
+      "Professional Scrum Master (PSM I)",
+      "Google Project Management Professional Certificate"
+    ],
+    "relatedCareers": [
+      {
+        "name": "Product Manager",
+        "slug": "product-manager"
+      },
+      {
+        "name": "Business Analyst",
+        "slug": "business-analyst"
+      },
+      {
+        "name": "Scrum Master",
+        "slug": "scrum-master"
+      },
+      {
+        "name": "Operations Manager",
+        "slug": "operations-manager"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Project Management a good career?",
+        "answer": "Yes. Project Management offers excellent career growth, competitive salaries, and opportunities across industries including IT, finance, healthcare, construction, and consulting."
+      },
+      {
+        "question": "Do Project Managers need coding skills?",
+        "answer": "No. Coding isn't mandatory, but understanding software development processes is beneficial when managing technical projects."
+      },
+      {
+        "question": "Which certification is best for beginners?",
+        "answer": "CAPM (Certified Associate in Project Management) and the Google Project Management Professional Certificate are excellent starting points before pursuing PMP."
+      }
+    ]
+  }
+]
