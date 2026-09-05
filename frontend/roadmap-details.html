@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Roadmap - CareerCompass</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS Folder/roadmap-details.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR (same markup as career-details.html / careers.html) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logos/logo.jpg" alt="CareerCompass Logo">
+                CareerCompass
+            </a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="careers.html">Career</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="mobile-btn-container"><a href="contact.html" class="nav-btn mobile-contact-btn">Contact</a></li>
+            </ul>
+
+            <a href="contact.html" class="nav-btn desktop-btn">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- ==========================
+        LOADING STATE
+    =========================== -->
+    <div class="state-container" id="loadingState">
+        <div class="spinner"></div>
+        <p>Loading roadmap...</p>
+    </div>
+
+
+    <!-- ==========================
+        ERROR STATE
+    =========================== -->
+    <div class="state-container" id="errorState" style="display:none;">
+        <i class="ri-error-warning-line state-icon"></i>
+        <h2 id="errorTitle">Something went wrong</h2>
+        <p id="errorMessage">We couldn't load this roadmap. Please try again.</p>
+        <a href="careers.html" class="nav-btn">Back to Careers</a>
+    </div>
+
+
+    <!-- ==========================
+        EMPTY ROADMAP STATE
+    =========================== -->
+    <div class="state-container" id="emptyState" style="display:none;">
+        <i class="ri-road-map-line state-icon"></i>
+        <h2>Roadmap Coming Soon</h2>
+        <p id="emptyMessage">We are currently preparing a detailed learning roadmap for this career.</p>
+        <a href="careers.html" class="nav-btn">Back to Careers</a>
+    </div>
+
+
+    <!-- ==========================
+        MAIN ROADMAP CONTENT
+        (hidden until data loads)
+    =========================== -->
+    <div id="roadmapContent" style="display:none;">
+
+        <!-- BREADCRUMB -->
+        <nav class="breadcrumb">
+            <div class="container breadcrumb-container">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="careers.html">Careers</a>
+                <span>/</span>
+                <a class="breadcrumb-career" href="#"></a>
+                <span>/</span>
+                <span class="breadcrumb-current">Roadmap</span>
+            </div>
+        </nav>
+
+        <!-- ROADMAP HERO -->
+        <section class="roadmap-hero">
+            <div class="container">
+                <span class="roadmap-hero-badge">CAREER ROADMAP</span>
+                <h1 class="roadmap-title"></h1>
+                <p class="roadmap-subtitle">Follow a structured learning path from fundamentals to career readiness.</p>
+
+                <div class="hero-stats roadmap-hero-stats">
+
+                    <div class="hero-stat-card">
+                        <div class="stat-icon"><i class="ri-bar-chart-2-line"></i></div>
+                        <div class="stat-content">
+                            <h6>Difficulty</h6>
+                            <h3 class="roadmap-difficulty">—</h3>
+                        </div>
+                    </div>
+
+                    <div class="hero-stat-card">
+                        <div class="stat-icon"><i class="ri-flag-line"></i></div>
+                        <div class="stat-content">
+                            <h6>Phases</h6>
+                            <h3 class="roadmap-phase-count">0</h3>
+                        </div>
+                    </div>
+
+                    <div class="hero-stat-card">
+                        <div class="stat-icon"><i class="ri-list-check-2"></i></div>
+                        <div class="stat-content">
+                            <h6>Topics</h6>
+                            <h3 class="roadmap-topic-count">0</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- OVERALL PROGRESS -->
+        <section class="progress-section">
+            <div class="container">
+                <div class="progress-card card">
+                    <div class="progress-header">
+                        <span class="progress-label">Your Progress</span>
+                        <span class="progress-percent">0%</span>
+                    </div>
+                    <div class="progress-bar-track">
+                        <div class="progress-bar-fill" style="width:0%"></div>
+                    </div>
+                    <p class="progress-detail">0 of 0 subtopics completed</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHASE TIMELINE / QUICK NAVIGATION -->
+        <section class="phase-timeline-section">
+            <div class="container">
+                <div class="phase-timeline" id="phaseTimeline">
+                    <!-- JS generates timeline items -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ROADMAP PHASES (JS generates one phase-card per phase) -->
+        <section class="roadmap-phases-section">
+            <div class="container">
+                <div id="roadmapPhases">
+                    <!-- JS generates phase cards -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CAREER READY -->
+        <section class="career-ready-section">
+            <div class="container">
+                <div class="career-ready-card card">
+                    <div class="career-ready-icon">🏁</div>
+                    <h2>Career Ready?</h2>
+                    <p class="career-ready-message"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="roadmap-cta-section">
+            <div class="container">
+                <div class="roadmap-cta-card">
+                    <h2>Want the full picture?</h2>
+                    <p>See salary, companies hiring, resources, and more for this career.</p>
+                    <a href="#" class="nav-btn cta-view-career-btn">View Career Details</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- ==========================
+            FOOTER (same markup as career-details.html)
+    =========================== -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-wrapper">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/logos/logo.jpg" alt="CareerCompass Logo">
+                        <span>CareerCompass</span>
+                    </a>
+
+                    <p>
+                        Discover careers, explore learning paths, and access curated resources—all in one place.
+                    </p>
+
+                    <div class="social-links">
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                        <a href="#"><i class="ri-github-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="footer-links">
+                    <h3>Platform</h3>
+                    <ul>
+                        <li><a href="careers.html">Career Explorer</a></li>
+                        <li><a href="roadmap.html">Roadmaps</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-cta">
+                    <h3>Ready to Explore?</h3>
+                    <p>Discover your ideal career path and start learning today.</p>
+                    <a href="careers.html" class="footer-btn">Explore Careers</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 CareerCompass. All Rights Reserved.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="JS Folder/roadmap-details.js"></script>
+</body>
+
+</html>

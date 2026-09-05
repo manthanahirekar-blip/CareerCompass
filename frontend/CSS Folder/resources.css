@@ -1,0 +1,456 @@
+/* =========================================================
+   resources.css
+   Adds only what roadmap-details.css doesn't already cover
+   (navbar, footer, state-container, .card, color/radius
+   tokens are all reused as-is).
+========================================================= */
+
+/* =========================
+    STEP HEADER
+========================= */
+
+.step-header-section {
+    background: var(--cc-bg-hero);
+    padding: 2.4rem 0 2.6rem;
+    color: #FFFFFF;
+}
+
+.back-to-roadmap-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #C7CBFA;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    transition: color 0.25s ease;
+}
+
+.back-to-roadmap-btn:hover {
+    color: #FFFFFF;
+}
+
+.step-header-career {
+    display: block;
+    color: #9CA3E8;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.6rem;
+}
+
+.step-header-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.12);
+    color: #FFFFFF;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 0.9rem;
+}
+
+.step-header-title {
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    font-weight: 800;
+    max-width: 760px;
+    line-height: 1.3;
+}
+
+/* =========================
+    SECTION SHELL
+========================= */
+
+.resource-section {
+    padding: 2.4rem 0;
+}
+
+.resource-section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--cc-text-dark);
+    margin-bottom: 1.2rem;
+}
+
+.resource-section-title i {
+    color: var(--cc-accent-2);
+    font-size: 1.3rem;
+}
+
+.resource-empty-box {
+    background: #FFFFFF;
+    border: 1px dashed var(--cc-border);
+    border-radius: var(--cc-radius-md);
+    padding: 2.2rem 1.5rem;
+    text-align: center;
+    color: var(--cc-text-muted);
+}
+
+.resource-empty-box i {
+    font-size: 1.8rem;
+    color: var(--cc-text-faint);
+    margin-bottom: 0.6rem;
+    display: block;
+}
+
+.resource-empty-box h4 {
+    color: var(--cc-text-dark);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.resource-empty-box p {
+    font-size: 0.88rem;
+}
+
+/* =========================
+    VIDEO LEARNING
+========================= */
+
+.video-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.video-player-wrap {
+    background: #000000;
+    border-radius: var(--cc-radius-md);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+.video-player-frame {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    border: none;
+}
+
+.video-active-title {
+    background: #FFFFFF;
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--cc-text-dark);
+    border: 1px solid var(--cc-border);
+    border-top: none;
+    border-bottom-left-radius: var(--cc-radius-md);
+    border-bottom-right-radius: var(--cc-radius-md);
+}
+
+.video-playlist {
+    background: #FFFFFF;
+    border: 1px solid var(--cc-border);
+    border-radius: var(--cc-radius-md);
+    max-height: 420px;
+    overflow-y: auto;
+}
+
+.playlist-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--cc-border);
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.playlist-item:last-child {
+    border-bottom: none;
+}
+
+.playlist-item:hover {
+    background: var(--cc-bg-page);
+}
+
+.playlist-item.active {
+    background: var(--cc-bg-section);
+}
+
+.playlist-item.active .playlist-number {
+    background: var(--cc-primary);
+    color: #FFFFFF;
+}
+
+.playlist-item.unavailable {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.playlist-number {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--cc-bg-section);
+    color: var(--cc-accent-2);
+    font-size: 0.78rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playlist-title {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--cc-text-dark);
+    line-height: 1.3;
+}
+
+.playlist-unavailable-tag {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--cc-text-faint);
+    margin-top: 2px;
+}
+
+/* =========================
+    NOTES & STUDY MATERIALS
+========================= */
+
+.notes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.note-card {
+    background: #FFFFFF;
+    border: 1px solid var(--cc-border);
+    border-radius: var(--cc-radius-md);
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.note-icon {
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: #FDECEC;
+    color: #E5484D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.note-info {
+    flex: 1;
+    min-width: 180px;
+}
+
+.note-name {
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: var(--cc-text-dark);
+    margin-bottom: 2px;
+}
+
+.note-meta {
+    font-size: 0.83rem;
+    color: var(--cc-text-muted);
+}
+
+.note-actions {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.note-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: var(--cc-radius-sm);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border: 1px solid var(--cc-border);
+}
+
+.note-btn-open {
+    background: linear-gradient(135deg, var(--cc-primary-grad), var(--cc-primary));
+    color: #FFFFFF;
+    border: none;
+    box-shadow: 0 4px 14px rgba(91, 93, 246, 0.28);
+}
+
+.note-btn-open:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(91, 93, 246, 0.4);
+}
+
+.note-btn-download {
+    background: #FFFFFF;
+    color: var(--cc-text-dark);
+}
+
+.note-btn-download:hover {
+    background: var(--cc-bg-page);
+}
+
+/* =========================
+    OFFICIAL DOCUMENTATION
+========================= */
+
+.doc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.doc-card {
+    background: #FFFFFF;
+    border: 1px solid var(--cc-border);
+    border-radius: var(--cc-radius-md);
+    padding: 1.4rem 1.2rem;
+    text-align: center;
+    transition: all 0.25s ease;
+}
+
+.doc-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.doc-logo-wrap {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 0.9rem;
+    border-radius: 14px;
+    background: var(--cc-bg-section);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.doc-logo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 8px;
+}
+
+.doc-logo-wrap i {
+    font-size: 1.5rem;
+    color: var(--cc-accent-2);
+}
+
+.doc-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--cc-text-dark);
+    margin-bottom: 2px;
+}
+
+.doc-type {
+    font-size: 0.78rem;
+    color: var(--cc-text-muted);
+    margin-bottom: 0.9rem;
+}
+
+.doc-open-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--cc-primary);
+}
+
+.doc-open-link i {
+    transition: transform 0.25s ease;
+}
+
+.doc-card:hover .doc-open-link i {
+    transform: translateX(3px);
+}
+
+/* =========================
+    TOAST
+========================= */
+
+.toast-container {
+    position: fixed;
+    bottom: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.cc-toast {
+    background: var(--cc-bg-hero-card);
+    color: #FFFFFF;
+    padding: 12px 22px;
+    border-radius: var(--cc-radius-sm);
+    font-size: 0.88rem;
+    font-weight: 500;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transform: translateY(12px);
+    transition: all 0.3s ease;
+    text-align: center;
+    max-width: 90vw;
+}
+
+.cc-toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+    RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .video-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .video-playlist {
+        max-height: 280px;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .note-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .note-actions {
+        width: 100%;
+    }
+
+    .note-btn {
+        flex: 1;
+        justify-content: center;
+    }
+}

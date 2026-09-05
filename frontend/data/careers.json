@@ -3114,42 +3114,42 @@
     "companies": [
       {
         "name": "Palo Alto Networks",
-        "logo": "assets/logos/palo-alto.",
+        "logo": "assets/logos/palo-alto.png",
         "url": "https://www.paloaltonetworks.com"
       },
       {
         "name": "Cisco",
-        "logo": "assets/logos/cisco.",
+        "logo": "assets/logos/cisco.png",
         "url": "https://www.cisco.com"
       },
       {
         "name": "IBM",
-        "logo": "assets/logos/ibm.",
+        "logo": "assets/logos/ibm.png",
         "url": "https://www.ibm.com"
       },
       {
         "name": "Microsoft",
-        "logo": "assets/logos/microsoft.",
+        "logo": "assets/logos/microsoft.png",
         "url": "https://www.microsoft.com"
       },
       {
         "name": "Google",
-        "logo": "assets/logos/google.",
+        "logo": "assets/logos/google.png",
         "url": "https://www.google.com"
       },
       {
         "name": "Accenture",
-        "logo": "assets/logos/accenture.",
+        "logo": "assets/logos/accenture.png",
         "url": "https://www.accenture.com"
       },
       {
         "name": "Deloitte",
-        "logo": "assets/logos/deloitte.",
+        "logo": "assets/logos/deloitte.png",
         "url": "https://www.deloitte.com"
       },
       {
         "name": "TCS",
-        "logo": "assets/logos/tcs.",
+        "logo": "assets/logos/tcs.png",
         "url": "https://www.tcs.com"
       }
     ],
@@ -3196,7 +3196,7 @@
       {
         "name": "Hack The Box",
         "type": "Practice",
-        "logo": "assets/logos/hack-the-box.png",
+        "logo": "assets/logos/hackthebox.png",
         "url": "https://www.hackthebox.com"
       },
       {

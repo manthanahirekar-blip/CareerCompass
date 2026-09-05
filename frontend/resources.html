@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step Resources - CareerCompass</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Reuses roadmap-details.css for navbar, footer, state-container
+         and shared design tokens (colors, radius, card) -->
+    <link rel="stylesheet" href="CSS Folder/roadmap-details.css">
+    <link rel="stylesheet" href="CSS Folder/resources.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR (same markup as every other page) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logos/logo.jpg" alt="CareerCompass Logo">
+                CareerCompass
+            </a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="careers.html">Career</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a class="active" href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="mobile-btn-container"><a href="contact.html" class="nav-btn mobile-contact-btn">Contact</a></li>
+            </ul>
+
+            <a href="contact.html" class="nav-btn desktop-btn">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- ==========================
+        LOADING STATE
+    =========================== -->
+    <div class="state-container" id="loadingState">
+        <div class="spinner"></div>
+        <p>Loading resources...</p>
+    </div>
+
+
+    <!-- ==========================
+        ERROR STATE
+        (missing/invalid step param, API error, step not found)
+    =========================== -->
+    <div class="state-container" id="errorState" style="display:none;">
+        <i class="ri-error-warning-line state-icon"></i>
+        <h2 id="errorTitle">Something went wrong</h2>
+        <p id="errorMessage">We couldn't load these resources. Please try again.</p>
+        <a href="careers.html" class="nav-btn">Back to Careers</a>
+    </div>
+
+
+    <!-- ==========================
+        MAIN RESOURCE CONTENT
+        (hidden until data loads)
+    =========================== -->
+    <div id="resourcesContent" style="display:none;">
+
+        <!-- STEP HEADER -->
+        <section class="step-header-section">
+            <div class="container">
+                <a href="#" class="back-to-roadmap-btn">
+                    <i class="ri-arrow-left-line"></i>
+                    Back to Roadmap
+                </a>
+
+                <span class="step-header-career"></span>
+                <span class="step-header-badge">STEP <span class="step-header-number"></span></span>
+                <h1 class="step-header-title"></h1>
+            </div>
+        </section>
+
+        <!-- VIDEO LEARNING -->
+        <section class="resource-section">
+            <div class="container">
+                <h2 class="resource-section-title">
+                    <i class="ri-play-circle-line"></i>
+                    Video Learning
+                </h2>
+
+                <div id="videoBlock">
+                    <!-- JS renders either the player+playlist or an empty state -->
+                </div>
+            </div>
+        </section>
+
+        <!-- NOTES & STUDY MATERIALS -->
+        <section class="resource-section">
+            <div class="container">
+                <h2 class="resource-section-title">
+                    <i class="ri-file-text-line"></i>
+                    Notes &amp; Study Materials
+                </h2>
+
+                <div id="notesList" class="notes-list">
+                    <!-- JS renders one or more horizontal note cards -->
+                </div>
+            </div>
+        </section>
+
+        <!-- OFFICIAL DOCUMENTATION -->
+        <section class="resource-section">
+            <div class="container">
+                <h2 class="resource-section-title">
+                    <i class="ri-book-open-line"></i>
+                    Official Documentation
+                </h2>
+
+                <div id="docsBlock">
+                    <!-- JS renders either the doc grid or an empty state -->
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- TOAST CONTAINER -->
+    <div id="toastContainer" class="toast-container"></div>
+
+
+    <!-- ==========================
+            FOOTER (same markup as every other page)
+    =========================== -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-wrapper">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/logos/logo.jpg" alt="CareerCompass Logo">
+                        <span>CareerCompass</span>
+                    </a>
+
+                    <p>
+                        Discover careers, explore learning paths, and access curated resources—all in one place.
+                    </p>
+
+                    <div class="social-links">
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                        <a href="#"><i class="ri-github-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="footer-links">
+                    <h3>Platform</h3>
+                    <ul>
+                        <li><a href="careers.html">Career Explorer</a></li>
+                        <li><a href="roadmap.html">Roadmaps</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-cta">
+                    <h3>Ready to Explore?</h3>
+                    <p>Discover your ideal career path and start learning today.</p>
+                    <a href="careers.html" class="footer-btn">Explore Careers</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 CareerCompass. All Rights Reserved.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="JS Folder/resources.js"></script>
+</body>
+
+</html>

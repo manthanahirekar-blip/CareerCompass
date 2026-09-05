@@ -31,30 +31,44 @@ const requestOptions = {
     redirect: "follow"
 };
 
-const params = new URLSearchParams(window.location.search)
-const slug = params.get("slug")
-console.log(slug);
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
 
+console.log("Career ID:", id);
 
-fetch("data/careers.json", requestOptions)
-    .then((response) => response.json())
-    .then((data) => {
-        let career = data.find(item => {
-            return item.slug === slug;
-        })
-        console.log(career);
-        renderHero(career)
-        renderAbout(career)
-        renderResponsibilities(career)
-        renderSkills(career)
-        renderRoadmap(career)
-        renderResources(career)
-        renderSnapshot(career)
-        renderCompanies(career)
-        renderQuickInfo(career)
-        renderRelatedCareer(career)
-        renderFAQs(career.faqs)
+console.log("Fetching career with ID:", id);
+
+fetch(`http://127.0.0.1:5000/api/careers/${id}`)
+    .then((response) => {
+
+        console.log("Response status:", response.status);
+
+        if (!response.ok) {
+            throw new Error("Career not found");
+        }
+
+        return response.json();
     })
+    .then((career) => {
+
+        console.log("Career received from backend:", career);
+
+        renderHero(career);
+        renderAbout(career);
+        renderResponsibilities(career);
+        renderSkills(career);
+        renderRoadmap(career);
+        renderResources(career);
+        renderSnapshot(career);
+        renderCompanies(career);
+        renderQuickInfo(career);
+        renderRelatedCareer(career);
+        renderFAQs(career.faqs);
+
+    })
+    .catch((error) => {
+        console.error("Error fetching career:", error);
+    });
 
 function renderHero(career) {
     careerTitle.textContent = career.title;
@@ -122,11 +136,11 @@ const visitBtn = document.querySelector(".visit-btn");
 
 const resourceGrid = document.querySelector(".resource-grid");
 
-function renderResources(career){
+function renderResources(career) {
 
     resourceGrid.innerHTML = "";
 
-    career.resources.forEach(resource=>{
+    career.resources.forEach(resource => {
 
         const resourceCard = document.createElement("div");
 
@@ -226,13 +240,24 @@ function renderQuickInfo(career) {
 
 const relatedList = document.querySelector(".related-list")
 function renderRelatedCareer(career) {
-    relatedList.innerHTML = ""
+
+    relatedList.innerHTML = "";
+
     career.relatedCareers.forEach(item => {
+
         const li = document.createElement("li");
-        li.innerHTML = `<a href = "career-details.html?slug=${item.slug}">${item.name}
-                        <i class="ri-arrow-right-line"></i></a>`;
-        relatedList.appendChild(li)
-    })
+
+        li.innerHTML = `
+            <a href="career-details.html?id=${item.id}">
+                ${item.name}
+                <i class="ri-arrow-right-line"></i>
+            </a>
+        `;
+
+        relatedList.appendChild(li);
+
+    });
+
 }
 
 function renderFAQs(faqs) {

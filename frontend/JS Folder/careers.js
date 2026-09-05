@@ -22,18 +22,42 @@ const filters = {
     experience: "All Levels",
     sort: "Highest Demand"
 };
-const requestOptions = {
-    method: "GET",
-    redirect: "follow"
-};
 
+// Show More / Show Less state.
+// currentFilteredData always holds the CURRENT search+filter result
+// (before the visible-card limit is applied), so Show Less can return
+// to the first 4 of it without losing the active search/filter.
+const INITIAL_VISIBLE = 8;
+const VISIBLE_STEP = 8;
+let visibleLimit = INITIAL_VISIBLE;
+let currentFilteredData = [];
+fetch("http://127.0.0.1:5000/api/careers")
 
-fetch("data/careers.json", requestOptions)
-    .then((response) => response.json())
-    .then((data) => {
-        careers = data;
-        renderCareerCards(data)
+    .then((response) => {
+
+        if (!response.ok) {
+            throw new Error("Failed to fetch careers");
+        }
+
+        return response.json();
     })
+
+    .then((data) => {
+
+        careers = data;
+
+        visibleLimit = INITIAL_VISIBLE;
+        currentFilteredData = careers;
+
+        renderVisibleCareers();
+
+    })
+
+    .catch((error) => {
+
+        console.error("Error fetching careers:", error);
+
+    });
 
 function createCareerCard(career) {
     let card = `
@@ -44,31 +68,23 @@ function createCareerCard(career) {
                             <span>${career.demand}</span>
                         </div>
 
-                        <div class="career-body">   
+                        <div class="career-body">
                             <h3>${career.title}</h3>
 
                             <p>${career.shortDescription}</p>
-
-                            <p class="career-salary">
-                                <strong>₹${career.salary.min} - ₹${career.salary.max} LPA</strong>
-                                <span>Average Salary</span>
-                            </p>
-
-                            <div class="career-skills">
-                                Skills :
-                                ${career.skills.map(skill => `<span>${skill.name}</span>`).join(" ")}
-                            </div>
                         </div>
 
-                        <div class="career-footer">
-                            <span>Experience : ${career.experience}</span>
-                            <span>Category : ${career.category}</span>
-                        </div>
+                        <div class="career-actions">
+                            <a href="career-details.html?id=${career.id}" target="_blank" class="explore-btn">
+                                Explore Career
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
 
-                        <a href="career-details.html?slug=${career.slug}" target="_blank" class="explore-btn">
-                            Explore
-                            <i class="ri-arrow-right-line"></i>
-                        </a>
+                            <a href="roadmap-details.html?careerId=${career.id}" target="_blank" class="roadmap-btn">
+                                View Roadmap
+                                <i class="ri-road-map-line"></i>
+                            </a>
+                        </div>
 
                     </div>
                     `;
@@ -79,17 +95,6 @@ function createCareerCard(career) {
 
 function renderCareerCards(data) {
 
-    careerGrid.innerHTML = "";
-
-    const noResults = document.querySelector(".no-results");
-
-    if (data.length === 0) {
-        noResults.style.display = "block";
-        return;
-    }
-
-    noResults.style.display = "none";
-
     let card = "";
 
     data.forEach(career => {
@@ -98,6 +103,51 @@ function renderCareerCards(data) {
 
     careerGrid.innerHTML = card;
 }
+
+
+// ==========================================
+// Show More / Show Less
+// Renders only `visibleLimit` cards out of the CURRENT
+// search+filter result (currentFilteredData), and shows/hides
+// the Show More / Show Less buttons based on that same result.
+// ==========================================
+function renderVisibleCareers() {
+
+    const noResults = document.querySelector(".no-results");
+    const showMoreBtn = document.querySelector(".show-more-btn");
+    const showLessBtn = document.querySelector(".show-less-btn");
+
+    const total = currentFilteredData.length;
+
+    if (total === 0) {
+        careerGrid.innerHTML = "";
+        noResults.style.display = "block";
+        showMoreBtn.style.display = "none";
+        showLessBtn.style.display = "none";
+        return;
+    }
+
+    noResults.style.display = "none";
+
+    const visibleData = currentFilteredData.slice(0, visibleLimit);
+    renderCareerCards(visibleData);
+
+    showMoreBtn.style.display = visibleLimit < total ? "inline-flex" : "none";
+    showLessBtn.style.display = (visibleLimit >= total && total > INITIAL_VISIBLE) ? "inline-flex" : "none";
+}
+
+
+const showMoreBtn = document.querySelector(".show-more-btn");
+showMoreBtn.addEventListener("click", function () {
+    visibleLimit = Math.min(visibleLimit + VISIBLE_STEP, currentFilteredData.length);
+    renderVisibleCareers();
+});
+
+const showLessBtn = document.querySelector(".show-less-btn");
+showLessBtn.addEventListener("click", function () {
+    visibleLimit = INITIAL_VISIBLE;
+    renderVisibleCareers();
+});
 
 function applyFilters() {
     let filteredData = careers
@@ -154,26 +204,6 @@ function applyFilters() {
         return true
     })
 
-
-    // Experience
-    // filteredData = filteredData.filter(career =>{
-    //     if(filters.experience !== "All"){
-    //         if(career.experience === filters.experience){
-    //             return true
-    //         }
-    //         return false
-    //     }
-    //     return true
-    // })
-
-    // filteredData = filteredData.filter(career => {
-    //     if (filters.experience === "All") {
-    //         return true;
-    //     }
-
-    //     return career.experience === filters.experience;
-    // });
-
     filteredData = filteredData.filter(career => {
         return (
             filters.experience === "All Levels" ||
@@ -181,7 +211,10 @@ function applyFilters() {
         );
     });
 
-    renderCareerCards(filteredData)
+    visibleLimit = INITIAL_VISIBLE;
+    currentFilteredData = filteredData;
+
+    renderVisibleCareers();
 }
 
 

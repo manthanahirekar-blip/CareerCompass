@@ -1,0 +1,1030 @@
+/* =========================================================
+   roadmap-details.css
+   NOTE: This project's existing CSS files don't define
+   :root custom properties -- colors are hardcoded per file
+   (career-details.css, careers.css each repeat their own
+   navbar/footer rules). The variables below are NOT new
+   colors -- they're just aliases for the exact hex values
+   already used across the site, added here so this one file
+   is easier to maintain. Nothing in your other CSS files
+   changes.
+========================================================= */
+
+:root {
+    --cc-primary: #5B5DF6;         /* nav links / buttons active state (site-wide) */
+    --cc-primary-grad: #6D5DF6;    /* nav-btn gradient start (site-wide) */
+    --cc-accent: #6F5AE8;          /* card icon accent: section-title, step-circle */
+    --cc-accent-2: #6C63FF;        /* FAQ / section-heading icon accent */
+    --cc-text-dark: #111827;
+    --cc-text-body: #4B5563;
+    --cc-text-muted: #6B7280;
+    --cc-text-faint: #94A3B8;
+    --cc-border: #ECEEF5;
+    --cc-bg-page: #F8F9FD;
+    --cc-bg-section: #F2F2FF;
+    --cc-bg-hero: #151E55;
+    --cc-bg-hero-card: #030427;
+    --cc-radius-lg: 20px;
+    --cc-radius-md: 14px;
+    --cc-radius-sm: 10px;
+}
+
+/* =========================
+        RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background: var(--cc-bg-page);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* =========================
+        NAVBAR (copied from career-details.css)
+========================= */
+
+.navbar {
+    background: #FFFFFF;
+    border-bottom: 1px solid var(--cc-border);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 16px 0;
+}
+
+.nav-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--cc-text-dark);
+    font-size: clamp(1.3rem, 2vw, 1.6rem);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #475569;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--cc-primary);
+}
+
+.nav-btn {
+    background: linear-gradient(135deg, var(--cc-primary-grad), var(--cc-primary));
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 10px 22px;
+    border-radius: var(--cc-radius-md);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(91, 93, 246, 0.35);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(91, 93, 246, 0.5);
+}
+
+.mobile-btn-container {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.menu-toggle .bar {
+    width: 28px;
+    height: 3px;
+    background-color: var(--cc-text-dark);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .desktop-btn {
+        display: none;
+    }
+
+    .mobile-btn-container {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .mobile-contact-btn {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 20px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
+        border-bottom: 1px solid var(--cc-border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.4s ease-in-out;
+        pointer-events: none;
+    }
+
+    .nav-links.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        pointer-events: auto;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        font-size: 1.05rem;
+        display: block;
+        width: 100%;
+    }
+
+    .menu-toggle.is-active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.is-active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
+
+/* =========================
+    LOADING / ERROR / EMPTY STATES
+========================= */
+
+.state-container {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 3rem 1.5rem;
+}
+
+.state-container h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cc-text-dark);
+}
+
+.state-container p {
+    color: var(--cc-text-muted);
+    max-width: 420px;
+}
+
+.state-icon {
+    font-size: 2.5rem;
+    color: var(--cc-accent);
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--cc-border);
+    border-top-color: var(--cc-primary);
+    border-radius: 50%;
+    animation: cc-spin 0.8s linear infinite;
+}
+
+@keyframes cc-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* =========================
+    BREADCRUMB
+========================= */
+
+.breadcrumb {
+    background: #FFFFFF;
+    border-bottom: 1px solid var(--cc-border);
+    padding: 14px 0;
+}
+
+.breadcrumb-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 0.85rem;
+}
+
+.breadcrumb a {
+    color: var(--cc-text-muted);
+    transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--cc-primary);
+}
+
+.breadcrumb span {
+    color: #C7CBD9;
+}
+
+.breadcrumb-current {
+    color: var(--cc-text-dark);
+    font-weight: 600;
+}
+
+/* =========================
+    ROADMAP HERO
+========================= */
+
+.roadmap-hero {
+    width: 100%;
+    background: var(--cc-bg-hero);
+    color: #fff;
+    padding: 4vw 0;
+    text-align: center;
+}
+
+.roadmap-hero-badge {
+    display: inline-block;
+    background-color: var(--cc-primary);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+.roadmap-title {
+    font-size: clamp(1.8rem, 4vw, 3.2rem);
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+}
+
+.roadmap-subtitle {
+    color: #E5E7EB;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.roadmap-hero-stats {
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+/* hero-stat-card reused from career-details.css look */
+.hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.hero-stat-card {
+    width: 160px;
+    border: 0.1px solid #eef2f7;
+    background-color: var(--cc-bg-hero-card);
+    border-radius: 18px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, .05);
+}
+
+.hero-stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(37, 99, 235, .12);
+}
+
+.hero-stat-card .stat-icon {
+    font-size: 1.4rem;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background: #EEF2FF;
+    color: var(--cc-accent-2);
+}
+
+.stat-content h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cc-text-faint);
+}
+
+.stat-content h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* =========================
+    CARD (reused base, same as career-details.css .card)
+========================= */
+
+.card {
+    background-color: #fff;
+    border: none;
+    border-radius: var(--cc-radius-lg);
+    padding: 1.5rem;
+}
+
+/* =========================
+    OVERALL PROGRESS
+========================= */
+
+.progress-section {
+    padding: 2.5rem 0 0;
+}
+
+.progress-card {
+    max-width: 720px;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.75rem;
+}
+
+.progress-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--cc-text-muted);
+    text-transform: uppercase;
+}
+
+.progress-percent {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--cc-accent);
+}
+
+.progress-bar-track,
+.phase-progress-bar-track {
+    width: 100%;
+    height: 10px;
+    background: var(--cc-bg-section);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar-fill,
+.phase-progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(135deg, var(--cc-primary-grad), var(--cc-primary));
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+.progress-detail {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--cc-text-muted);
+}
+
+/* =========================
+    PHASE TIMELINE
+========================= */
+
+.phase-timeline-section {
+    padding: 2.5rem 0 0;
+}
+
+.phase-timeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    overflow-x: auto;
+    padding: 0.5rem 0;
+}
+
+.timeline-item {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.timeline-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 100%;
+    width: 100%;
+    height: 2px;
+    background: var(--cc-border);
+}
+
+.timeline-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid var(--cc-border);
+    color: var(--cc-text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    transition: all 0.25s ease;
+}
+
+.timeline-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--cc-text-muted);
+    white-space: nowrap;
+}
+
+.timeline-item.active .timeline-circle {
+    background: var(--cc-accent);
+    border-color: var(--cc-accent);
+    color: #fff;
+}
+
+.timeline-item.active .timeline-label {
+    color: var(--cc-text-dark);
+}
+
+@media (max-width: 700px) {
+    .phase-timeline {
+        justify-content: flex-start;
+    }
+}
+
+/* =========================
+    ROADMAP PHASES
+========================= */
+
+.roadmap-phases-section {
+    padding: 3rem 0;
+}
+
+#roadmapPhases {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.phase-card {
+    scroll-margin-top: 100px;
+}
+
+.phase-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.phase-header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.phase-number {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--cc-accent);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.phase-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--cc-text-dark);
+}
+
+.phase-progress-percent {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--cc-accent);
+    flex-shrink: 0;
+}
+
+.phase-progress-bar-track {
+    height: 8px;
+    margin-bottom: 1.25rem;
+}
+
+/* Topic accordion (same interaction pattern as the existing FAQ accordion) */
+
+.topic-accordion {
+    border: 1px solid #E5E7EB;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.topic-item {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.topic-item:last-child {
+    border-bottom: none;
+}
+
+.topic-question {
+    width: 100%;
+    padding: 16px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--cc-text-dark);
+    transition: 0.3s;
+    text-align: left;
+    font-family: inherit;
+}
+
+.topic-question:hover {
+    background: #FAFAFC;
+}
+
+.topic-question-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.topic-progress-count {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--cc-text-muted);
+    background: var(--cc-bg-section);
+    padding: 2px 8px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.topic-icon {
+    font-size: 20px;
+    color: #6B7280;
+    transition: 0.3s;
+    flex-shrink: 0;
+}
+
+.topic-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    background: var(--cc-bg-page);
+}
+
+.topic-item.active .topic-answer {
+    max-height: 1000px;
+}
+
+.topic-item.active .topic-question {
+    background: var(--cc-bg-page);
+    color: var(--cc-accent-2);
+}
+
+.topic-item.active .topic-icon {
+    transform: rotate(45deg);
+    color: var(--cc-accent-2);
+}
+
+.subtopic-list {
+    padding: 4px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.phase-resources-cta {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 22px 22px;
+}
+
+.phase-resources-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, var(--cc-primary-grad), var(--cc-primary));
+    color: #FFFFFF;
+    font-size: 0.88rem;
+    font-weight: 600;
+    border-radius: var(--cc-radius-sm);
+    box-shadow: 0 4px 14px rgba(91, 93, 246, 0.28);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phase-resources-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(91, 93, 246, 0.4);
+}
+
+.phase-resources-btn i {
+    font-size: 1rem;
+    transition: transform 0.25s ease;
+}
+
+.phase-resources-btn:hover i {
+    transform: translateX(3px);
+}
+
+.subtopic-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: var(--cc-text-body);
+    transition: background 0.2s ease;
+}
+
+.subtopic-toggle:hover {
+    background: #F0F1FA;
+}
+
+.subtopic-icon {
+    font-size: 1.1rem;
+    color: #C7CBD9;
+    flex-shrink: 0;
+}
+
+.subtopic-toggle.completed .subtopic-icon {
+    color: #22C55E;
+}
+
+.subtopic-toggle.completed .subtopic-title {
+    color: var(--cc-text-faint);
+    text-decoration: line-through;
+}
+
+/* Milestone */
+
+.milestone-box {
+    margin-top: 1.25rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9rem;
+    background: #EEF2FF;
+    border-left: 3px solid var(--cc-accent-2);
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+}
+
+.milestone-icon {
+    font-size: 1.3rem;
+}
+
+.milestone-box h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--cc-text-dark);
+    margin-bottom: 0.2rem;
+}
+
+.milestone-box p {
+    font-size: 0.85rem;
+    color: var(--cc-text-body);
+}
+
+/* =========================
+    CAREER READY
+========================= */
+
+.career-ready-section {
+    padding: 1rem 0 3rem;
+}
+
+.career-ready-card {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--cc-bg-section);
+}
+
+.career-ready-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.career-ready-card h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--cc-text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.career-ready-message {
+    color: var(--cc-text-body);
+}
+
+/* =========================
+    CTA
+========================= */
+
+.roadmap-cta-section {
+    padding-bottom: 3rem;
+}
+
+.roadmap-cta-card {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.roadmap-cta-card h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--cc-text-dark);
+    margin-bottom: 0.4rem;
+}
+
+.roadmap-cta-card p {
+    color: var(--cc-text-muted);
+    margin-bottom: 1.2rem;
+}
+
+/* =========================
+    FOOTER (copied from career-details.css)
+========================= */
+
+.footer {
+    background-color: #FFFFFF;
+    border-top: 1px solid var(--cc-border);
+    padding: 80px 0 30px;
+}
+
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr) 1.5fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.footer-brand .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--cc-primary);
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+.footer-brand .footer-logo img {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.footer-brand p {
+    font-size: 0.9rem;
+    color: var(--cc-text-muted);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+}
+
+.social-links a {
+    width: 36px;
+    height: 36px;
+    background-color: var(--cc-bg-page);
+    border: 1px solid var(--cc-border);
+    border-radius: var(--cc-radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cc-text-muted);
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background-color: var(--cc-primary);
+    color: #FFFFFF;
+    border-color: var(--cc-primary);
+}
+
+.footer-links h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cc-text-dark);
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links ul li a {
+    color: var(--cc-text-muted);
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-links ul li a:hover {
+    color: var(--cc-primary);
+}
+
+.footer-cta h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cc-text-dark);
+    margin-bottom: 12px;
+}
+
+.footer-cta p {
+    font-size: 0.9rem;
+    color: var(--cc-text-muted);
+    margin-bottom: 16px;
+}
+
+.footer-btn {
+    display: inline-block;
+    background-color: #F0F2FF;
+    color: var(--cc-primary);
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.footer-btn:hover {
+    background-color: var(--cc-primary);
+    color: #FFFFFF;
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--cc-border);
+    padding-top: 24px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.85rem;
+    color: #9CA3AF;
+}
+
+@media (max-width: 1024px) {
+    .footer-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .footer-brand {
+        grid-column: span 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 50px 0 20px;
+    }
+
+    .footer-wrapper {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+
+    .footer-brand {
+        grid-column: span 1;
+    }
+
+    .hero-stat-card {
+        width: 130px;
+    }
+
+    #roadmapPhases {
+        padding: 0 0.5rem;
+    }
+}
