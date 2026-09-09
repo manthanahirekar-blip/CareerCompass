@@ -1,4 +1,9 @@
+import os
 import re
+
+from dotenv import load_dotenv
+load_dotenv()
+
 from flask import Flask, jsonify
 from flask_cors import CORS
 import mysql.connector
@@ -35,14 +40,13 @@ def slugify(text):
 # =========================================
 
 def get_db_connection():
-
     connection = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="manthan",
-        database="careercompass"
+        host=os.getenv("MYSQL_HOST"),
+        port=int(os.getenv("MYSQL_PORT", 3306)),
+        user=os.getenv("MYSQL_USER"),
+        password=os.getenv("MYSQL_PASSWORD"),
+        database=os.getenv("MYSQL_DATABASE")
     )
-
     return connection
 
 
@@ -68,12 +72,7 @@ def get_careers():
 
     try:
 
-        connection = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="manthan",
-            database="careercompass"
-        )
+        connection = get_db_connection()
 
         cursor = connection.cursor(dictionary=True)
 
