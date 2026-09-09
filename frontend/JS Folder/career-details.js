@@ -63,7 +63,7 @@ if (!id || isNaN(id)) {
 
 } else {
 
-    fetch(`http://127.0.0.1:5000/api/careers/${id}`)
+    fetch(`https://careercompass-backend.onrender.com/api/careers/${id}`)
 
         .then((response) => {
 

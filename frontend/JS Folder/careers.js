@@ -31,7 +31,7 @@ const INITIAL_VISIBLE = 8;
 const VISIBLE_STEP = 8;
 let visibleLimit = INITIAL_VISIBLE;
 let currentFilteredData = [];
-fetch("http://127.0.0.1:5000/api/careers")
+fetch("https://careercompass-backend.onrender.com/api/careers")
 
     .then((response) => {
 
