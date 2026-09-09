@@ -332,14 +332,16 @@ def get_career(career_id):
 
         cursor.execute("""
             SELECT
+                s.id,
                 s.name,
                 s.logo,
-                s.url
+                s.url,
+                cs.skill_category AS category
             FROM career_skills cs
             JOIN skills s
                 ON cs.skill_id = s.id
             WHERE cs.career_id = %s
-            ORDER BY s.id;
+            ORDER BY s.name;
         """, (career_id,))
 
         response["skills"] = cursor.fetchall()
@@ -495,8 +497,11 @@ def get_career(career_id):
 
         cursor.execute("""
             SELECT
+                c.id,
                 c.title,
-                c.slug
+                c.slug,
+                c.icon,
+                c.short_description
             FROM related_careers rc
             JOIN careers c
                 ON rc.related_career_id = c.id
@@ -510,8 +515,11 @@ def get_career(career_id):
         response["relatedCareers"] = [
 
             {
+                "id": item["id"],
                 "name": item["title"],
-                "slug": item["slug"]
+                "slug": item["slug"],
+                "icon": item["icon"],
+                "shortDescription": item["short_description"]
             }
 
             for item in related
@@ -519,7 +527,48 @@ def get_career(career_id):
 
 
         # =====================================
-        # 12. FAQs
+        # 12. PROJECTS TO BUILD
+        # career_projects -> projects
+        # ordered by project_order
+        # =====================================
+
+        cursor.execute("""
+            SELECT
+                p.id,
+                p.title,
+                p.description,
+                p.difficulty,
+                p.project_type,
+                p.image,
+                p.url
+            FROM career_projects cp
+            JOIN projects p
+                ON cp.project_id = p.id
+            WHERE cp.career_id = %s
+            ORDER BY cp.project_order;
+        """, (career_id,))
+
+        projects = cursor.fetchall()
+
+
+        response["projects"] = [
+
+            {
+                "id": item["id"],
+                "title": item["title"],
+                "shortDescription": item["description"],
+                "difficulty": item["difficulty"],
+                "type": item["project_type"],
+                "image": item["image"],
+                "url": item["url"]
+            }
+
+            for item in projects
+        ]
+
+
+        # =====================================
+        # 13. FAQs
         # =====================================
 
         cursor.execute("""
@@ -555,7 +604,6 @@ def get_career(career_id):
 
         if connection and connection.is_connected():
             connection.close()
-
 
 # =========================================
 # GET COMPLETE CAREER ROADMAP

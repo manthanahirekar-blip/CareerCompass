@@ -1,11 +1,12 @@
-// Menu js
+// ==========================================
+// Mobile menu (same pattern as every other page)
+// ==========================================
 const mobileMenu = document.getElementById('mobile-menu');
 const navLinks = document.querySelector('.nav-links');
 mobileMenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('is-active');
     navLinks.classList.toggle('active');
 });
-// Optional: Link par click karne par menu apne aap band ho jaye (mobile view mein)
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         mobileMenu.classList.remove('is-active');
@@ -14,252 +15,354 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 
-const careerImage = document.querySelector(".career-image");
-const careerCategory = document.querySelector(".career-category");
-const careerTitle = document.querySelector(".career-title");
-const careerShortDescription = document.querySelector(".career-short-description");
+// ==========================================
+// State containers
+// ==========================================
+const loadingState = document.getElementById("loadingState");
+const errorState = document.getElementById("errorState");
+const careerContent = document.getElementById("careerContent");
 
-const salary = document.querySelector(".salary");
-const experience = document.querySelector(".experience");
-const demand = document.querySelector(".demand");
-const category = document.querySelector(".category");
+function hideAllStates() {
+    loadingState.style.display = "none";
+    errorState.style.display = "none";
+    careerContent.style.display = "none";
+}
+
+function showLoading() {
+    hideAllStates();
+    loadingState.style.display = "flex";
+}
+
+function showError(title, message) {
+    hideAllStates();
+    document.getElementById("errorTitle").textContent = title;
+    document.getElementById("errorMessage").textContent = message;
+    errorState.style.display = "flex";
+}
+
+function showContent() {
+    hideAllStates();
+    careerContent.style.display = "block";
+}
 
 
-
-const requestOptions = {
-    method: "Get",
-    redirect: "follow"
-};
-
+// ==========================================
+// Fetch and boot
+// ==========================================
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
-console.log("Career ID:", id);
+showLoading();
 
-console.log("Fetching career with ID:", id);
+if (!id || isNaN(id)) {
 
-fetch(`http://127.0.0.1:5000/api/careers/${id}`)
-    .then((response) => {
+    showError(
+        "Invalid Career Link",
+        "This career link is missing a valid career ID."
+    );
 
-        console.log("Response status:", response.status);
+} else {
 
-        if (!response.ok) {
-            throw new Error("Career not found");
-        }
+    fetch(`http://127.0.0.1:5000/api/careers/${id}`)
 
-        return response.json();
-    })
-    .then((career) => {
+        .then((response) => {
 
-        console.log("Career received from backend:", career);
+            if (response.status === 404) {
+                throw new Error("NOT_FOUND");
+            }
 
-        renderHero(career);
-        renderAbout(career);
-        renderResponsibilities(career);
-        renderSkills(career);
-        renderRoadmap(career);
-        renderResources(career);
-        renderSnapshot(career);
-        renderCompanies(career);
-        renderQuickInfo(career);
-        renderRelatedCareer(career);
-        renderFAQs(career.faqs);
+            if (!response.ok) {
+                throw new Error("SERVER_ERROR");
+            }
 
-    })
-    .catch((error) => {
-        console.error("Error fetching career:", error);
-    });
+            return response.json();
+        })
 
+        .then((career) => {
+
+            renderHero(career);
+            renderAbout(career);
+            renderResponsibilities(career);
+            renderSkills(career);
+            renderRoadmap(career);
+            renderResources(career);
+            renderRelatedCareers(career);
+            renderProjects(career);
+            renderFAQs(career.faqs || []);
+
+            showContent();
+        })
+
+        .catch((error) => {
+
+            console.error("Error fetching career:", error);
+
+            if (error.message === "NOT_FOUND") {
+                showError("Career Not Found", "We couldn't find a career with this ID.");
+            } else {
+                showError("Something Went Wrong", "We couldn't load this career. Please try again.");
+            }
+        });
+}
+
+
+// ==========================================
+// HERO
+// ==========================================
 function renderHero(career) {
-    careerTitle.textContent = career.title;
-    careerCategory.textContent = career.category;
-    careerShortDescription.textContent = career.shortDescription;
-    salary.textContent = `₹${career.salary.min} - ${career.salary.max} LPA`
-    experience.textContent = career.experience
-    demand.textContent = career.demand
-    category.textContent = career.category
+
+    document.querySelector(".career-icon").className = `career-icon ${career.icon || "ri-briefcase-line"}`;
+    document.querySelector(".career-category").textContent = career.category;
+    document.querySelector(".career-title").textContent = career.title;
+    document.querySelector(".career-short-description").textContent = career.shortDescription;
+
+    document.querySelector(".demand").textContent = career.demand || "—";
+
+    const salaryEl = document.querySelector(".salary");
+    salaryEl.textContent = (career.salary && career.salary.min != null && career.salary.max != null)
+        ? `₹${career.salary.min} - ₹${career.salary.max} LPA`
+        : "—";
+
+    document.querySelector(".start-learning-btn").href = `roadmap-details.html?careerId=${career.id}`;
 }
 
-const about = document.querySelector("#about");
-const aboutDescription = document.querySelector(".about-description");
+
+// ==========================================
+// ABOUT THIS CAREER
+// ==========================================
 function renderAbout(career) {
-    about.textContent = career.title;
-    aboutDescription.textContent = career.fullDescription
+    document.querySelector(".about-description").textContent = career.fullDescription || career.shortDescription || "";
 }
 
-const responsibilities = document.querySelector(".responsibility-list")
+
+// ==========================================
+// KEY RESPONSIBILITIES
+// ==========================================
 function renderResponsibilities(career) {
-    career.responsibilities.forEach(item => {
+
+    const list = document.querySelector(".responsibility-list");
+    list.innerHTML = "";
+
+    (career.responsibilities || []).forEach(item => {
         const li = document.createElement("li");
         li.innerHTML = `
-        <i class="ri-chat-check-line"></i>
-        <span>${item}</span>
-    `;
-        responsibilities.appendChild(li);
+            <i class="ri-checkbox-circle-line"></i>
+            <span>${item}</span>
+        `;
+        list.appendChild(li);
     });
 }
 
-const skills = document.querySelector(".skills-wrapper")
+
+// ==========================================
+// REQUIRED SKILLS
+// Groups dynamically by skill.category:
+//   core                  -> Core Skills
+//   framework / library   -> Frameworks / Libraries
+//   tool                  -> Tools
+//   anything else         -> Other Skills
+// A group's <section> stays hidden if it ends up empty.
+// ==========================================
 function renderSkills(career) {
-    career.skills.forEach(skill => {
-        const skillChip = document.createElement("div");
-        skillChip.classList.add("skill-chip");
-        skillChip.innerHTML = `<a href ="${skill.url}" target="_blank"><img src = "${skill.logo}"></i></a>
-                                <a href = "${skill.url}" target="_blank"><span>${skill.name}</span></a>`;
-        skills.appendChild(skillChip);
-    })
+
+    const groups = {
+        core: [],
+        framework: [],
+        tool: [],
+        other: []
+    };
+
+    (career.skills || []).forEach(skill => {
+
+        const category = (skill.category || "").toLowerCase();
+
+        if (category === "core") {
+            groups.core.push(skill);
+        } else if (category === "framework" || category === "library") {
+            groups.framework.push(skill);
+        } else if (category === "tool") {
+            groups.tool.push(skill);
+        } else {
+            groups.other.push(skill);
+        }
+    });
+
+    fillSkillGroup("coreSkillsGroup", "coreSkillsWrapper", groups.core);
+    fillSkillGroup("frameworkSkillsGroup", "frameworkSkillsWrapper", groups.framework);
+    fillSkillGroup("toolSkillsGroup", "toolSkillsWrapper", groups.tool);
+    fillSkillGroup("otherSkillsGroup", "otherSkillsWrapper", groups.other);
 }
 
-const roadmap = document.querySelector(".roadmap-wrapper");
+function fillSkillGroup(groupId, wrapperId, skills) {
+
+    const group = document.getElementById(groupId);
+    const wrapper = document.getElementById(wrapperId);
+
+    if (skills.length === 0) {
+        group.style.display = "none";
+        wrapper.innerHTML = "";
+        return;
+    }
+
+    group.style.display = "block";
+
+    wrapper.innerHTML = skills.map(skill => `
+        <div class="skill-chip">
+            <a href="${skill.url}" target="_blank"><img src="${skill.logo}" alt="${skill.name}"></a>
+            <a href="${skill.url}" target="_blank"><span>${skill.name}</span></a>
+        </div>
+    `).join("");
+}
+
+
+// ==========================================
+// CAREER ROADMAP (high-level steps only)
+// ==========================================
 function renderRoadmap(career) {
-    roadmap.innerHTML = ""
-    career.roadmap.forEach(steps => {
-        const roadmapStep = document.createElement("div")
-        roadmapStep.classList.add("roadmap-step")
-        const stepCircle = document.createElement("div")
-        stepCircle.classList.add("step-circle")
-        stepCircle.textContent = steps.step
 
-        const p = document.createElement("p")
-        p.textContent = steps.title
+    const roadmap = document.querySelector(".roadmap-wrapper");
+    roadmap.innerHTML = "";
 
-        roadmapStep.appendChild(stepCircle)
-        roadmapStep.appendChild(p)
+    const steps = career.roadmap || [];
 
-        roadmap.appendChild(roadmapStep)
-    })
+    steps.forEach((step, index) => {
+
+        const roadmapStep = document.createElement("div");
+        roadmapStep.classList.add("roadmap-step");
+        roadmapStep.innerHTML = `
+            <div class="step-circle">${step.step}</div>
+            <p>${step.title}</p>
+        `;
+        roadmap.appendChild(roadmapStep);
+
+        if (index < steps.length - 1) {
+            const arrow = document.createElement("i");
+            arrow.className = "ri-arrow-right-line roadmap-arrow";
+            roadmap.appendChild(arrow);
+        }
+    });
+
+    document.querySelector(".complete-roadmap-btn").href = `roadmap-details.html?careerId=${career.id}`;
+
+    document.getElementById("roadmapSection").style.display = steps.length > 0 ? "block" : "none";
 }
 
-const content = document.querySelector(".content");
-const contentText = document.querySelector(".content-text");
-const visitBtn = document.querySelector(".visit-btn");
 
-const resourceGrid = document.querySelector(".resource-grid");
-
+// ==========================================
+// OFFICIAL LEARNING RESOURCES
+// ==========================================
 function renderResources(career) {
 
+    const resourceGrid = document.querySelector(".resource-grid");
     resourceGrid.innerHTML = "";
 
-    career.resources.forEach(resource => {
+    const resources = career.resources || [];
+
+    resources.forEach(resource => {
 
         const resourceCard = document.createElement("div");
-
         resourceCard.classList.add("resource-card");
 
         resourceCard.innerHTML = `
             <div class="content">
-
                 <img src="${resource.logo}" alt="${resource.name}">
-
                 <div class="content-text">
                     <h3>${resource.name}</h3>
-                    <p>${resource.type}</p>
+                    <p>${resource.type || ""}</p>
                 </div>
-
             </div>
-
-            <a href="${resource.url}"
-               target="_blank"
-               class="visit-btn">
-
+            <a href="${resource.url}" target="_blank" rel="noopener noreferrer" class="visit-btn">
                 Visit
                 <i class="ri-arrow-right-line"></i>
-
             </a>
         `;
 
         resourceGrid.appendChild(resourceCard);
-
     });
 
-
-
+    document.getElementById("resourcesSection").style.display = resources.length > 0 ? "block" : "none";
 }
 
-const workMode = document.querySelector(".work-mode")
-const employmentType = document.querySelector(".employment-type")
-const education = document.querySelector(".education")
-const jobOpenings = document.querySelector(".job-openings")
-const futureScope = document.querySelector(".future-scope")
-const industry = document.querySelector(".industry")
-function renderSnapshot(career) {
-    const snapshot = career.snapshot
-    for (let item in snapshot) {
-        workMode.textContent = snapshot.workMode;
-        employmentType.textContent = snapshot.employmentType;
-        education.textContent = snapshot.education
-        jobOpenings.textContent = snapshot.jobOpenings;
-        futureScope.textContent = snapshot.futureScope;
-        industry.textContent = snapshot.industry
+
+// ==========================================
+// RELATED CAREERS
+// ==========================================
+function renderRelatedCareers(career) {
+
+    const relatedGrid = document.querySelector(".related-grid");
+    relatedGrid.innerHTML = "";
+
+    const related = career.relatedCareers || [];
+
+    related.forEach(item => {
+
+        const card = document.createElement("a");
+        card.classList.add("related-card");
+        card.href = `career-details.html?id=${item.id}`;
+
+        card.innerHTML = `
+            <div class="related-card-icon"><i class="${item.icon || "ri-briefcase-line"}"></i></div>
+            <div class="related-card-body">
+                <h4>${item.name}</h4>
+                ${item.shortDescription ? `<p>${item.shortDescription}</p>` : ""}
+            </div>
+            <i class="ri-arrow-right-line related-card-arrow"></i>
+        `;
+
+        relatedGrid.appendChild(card);
+    });
+
+    document.getElementById("relatedSection").style.display = related.length > 0 ? "block" : "none";
+}
+
+
+// ==========================================
+// PROJECTS TO BUILD
+// Section is fully hidden when there are zero projects.
+// ==========================================
+function renderProjects(career) {
+
+    const projectGrid = document.querySelector(".project-grid");
+    projectGrid.innerHTML = "";
+
+    const projects = career.projects || [];
+
+    if (projects.length === 0) {
+        document.getElementById("projectsSection").style.display = "none";
+        return;
     }
-}
 
-const companiesGrid = document.querySelector(".companies-grid");
-function renderCompanies(career) {
-    companiesGrid.innerHTML = "";
-    career.companies.forEach(company => {
-        const companyCard = document.createElement("div")
-        companyCard.classList.add("company-card")
-        // companyCard.innerHTML = `<img src="${company.logo}" alt="${company.name}">`
-        companyCard.innerHTML = `<a href = "${company.url}"><img src="${company.logo}" alt="${company.name}"></a>`
+    document.getElementById("projectsSection").style.display = "block";
 
-        companiesGrid.appendChild(companyCard)
-    });
-}
+    projects.forEach(project => {
 
-const quickInfoList = document.querySelector(".quick-info-list");
+        const card = document.createElement("div");
+        card.classList.add("project-card");
 
-function renderQuickInfo(career) {
-
-    quickInfoList.innerHTML = "";
-
-    career.quickInfo.forEach(info => {
-
-        const quickItem = document.createElement("div");
-        quickItem.classList.add("quick-item");
-
-        const quickLabel = document.createElement("div");
-        quickLabel.classList.add("quick-label");
-
-        quickLabel.innerHTML = `
-            <i class="${info.icon}"></i>
-            <span>${info.label}</span>
+        card.innerHTML = `
+            ${project.image ? `<img class="project-image" src="${project.image}" alt="${project.title}">` : ""}
+            <div class="project-card-body">
+                <div class="project-meta">
+                    ${project.difficulty ? `<span class="project-tag">${project.difficulty}</span>` : ""}
+                    ${project.type ? `<span class="project-tag">${project.type}</span>` : ""}
+                </div>
+                <h4>${project.title}</h4>
+                ${project.shortDescription ? `<p>${project.shortDescription}</p>` : ""}
+                <a href="${project.url}" target="_blank" rel="noopener noreferrer" class="visit-btn">
+                    View Project
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
         `;
 
-        const value = document.createElement("strong");
-        value.textContent = info.value;
-
-        quickItem.appendChild(quickLabel);
-        quickItem.appendChild(value);
-
-        quickInfoList.appendChild(quickItem);
-
+        projectGrid.appendChild(card);
     });
-
 }
 
-const relatedList = document.querySelector(".related-list")
-function renderRelatedCareer(career) {
 
-    relatedList.innerHTML = "";
-
-    career.relatedCareers.forEach(item => {
-
-        const li = document.createElement("li");
-
-        li.innerHTML = `
-            <a href="career-details.html?id=${item.id}">
-                ${item.name}
-                <i class="ri-arrow-right-line"></i>
-            </a>
-        `;
-
-        relatedList.appendChild(li);
-
-    });
-
-}
-
+// ==========================================
+// FAQs (unchanged accordion behaviour)
+// ==========================================
 function renderFAQs(faqs) {
 
     const faqContainer = document.getElementById("faqContainer");
@@ -269,33 +372,21 @@ function renderFAQs(faqs) {
     faqs.forEach((faq, index) => {
 
         html += `
-
             <div class="faq-item ${index === 0 ? "active" : ""}">
-
                 <button class="faq-question">
-
                     <span>${faq.question}</span>
-
                     <i class="ri-add-line faq-icon"></i>
-
                 </button>
-
                 <div class="faq-answer">
-
                     <p>${faq.answer}</p>
-
                 </div>
-
             </div>
-
         `;
-
     });
 
     faqContainer.innerHTML = html;
 
     initializeFAQs();
-
 }
 
 function initializeFAQs() {
@@ -311,19 +402,12 @@ function initializeFAQs() {
             const isActive = item.classList.contains("active");
 
             faqItems.forEach(faq => {
-
                 faq.classList.remove("active");
-
             });
 
             if (!isActive) {
-
                 item.classList.add("active");
-
             }
-
         });
-
     });
-
 }
