@@ -63,7 +63,7 @@ if (!id || isNaN(id)) {
 
 } else {
 
-    fetch(`https://careercompass-backend.onrender.com/api/careers/${id}`)
+    fetch(`https://careercompass-1yfu.onrender.com/api/careers/${id}`)
 
         .then((response) => {
 

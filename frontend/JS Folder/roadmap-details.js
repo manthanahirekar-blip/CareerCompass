@@ -100,7 +100,7 @@ if (!careerId || isNaN(careerId)) {
 
 } else {
 
-    fetch(`https://careercompass-backend.onrender.com/api/careers/${careerId}/roadmap`)
+    fetch(`https://careercompass-1yfu.onrender.com/api/careers/${careerId}/roadmap`)
 
         .then((response) => {
 
