@@ -1,0 +1,948 @@
++-----------+------------------------------+-----------------+-------------+-------------------------------------------------------+
+| career_id | career_name                  | roadmap_step_id | step_number | step_name                                             |
++-----------+------------------------------+-----------------+-------------+-------------------------------------------------------+
+|         1 | Frontend Developer           |               1 |           1 | Learn HTML                                            |
+|         1 | Frontend Developer           |               2 |           2 | Master CSS                                            |
+|         1 | Frontend Developer           |               3 |           3 | Learn JavaScript                                      |
+|         1 | Frontend Developer           |               4 |           4 | Learn React                                           |
+|         1 | Frontend Developer           |               5 |           5 | Build Projects                                        |
+|         1 | Frontend Developer           |               6 |           6 | Learn Tools                                           |
+|         1 | Frontend Developer           |               7 |           7 | Apply for Jobs                                        |
+|         2 | Backend Developer            |               8 |           1 | Learn JavaScript / Java Fundamentals                  |
+|         2 | Backend Developer            |               9 |           2 | Learn SQL & Database Fundamentals                     |
+|         2 | Backend Developer            |              10 |           3 | Learn Node.js & Express.js                            |
+|         2 | Backend Developer            |              11 |           4 | Build REST APIs                                       |
+|         2 | Backend Developer            |              12 |           5 | Learn Authentication & Security                       |
+|         2 | Backend Developer            |              13 |           6 | Learn Git, Docker & Deployment                        |
+|         2 | Backend Developer            |              14 |           7 | Build Real-world Projects & Apply for Jobs            |
+|         3 | Full Stack Developer         |              15 |           1 | Learn HTML & CSS                                      |
+|         3 | Full Stack Developer         |              16 |           2 | Master JavaScript                                     |
+|         3 | Full Stack Developer         |              17 |           3 | Learn React                                           |
+|         3 | Full Stack Developer         |              18 |           4 | Learn Backend Development                             |
+|         3 | Full Stack Developer         |              19 |           5 | Learn SQL, MongoDB & REST APIs                        |
+|         3 | Full Stack Developer         |              20 |           6 | Build Full Stack Projects                             |
+|         3 | Full Stack Developer         |              21 |           7 | Deploy & Apply for Jobs                               |
+|         4 | Software Engineer            |              22 |           1 | Learn Programming Fundamentals                        |
+|         4 | Software Engineer            |              23 |           2 | Master DSA & OOP                                      |
+|         4 | Software Engineer            |              24 |           3 | Learn Databases & SQL                                 |
+|         4 | Software Engineer            |              25 |           4 | Build Software Projects                               |
+|         4 | Software Engineer            |              26 |           5 | Learn System Design Basics                            |
+|         4 | Software Engineer            |              27 |           6 | Practice Interview Problems                           |
+|         4 | Software Engineer            |              28 |           7 | Apply for Software Engineering Roles                  |
+|         5 | Mobile App Developer         |              29 |           1 | Learn Programming Basics                              |
+|         5 | Mobile App Developer         |              30 |           2 | Choose Android or iOS                                 |
+|         5 | Mobile App Developer         |              31 |           3 | Learn Flutter or React Native                         |
+|         5 | Mobile App Developer         |              32 |           4 | Work with APIs & Firebase                             |
+|         5 | Mobile App Developer         |              33 |           5 | Build Real-world Apps                                 |
+|         5 | Mobile App Developer         |              34 |           6 | Publish Mobile Applications                           |
+|         5 | Mobile App Developer         |              35 |           7 | Apply for Mobile Developer Jobs                       |
+|         6 | DevOps Engineer              |              36 |           1 | Learn Linux & Networking                              |
+|         6 | DevOps Engineer              |              37 |           2 | Master Git & Scripting                                |
+|         6 | DevOps Engineer              |              38 |           3 | Learn Docker                                          |
+|         6 | DevOps Engineer              |              39 |           4 | Learn Kubernetes                                      |
+|         6 | DevOps Engineer              |              40 |           5 | Master Cloud Platforms                                |
+|         6 | DevOps Engineer              |              41 |           6 | Build CI/CD Pipelines                                 |
+|         6 | DevOps Engineer              |              42 |           7 | Deploy Production Projects                            |
+|         7 | AI Engineer                  |              43 |           1 | Learn Python & Mathematics                            |
+|         7 | AI Engineer                  |              44 |           2 | Master Machine Learning                               |
+|         7 | AI Engineer                  |              45 |           3 | Learn Deep Learning                                   |
+|         7 | AI Engineer                  |              46 |           4 | Build AI Projects                                     |
+|         7 | AI Engineer                  |              47 |           5 | Learn NLP & Computer Vision                           |
+|         7 | AI Engineer                  |              48 |           6 | Deploy AI Models                                      |
+|         7 | AI Engineer                  |              49 |           7 | Apply for AI Engineer Roles                           |
+|         8 | Machine Learning Engineer    |              50 |           1 | Learn Python & Mathematics                            |
+|         8 | Machine Learning Engineer    |              51 |           2 | Master Statistics & Probability                       |
+|         8 | Machine Learning Engineer    |              52 |           3 | Learn Machine Learning Algorithms                     |
+|         8 | Machine Learning Engineer    |              53 |           4 | Master TensorFlow & PyTorch                           |
+|         8 | Machine Learning Engineer    |              54 |           5 | Build Machine Learning Projects                       |
+|         8 | Machine Learning Engineer    |              55 |           6 | Deploy ML Models                                      |
+|         8 | Machine Learning Engineer    |              56 |           7 | Apply for ML Engineer Roles                           |
+|         9 | Data Scientist               |              57 |           1 | Learn Python & SQL                                    |
+|         9 | Data Scientist               |              58 |           2 | Master Statistics & Mathematics                       |
+|         9 | Data Scientist               |              59 |           3 | Learn Data Analysis                                   |
+|         9 | Data Scientist               |              60 |           4 | Master Machine Learning                               |
+|         9 | Data Scientist               |              61 |           5 | Build Data Science Projects                           |
+|         9 | Data Scientist               |              62 |           6 | Learn Data Visualization                              |
+|         9 | Data Scientist               |              63 |           7 | Apply for Data Scientist Roles                        |
+|        10 | Data Analyst                 |              64 |           1 | Learn Excel & SQL                                     |
+|        10 | Data Analyst                 |              65 |           2 | Learn Statistics                                      |
+|        10 | Data Analyst                 |              66 |           3 | Master Python for Data Analysis                       |
+|        10 | Data Analyst                 |              67 |           4 | Learn Power BI & Tableau                              |
+|        10 | Data Analyst                 |              68 |           5 | Build Data Analysis Projects                          |
+|        10 | Data Analyst                 |              69 |           6 | Create a Data Portfolio                               |
+|        10 | Data Analyst                 |              70 |           7 | Apply for Data Analyst Roles                          |
+|        11 | Data Engineer                |              71 |           1 | Learn SQL & Database Fundamentals                     |
+|        11 | Data Engineer                |              72 |           2 | Master Python Programming                             |
+|        11 | Data Engineer                |              73 |           3 | Learn ETL & Data Warehousing                          |
+|        11 | Data Engineer                |              74 |           4 | Master Big Data Technologies                          |
+|        11 | Data Engineer                |              75 |           5 | Learn Cloud Platforms                                 |
+|        11 | Data Engineer                |              76 |           6 | Build End-to-End Data Pipelines                       |
+|        11 | Data Engineer                |              77 |           7 | Apply for Data Engineer Roles                         |
+|        12 | Cyber Security Analyst       |              78 |           1 | Learn Networking & Operating Systems                  |
+|        12 | Cyber Security Analyst       |              79 |           2 | Master Cyber Security Fundamentals                    |
+|        12 | Cyber Security Analyst       |              80 |           3 | Learn Linux & Security Tools                          |
+|        12 | Cyber Security Analyst       |              81 |           4 | Study SIEM & Threat Detection                         |
+|        12 | Cyber Security Analyst       |              82 |           5 | Practice Incident Response                            |
+|        12 | Cyber Security Analyst       |              83 |           6 | Build Hands-on Security Labs                          |
+|        12 | Cyber Security Analyst       |              84 |           7 | Earn Certifications & Apply for Jobs                  |
+|        13 | Penetration Tester           |              85 |           1 | Learn Networking & Linux                              |
+|        13 | Penetration Tester           |              86 |           2 | Master Cyber Security Fundamentals                    |
+|        13 | Penetration Tester           |              87 |           3 | Learn Web & Network Security                          |
+|        13 | Penetration Tester           |              88 |           4 | Practice Penetration Testing Tools                    |
+|        13 | Penetration Tester           |              89 |           5 | Complete Hands-on Security Labs                       |
+|        13 | Penetration Tester           |              90 |           6 | Earn Ethical Hacking Certifications                   |
+|        13 | Penetration Tester           |              91 |           7 | Apply for Penetration Tester Roles                    |
+|        14 | Security Engineer            |              92 |           1 | Learn Networking & Linux                              |
+|        14 | Security Engineer            |              93 |           2 | Master Security Fundamentals                          |
+|        14 | Security Engineer            |              94 |           3 | Learn System & Cloud Security                         |
+|        14 | Security Engineer            |              95 |           4 | Practice Security Engineering Tools                   |
+|        14 | Security Engineer            |              96 |           5 | Study IAM & Security Frameworks                       |
+|        14 | Security Engineer            |              97 |           6 | Build Security Projects                               |
+|        14 | Security Engineer            |              98 |           7 | Earn Certifications & Apply for Jobs                  |
+|        15 | Cloud Engineer               |              99 |           1 | Learn Linux & Networking                              |
+|        15 | Cloud Engineer               |             100 |           2 | Master One Cloud Platform                             |
+|        15 | Cloud Engineer               |             101 |           3 | Learn Cloud Storage & Networking                      |
+|        15 | Cloud Engineer               |             102 |           4 | Master Docker & Kubernetes                            |
+|        15 | Cloud Engineer               |             103 |           5 | Learn Infrastructure as Code                          |
+|        15 | Cloud Engineer               |             104 |           6 | Build Cloud Deployment Projects                       |
+|        15 | Cloud Engineer               |             105 |           7 | Earn Certifications & Apply for Jobs                  |
+|        16 | Cloud Architect              |             106 |           1 | Master Linux & Networking                             |
+|        16 | Cloud Architect              |             107 |           2 | Learn One Major Cloud Platform                        |
+|        16 | Cloud Architect              |             108 |           3 | Understand Cloud Architecture Patterns                |
+|        16 | Cloud Architect              |             109 |           4 | Learn Docker & Kubernetes                             |
+|        16 | Cloud Architect              |             110 |           5 | Master Infrastructure as Code                         |
+|        16 | Cloud Architect              |             111 |           6 | Design Real Cloud Solutions                           |
+|        16 | Cloud Architect              |             112 |           7 | Earn Cloud Certifications & Apply                     |
+|        17 | Site Reliability Engineer    |             113 |           1 | Learn Linux & Networking                              |
+|        17 | Site Reliability Engineer    |             114 |           2 | Master Cloud Computing Basics                         |
+|        17 | Site Reliability Engineer    |             115 |           3 | Learn Docker & Kubernetes                             |
+|        17 | Site Reliability Engineer    |             116 |           4 | Study Infrastructure Automation                       |
+|        17 | Site Reliability Engineer    |             117 |           5 | Master Monitoring & Incident Management               |
+|        17 | Site Reliability Engineer    |             118 |           6 | Build Scalable Production Projects                    |
+|        17 | Site Reliability Engineer    |             119 |           7 | Earn Certifications & Apply for SRE Roles             |
+|        18 | UI Designer                  |             120 |           1 | Learn UI Design Fundamentals                          |
+|        18 | UI Designer                  |             121 |           2 | Master Figma                                          |
+|        18 | UI Designer                  |             122 |           3 | Learn Color Theory & Typography                       |
+|        18 | UI Designer                  |             123 |           4 | Create Wireframes & Prototypes                        |
+|        18 | UI Designer                  |             124 |           5 | Learn Design Systems & Accessibility                  |
+|        18 | UI Designer                  |             125 |           6 | Build a Strong UI Portfolio                           |
+|        18 | UI Designer                  |             126 |           7 | Apply for UI Designer Roles                           |
+|        19 | UX Designer                  |             127 |           1 | Learn UX Design Fundamentals                          |
+|        19 | UX Designer                  |             128 |           2 | Study User Research Methods                           |
+|        19 | UX Designer                  |             129 |           3 | Learn Information Architecture & User Flows           |
+|        19 | UX Designer                  |             130 |           4 | Master Figma & Prototyping                            |
+|        19 | UX Designer                  |             131 |           5 | Conduct Usability Testing                             |
+|        19 | UX Designer                  |             132 |           6 | Build UX Case Studies & Portfolio                     |
+|        19 | UX Designer                  |             133 |           7 | Apply for UX Designer Roles                           |
+|        20 | UI/UX Designer               |             134 |           1 | Learn UI & UX Design Fundamentals                     |
+|        20 | UI/UX Designer               |             135 |           2 | Master Figma & Design Tools                           |
+|        20 | UI/UX Designer               |             136 |           3 | Learn User Research & Information Architecture        |
+|        20 | UI/UX Designer               |             137 |           4 | Create Wireframes & Interactive Prototypes            |
+|        20 | UI/UX Designer               |             138 |           5 | Learn Design Systems & Accessibility                  |
+|        20 | UI/UX Designer               |             139 |           6 | Build Real-World Case Studies & Portfolio             |
+|        20 | UI/UX Designer               |             140 |           7 | Apply for UI/UX Designer Roles                        |
+|        21 | Product Manager              |             141 |           1 | Learn Product Management Fundamentals                 |
+|        21 | Product Manager              |             142 |           2 | Understand User Research & Market Analysis            |
+|        21 | Product Manager              |             143 |           3 | Learn Agile & Scrum Methodologies                     |
+|        21 | Product Manager              |             144 |           4 | Master Product Roadmapping & Prioritization           |
+|        21 | Product Manager              |             145 |           5 | Learn Product Analytics & Metrics                     |
+|        21 | Product Manager              |             146 |           6 | Build Product Case Studies & Projects                 |
+|        21 | Product Manager              |             147 |           7 | Earn Certifications & Apply for Product Manager Roles |
+|        22 | Business Analyst             |             148 |           1 | Learn Business Analysis Fundamentals                  |
+|        22 | Business Analyst             |             149 |           2 | Master Excel & SQL                                    |
+|        22 | Business Analyst             |             150 |           3 | Learn Requirement Gathering & Documentation           |
+|        22 | Business Analyst             |             151 |           4 | Study Agile & Scrum                                   |
+|        22 | Business Analyst             |             152 |           5 | Learn Power BI & Data Visualization                   |
+|        22 | Business Analyst             |             153 |           6 | Build Real Business Case Studies                      |
+|        22 | Business Analyst             |             154 |           7 | Earn Certifications & Apply for Jobs                  |
+|        23 | Digital Marketing Specialist |             155 |           1 | Learn Digital Marketing Fundamentals                  |
+|        23 | Digital Marketing Specialist |             156 |           2 | Master SEO & SEM                                      |
+|        23 | Digital Marketing Specialist |             157 |           3 | Learn Social Media & Content Marketing                |
+|        23 | Digital Marketing Specialist |             158 |           4 | Master Google Analytics & Google Ads                  |
+|        23 | Digital Marketing Specialist |             159 |           5 | Learn Email Marketing & Automation                    |
+|        23 | Digital Marketing Specialist |             160 |           6 | Build Real Marketing Campaigns & Portfolio            |
+|        23 | Digital Marketing Specialist |             161 |           7 | Earn Certifications & Apply for Jobs                  |
+|        24 | Project Manager              |             162 |           1 | Learn Project Management Fundamentals                 |
+|        24 | Project Manager              |             163 |           2 | Understand Agile, Scrum & Waterfall Methodologies     |
+|        24 | Project Manager              |             164 |           3 | Learn Project Planning & Scheduling                   |
+|        24 | Project Manager              |             165 |           4 | Master Risk, Budget & Resource Management             |
+|        24 | Project Manager              |             166 |           5 | Learn Project Management Tools                        |
+|        24 | Project Manager              |             167 |           6 | Manage Real or Simulated Projects                     |
+|        24 | Project Manager              |             168 |           7 | Earn Certifications & Apply for Project Manager Roles |
++-----------+------------------------------+-----------------+-------------+-------------------------------------------------------+
+
+
++-----+----------------------------------------------------------------------------+---------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------+
+| id  | name                                                                       | type          | logo                              | url                                                                                                              |
++-----+----------------------------------------------------------------------------+---------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------+
+|   1 | MDN Web Docs                                                               | Documentation | assets/logos/mdn.png              | https://developer.mozilla.org/                                                                                   |
+|   2 | freeCodeCamp                                                               | Course        | assets/logos/free-code-camp.png   | https://www.freecodecamp.org/                                                                                    |
+|   3 | Frontend Mentor                                                            | Practice      | assets/logos/frontend-mentor.png  | https://www.frontendmentor.io/                                                                                   |
+|   4 | JavaScript.info                                                            | Documentation | assets/logos/javascript-info.png  | https://javascript.info/                                                                                         |
+|   5 | Node.js Documentation                                                      | Documentation | assets/logos/node-doc.png         | https://nodejs.org/docs/latest/api/                                                                              |
+|   6 | Express.js                                                                 | Documentation | assets/logos/express-doc.png      | https://expressjs.com/                                                                                           |
+|   7 | MongoDB Docs                                                               | Documentation | assets/logos/mongo-db.png         | https://www.mongodb.com/docs/                                                                                    |
+|   8 | Postman Learning Center                                                    | API Testing   | assets/logos/postman.png          | https://learning.postman.com/                                                                                    |
+|   9 | MySQL Documentation                                                        | Documentation | assets/logos/mysql.png            | https://dev.mysql.com/doc/                                                                                       |
+|  10 | The Odin Project                                                           | Course        | assets/logos/the-odin-project.png | https://www.theodinproject.com/                                                                                  |
+|  11 | Full Stack Open                                                            | Course        | assets/logos/full-stack-open.png  | https://fullstackopen.com/en/                                                                                    |
+|  20 | GeeksforGeeks                                                              | Learning      | assets/logos/gfg.png              | https://www.geeksforgeeks.org/                                                                                   |
+|  21 | LeetCode                                                                   | Practice      | assets/logos/leetcode.png         | https://leetcode.com/                                                                                            |
+|  22 | Roadmap.sh                                                                 | Roadmap       | assets/logos/roadmap.png          | https://roadmap.sh/software-engineer                                                                             |
+|  23 | Android Developers                                                         | Documentation | assets/logos/android.png          | https://developer.android.com/docs                                                                               |
+|  24 | Flutter Documentation                                                      | Documentation | assets/logos/flutter.png          | https://docs.flutter.dev/                                                                                        |
+|  25 | React Native Documentation                                                 | Documentation | assets/logos/react-native.png     | https://reactnative.dev/docs/getting-started                                                                     |
+|  26 | Apple Developer                                                            | Documentation | assets/logos/apple.png            | https://developer.apple.com/documentation/                                                                       |
+|  27 | AWS Skill Builder                                                          | Course        | assets/logos/aws.png              | https://skillbuilder.aws/                                                                                        |
+|  28 | Docker Documentation                                                       | Documentation | assets/logos/docker.png           | https://docs.docker.com/                                                                                         |
+|  29 | Kubernetes Documentation                                                   | Documentation | assets/logos/kubernetes.png       | https://kubernetes.io/docs/                                                                                      |
+|  30 | Roadmap.sh DevOps                                                          | Roadmap       | assets/logos/roadmap.png          | https://roadmap.sh/devops                                                                                        |
+|  31 | DeepLearning.AI                                                            | Course        | assets/logos/deeplearning-ai.png  | https://www.deeplearning.ai/                                                                                     |
+|  32 | TensorFlow Documentation                                                   | Documentation | assets/logos/tensorflow.png       | https://www.tensorflow.org/learn                                                                                 |
+|  33 | PyTorch Documentation                                                      | Documentation | assets/logos/pytorch.png          | https://pytorch.org/tutorials/                                                                                   |
+|  34 | Kaggle                                                                     | Practice      | assets/logos/kaggle.png           | https://www.kaggle.com/                                                                                          |
+|  35 | Scikit-learn Documentation                                                 | Documentation | assets/logos/scikit-learn.png     | https://scikit-learn.org/stable/user_guide.html                                                                  |
+|  36 | Coursera Machine Learning                                                  | Course        | assets/logos/coursera.png         | https://www.coursera.org/learn/machine-learning                                                                  |
+|  37 | Pandas Documentation                                                       | Documentation | assets/logos/pandas.png           | https://pandas.pydata.org/docs/                                                                                  |
+|  38 | DataCamp                                                                   | Course        | assets/logos/datacamp.png         | https://www.datacamp.com/                                                                                        |
+|  39 | Coursera Data Science                                                      | Course        | assets/logos/coursera.png         | https://www.coursera.org/browse/data-science                                                                     |
+|  40 | Microsoft Learn                                                            | Course        | assets/logos/microsoft.png        | https://learn.microsoft.com                                                                                      |
+|  43 | Tableau Learning                                                           | Documentation | assets/logos/tableau.png          | https://www.tableau.com/learn                                                                                    |
+|  44 | Apache Spark Documentation                                                 | Documentation | assets/logos/apache-spark.png     | https://spark.apache.org/docs/latest/                                                                            |
+|  45 | Apache Airflow Documentation                                               | Documentation | assets/logos/apache-airflow.png   | https://airflow.apache.org/docs/                                                                                 |
+|  47 | Data Engineering Zoomcamp                                                  | Course        | assets/logos/data-engineering.png | https://github.com/DataTalksClub/data-engineering-zoomcamp                                                       |
+|  48 | TryHackMe                                                                  | Practice      | assets/logos/tryhackme.png        | https://tryhackme.com                                                                                            |
+|  49 | Hack The Box                                                               | Practice      | assets/logos/hackthebox.png       | https://www.hackthebox.com                                                                                       |
+|  50 | OWASP                                                                      | Documentation | assets/logos/owasp.png            | https://owasp.org                                                                                                |
+|  51 | Microsoft Learn Security                                                   | Course        | assets/logos/microsoft.png        | https://learn.microsoft.com/security                                                                             |
+|  52 | PortSwigger Web Security Academy                                           | Course        | assets/logos/portswigger.png      | https://portswigger.net/web-security                                                                             |
+|  53 | AWS Security Documentation                                                 | Documentation | assets/logos/aws.png              | https://docs.aws.amazon.com/security/                                                                            |
+|  54 | Cisco Networking Academy                                                   | Course        | assets/logos/cisco.png            | https://www.netacad.com                                                                                          |
+|  55 | Microsoft Learn Azure                                                      | Course        | assets/logos/azure.png            | https://learn.microsoft.com/azure                                                                                |
+|  56 | Google Cloud Skills Boost                                                  | Course        | assets/logos/gcp.png              | https://www.cloudskillsboost.google                                                                              |
+|  57 | Terraform Documentation                                                    | Documentation | assets/logos/terraform.png        | https://developer.hashicorp.com/terraform/docs                                                                   |
+|  58 | AWS Architecture Center                                                    | Documentation | assets/logos/aws.png              | https://aws.amazon.com/architecture/                                                                             |
+|  59 | Google SRE Book                                                            | Book          | assets/logos/google.png           | https://sre.google/books/                                                                                        |
+|  60 | Prometheus Documentation                                                   | Documentation | assets/logos/prometheus.png       | https://prometheus.io/docs/                                                                                      |
+|  61 | Linux Journey                                                              | Course        | assets/logos/linux.png            | https://linuxjourney.com/                                                                                        |
+|  62 | Figma Learn                                                                | Course        | assets/logos/figma.png            | https://help.figma.com/                                                                                          |
+|  63 | Material Design                                                            | Documentation | assets/logos/material-design.png  | https://m3.material.io/                                                                                          |
+|  64 | Interaction Design Foundation                                              | Course        | assets/logos/idf.png              | https://www.interaction-design.org/                                                                              |
+|  65 | Google UX Design                                                           | Course        | assets/logos/google.png           | https://www.coursera.org/professional-certificates/google-ux-design                                              |
+|  66 | Nielsen Norman Group                                                       | Course        | assets/logos/nng.png              | https://www.nngroup.com/                                                                                         |
+|  67 | Google UX Design Professional Certificate                                  | Course        | assets/logos/google.png           | https://www.coursera.org/professional-certificates/google-ux-design                                              |
+|  71 | Atlassian Product Management Guide                                         | Documentation | assets/logos/atlassian.png        | https://www.atlassian.com/agile/product-management                                                               |
+|  72 | Google Project Management                                                  | Course        | assets/logos/google.png           | https://www.coursera.org/professional-certificates/google-project-management                                     |
+|  73 | Product School                                                             | Course        | assets/logos/product-school.png   | https://productschool.com                                                                                        |
+|  74 | Mind the Product                                                           | Course        | assets/logos/mind-the-product.png | https://www.mindtheproduct.com                                                                                   |
+|  75 | IIBA BABOK Guide                                                           | Documentation | assets/logos/iiba.png             | https://www.iiba.org/business-analysis-standards-and-publications/business-analysis-body-of-knowledge-babok/     |
+|  76 | Microsoft Learn Power BI                                                   | Course        | assets/logos/powerbi.png          | https://learn.microsoft.com/power-bi/                                                                            |
+|  77 | Google Data Analytics Professional Certificate                             | Course        | assets/logos/google.png           | https://www.coursera.org/professional-certificates/google-data-analytics                                         |
+|  78 | Atlassian Agile Guide                                                      | Documentation | assets/logos/atlassian.png        | https://www.atlassian.com/agile                                                                                  |
+|  79 | Google Skillshop                                                           | Course        | assets/logos/google.png           | https://skillshop.withgoogle.com/                                                                                |
+|  80 | HubSpot Academy                                                            | Course        | assets/logos/hubspot.png          | https://academy.hubspot.com/                                                                                     |
+|  81 | Google Analytics Academy                                                   | Course        | assets/logos/google-analytics.png | https://analytics.google.com/analytics/academy/                                                                  |
+|  82 | Meta Blueprint                                                             | Course        | assets/logos/meta.png             | https://www.facebook.com/business/learn                                                                          |
+|  83 | Project Management Institute (PMI)                                         | Documentation | assets/logos/pmi.png              | https://www.pmi.org                                                                                              |
+|  84 | Google Project Management Professional Certificate                         | Course        | assets/logos/google.png           | https://www.coursera.org/professional-certificates/google-project-management                                     |
+|  85 | Atlassian Agile Coach                                                      | Documentation | assets/logos/atlassian.png        | https://www.atlassian.com/agile                                                                                  |
+|  86 | Scrum.org Learning                                                         | Documentation | assets/logos/scrum.png            | https://www.scrum.org/resources                                                                                  |
+|  87 | React Documentation                                                        | Documentation | NULL                              | https://react.dev/                                                                                               |
+|  88 | Flask Documentation                                                        | Documentation | NULL                              | https://flask.palletsprojects.com/                                                                               |
+|  89 | Python Documentation                                                       | Documentation | NULL                              | https://docs.python.org/3/                                                                                       |
+|  90 | Git Documentation                                                          | Documentation | NULL                              | https://git-scm.com/doc                                                                                          |
+|  91 | GitHub Documentation                                                       | Documentation | NULL                              | https://docs.github.com/                                                                                         |
+|  92 | npm Documentation                                                          | Documentation | NULL                              | https://docs.npmjs.com/                                                                                          |
+|  93 | Vite Documentation                                                         | Documentation | NULL                              | https://vite.dev/guide/                                                                                          |
+|  94 | Vercel Documentation                                                       | Documentation | NULL                              | https://vercel.com/docs                                                                                          |
+|  95 | Render Documentation                                                       | Documentation | NULL                              | https://render.com/docs                                                                                          |
+|  96 | HTML Crash Course - Traversy Media                                         | Video         | NULL                              | https://www.youtube.com/watch?v=UB1O30fR-EE                                                                      |
+|  97 | CSS Crash Course - Traversy Media                                          | Video         | NULL                              | https://www.youtube.com/watch?v=yfoY53QXEnI                                                                      |
+|  98 | Modern JavaScript Course                                                   | Video         | NULL                              | https://www.youtube.com/watch?v=a-wVHL0lpb0                                                                      |
+|  99 | React Tutorial                                                             | Video         | NULL                              | https://www.youtube.com/watch?v=3LRZRSIh_KE                                                                      |
+| 100 | Python Flask Backend Development Tutorial                                  | Video         | NULL                              | https://www.youtube.com/watch?v=QZfaRHzWM0k                                                                      |
+| 101 | Node.js Crash Course - Traversy Media                                      | Video         | NULL                              | https://www.youtube.com/@TraversyMedia/search?query=Node.js                                                      |
+| 102 | MySQL Database Tutorial                                                    | Video         | NULL                              | https://www.youtube.com/watch?v=hlGoQC332VM                                                                      |
+| 103 | MongoDB Tutorial                                                           | Video         | NULL                              | https://www.youtube.com/watch?v=M1dKYQ7GsTg                                                                      |
+| 104 | Git and GitHub Tutorial - freeCodeCamp                                     | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Git%20GitHub                                                  |
+| 105 | Docker Tutorial - freeCodeCamp                                             | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Docker                                                        |
+| 106 | REST API Tutorial                                                          | Video         | NULL                              | https://www.youtube.com/watch?v=XvFmUE-36Kc                                                                      |
+| 107 | GitHub Portfolio Projects - Traversy Media                                 | Video         | NULL                              | https://www.youtube.com/@TraversyMedia/search?query=Portfolio                                                    |
+| 108 | npm and Vite Tutorial - Traversy Media                                     | Video         | NULL                              | https://www.youtube.com/@TraversyMedia/search?query=npm%20Vite                                                   |
+| 109 | Browser Developer Tools Tutorial - freeCodeCamp                            | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Chrome%20DevTools                                             |
+| 110 | Frontend Interview Preparation - Traversy Media                            | Video         | NULL                              | https://www.youtube.com/@TraversyMedia/search?query=Frontend%20Interview                                         |
+| 111 | Java Documentation                                                         | Documentation | NULL                              | https://docs.oracle.com/en/java/                                                                                 |
+| 112 | Java Full Course - freeCodeCamp                                            | Video         | NULL                              | https://www.youtube.com/watch?v=xk4_1vDrzzo                                                                      |
+| 113 | LinkedIn Help Center                                                       | Documentation | NULL                              | https://www.linkedin.com/help/linkedin                                                                           |
+| 114 | How to Write a Software Engineer Resume - freeCodeCamp                     | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=software%20engineer%20resume                                  |
+| 115 | Full Stack Project Tutorial                                                | Video         | NULL                              | https://www.youtube.com/watch?v=zG3hNL08Dro                                                                      |
+| 116 | Full Stack Application Deployment Tutorial                                 | Video         | NULL                              | https://www.youtube.com/watch?v=wGjyuDvvRx4                                                                      |
+| 117 | Data Structures & Algorithms Course                                        | Video         | NULL                              | https://www.youtube.com/watch?v=f9Aje_cN_CY                                                                      |
+| 118 | Object-Oriented Programming Course                                         | Video         | NULL                              | https://www.youtube.com/watch?v=Mf2RdpEiXjU                                                                      |
+| 119 | Building Software Projects                                                 | Video         | NULL                              | https://www.youtube.com/watch?v=14RP8liACqo                                                                      |
+| 120 | System Design Fundamentals                                                 | Video         | NULL                              | https://www.youtube.com/watch?v=Vnm-ycSfJx4                                                                      |
+| 121 | System Design Explained                                                    | Video         | NULL                              | https://www.youtube.com/watch?v=oYxTTirKY8M                                                                      |
+| 122 | Software Engineering Interview Preparation                                 | Video         | NULL                              | https://www.youtube.com/watch?v=Tc_MJZ8XYYc                                                                      |
+| 123 | Top 6 Coding Interview Concepts - NeetCode                                 | Video         | NULL                              | https://www.youtube.com/watch?v=ft0owvS5tQA                                                                      |
+| 124 | Python Programming Fundamentals - freeCodeCamp                             | Video         | NULL                              | https://www.youtube.com/watch?v=rfscVS0vtbw                                                                      |
+| 125 | Mobile Development Fundamentals                                            | Video         | NULL                              | https://www.youtube.com/watch?v=NMOdEHyMXBo                                                                      |
+| 126 | Android & iOS Development Fundamentals                                     | Video         | NULL                              | https://www.youtube.com/watch?v=-VC3hIEL7eQ                                                                      |
+| 127 | Flutter Fundamentals                                                       | Video         | NULL                              | https://www.youtube.com/watch?v=92h2XcvZ-vM                                                                      |
+| 128 | React Native Fundamentals                                                  | Video         | NULL                              | https://www.youtube.com/watch?v=JKccS9k56_I                                                                      |
+| 129 | Firebase Fundamentals                                                      | Video         | NULL                              | https://www.youtube.com/watch?v=CD7kaC8OALM                                                                      |
+| 130 | Mobile App Development Project                                             | Video         | NULL                              | https://www.youtube.com/watch?v=LIwwHOMKN0o                                                                      |
+| 131 | Real World Mobile App Project                                              | Video         | NULL                              | https://www.youtube.com/watch?v=Q7AYc2kECDI                                                                      |
+| 132 | Android App Deployment & Play Store Publishing                             | Video         | NULL                              | https://www.youtube.com/watch?v=WOKrelHPefc                                                                      |
+| 133 | iOS App Deployment & App Store Publishing                                  | Video         | NULL                              | https://www.youtube.com/watch?v=_P-bJW-4TmY                                                                      |
+| 134 | Firebase Documentation                                                     | Documentation | NULL                              | https://firebase.google.com/docs                                                                                 |
+| 135 | GitHub Actions Documentation                                               | Documentation | NULL                              | https://docs.github.com/en/actions                                                                               |
+| 136 | FastAPI Documentation                                                      | Documentation | NULL                              | https://fastapi.tiangolo.com/                                                                                    |
+| 137 | Hugging Face Documentation                                                 | Documentation | NULL                              | https://huggingface.co/docs                                                                                      |
+| 138 | Khan Academy Statistics and Probability                                    | Documentation | NULL                              | https://www.khanacademy.org/math/statistics-probability                                                          |
+| 139 | Khan Academy Linear Algebra                                                | Documentation | NULL                              | https://www.khanacademy.org/math/linear-algebra                                                                  |
+| 140 | Microsoft Excel Training                                                   | Documentation | NULL                              | https://support.microsoft.com/en-us/excel                                                                        |
+| 141 | NumPy Documentation                                                        | Documentation | NULL                              | https://numpy.org/doc/                                                                                           |
+| 142 | Matplotlib Documentation                                                   | Documentation | NULL                              | https://matplotlib.org/stable/                                                                                   |
+| 143 | Linux Fundamentals - freeCodeCamp                                          | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Linux                                                         |
+| 144 | Networking Fundamentals - freeCodeCamp                                     | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Networking                                                    |
+| 145 | Shell Scripting - freeCodeCamp                                             | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Bash%20Scripting                                              |
+| 146 | Kubernetes Tutorial - freeCodeCamp                                         | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Kubernetes                                                    |
+| 147 | AWS Cloud Practitioner - freeCodeCamp                                      | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=AWS%20Cloud%20Practitioner                                    |
+| 148 | CI/CD Pipeline Tutorial - freeCodeCamp                                     | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=CI%20CD%20Pipeline                                            |
+| 149 | Monitoring with Prometheus & Grafana - freeCodeCamp                        | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Prometheus%20Grafana%20Monitoring                             |
+| 150 | 3Blue1Brown - Essence of Linear Algebra                                    | Video         | NULL                              | https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab                                         |
+| 151 | Machine Learning Course - freeCodeCamp                                     | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Machine%20Learning%20Course                                   |
+| 152 | Deep Learning Neural Networks - freeCodeCamp                               | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Deep%20Learning%20Neural%20Networks                           |
+| 153 | PyTorch Tutorial - freeCodeCamp                                            | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=PyTorch%20Tutorial                                            |
+| 154 | AI Project Tutorial - freeCodeCamp                                         | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=AI%20Project%20Tutorial                                       |
+| 155 | NLP Natural Language Processing - freeCodeCamp                             | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=NLP%20Natural%20Language%20Processing                         |
+| 156 | Deploy Machine Learning Model - freeCodeCamp                               | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Deploy%20Machine%20Learning%20Model%20Flask                   |
+| 157 | AI Engineer Interview Questions - freeCodeCamp                             | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=AI%20Engineer%20Interview                                     |
+| 158 | Statistics and Probability - freeCodeCamp                                  | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Statistics%20and%20Probability                                |
+| 159 | Machine Learning Project - freeCodeCamp                                    | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Machine%20Learning%20Project                                  |
+| 160 | Machine Learning Interview Questions - freeCodeCamp                        | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Machine%20Learning%20Interview%20Questions                    |
+| 161 | Data Analysis with Python - freeCodeCamp                                   | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Data%20Analysis%20with%20Python                               |
+| 162 | Data Visualization Matplotlib Seaborn - freeCodeCamp                       | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Data%20Visualization%20Matplotlib%20Seaborn                   |
+| 163 | Data Science Interview Questions - freeCodeCamp                            | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Data%20Science%20Interview%20Questions                        |
+| 164 | Excel Tutorial - freeCodeCamp                                              | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Excel%20Tutorial                                              |
+| 165 | Pandas NumPy Tutorial - freeCodeCamp                                       | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Pandas%20NumPy%20Tutorial                                     |
+| 166 | Power BI Tutorial - freeCodeCamp                                           | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Power%20BI%20Tutorial                                         |
+| 167 | Data Analyst Portfolio Project - freeCodeCamp                              | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Data%20Analyst%20Portfolio%20Project                          |
+| 168 | Data Analyst Interview Questions - freeCodeCamp                            | Video         | NULL                              | https://www.youtube.com/@freecodecamp/search?query=Data%20Analyst%20Interview%20Questions                        |
+| 169 | NIST Incident Response Guide (SP 800-61)                                   | Documentation | NULL                              | https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf                                       |
+| 170 | ETL & Data Warehousing in 1 Hour                                           | Video         | NULL                              | https://www.youtube.com/watch?v=b5dEtHNcth4                                                                      |
+| 171 | Apache Spark Full Course - Edureka                                         | Video         | NULL                              | https://www.youtube.com/watch?v=F8pyaR4uQ2g                                                                      |
+| 172 | Data Engineering Course for Beginners - freeCodeCamp                       | Video         | NULL                              | https://www.youtube.com/watch?v=PHsC_t0j1dU                                                                      |
+| 173 | Harvard CS50's Intro to Cybersecurity - freeCodeCamp                       | Video         | NULL                              | https://www.youtube.com/watch?v=9HOpanT0GRs                                                                      |
+| 174 | Linux Essentials for Ethical Hackers - freeCodeCamp                        | Video         | NULL                              | https://www.youtube.com/watch?v=1hvVcEhcbLM                                                                      |
+| 175 | Google Cloud Cybersecurity Certificate - freeCodeCamp                      | Video         | NULL                              | https://www.youtube.com/watch?v=DrAZf4ZHqaM                                                                      |
+| 176 | OWASP API Security Top 10 Course - freeCodeCamp                            | Video         | NULL                              | https://www.youtube.com/watch?v=YYe0FdfdgDU                                                                      |
+| 177 | Terraform and AWS - freeCodeCamp                                           | Video         | NULL                              | https://www.youtube.com/watch?v=SLB_c_ayRMo                                                                      |
+| 178 | AWS Certified Cloud Practitioner (CLF-C02) - freeCodeCamp                  | Video         | NULL                              | https://www.youtube.com/watch?v=7HKot-brXFE                                                                      |
+| 179 | W3C Web Content Accessibility Guidelines (WCAG)                            | Documentation | NULL                              | https://www.w3.org/WAI/standards-guidelines/wcag/                                                                |
+| 180 | UI Design with Figma - freeCodeCamp                                        | Video         | NULL                              | https://www.youtube.com/watch?v=jwCmIBJ8Jtc                                                                      |
+| 181 | UI/UX Design Tutorial - Wireframe, Mockup & Design in Figma - freeCodeCamp | Video         | NULL                              | https://www.youtube.com/watch?v=c9Wg6Cb_YlU                                                                      |
+| 182 | Create a Design System with Figma - freeCodeCamp                           | Video         | NULL                              | https://www.youtube.com/watch?v=RYDiDpW2VkM                                                                      |
+| 183 | User Research Full Course - Simplilearn                                    | Video         | NULL                              | https://www.youtube.com/watch?v=xkXaPOb9Qxo                                                                      |
+| 184 | Atlassian Product Roadmap Guide                                            | Documentation | NULL                              | https://www.atlassian.com/agile/product-management/product-roadmaps                                              |
+| 185 | Atlassian Prioritization Framework Guide                                   | Documentation | NULL                              | https://www.atlassian.com/agile/product-management/prioritization-framework                                      |
+| 186 | Amplitude Guide to Product Analytics                                       | Documentation | NULL                              | https://amplitude.com/guides/product-analytics                                                                   |
+| 187 | SBA Market Research & Competitive Analysis Guide                           | Documentation | NULL                              | https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis                       |
+| 188 | Google SEO Starter Guide                                                   | Documentation | NULL                              | https://developers.google.com/search/docs/fundamentals/seo-starter-guide                                         |
+| 189 | Atlassian Gantt Chart Guide                                                | Documentation | NULL                              | https://www.atlassian.com/agile/project-management/gantt-chart                                                   |
+| 190 | Jira Getting Started Guide                                                 | Documentation | NULL                              | https://www.atlassian.com/software/jira/guides/getting-started/introduction                                      |
+| 191 | Trello Guide                                                               | Documentation | NULL                              | https://trello.com/guide                                                                                         |
+| 192 | Asana Guide                                                                | Documentation | NULL                              | https://asana.com/guide                                                                                          |
+| 193 | IIBA Business Analysis Certifications                                      | Documentation | NULL                              | https://www.iiba.org/business-analysis-certifications/iiba-certifications/                                       |
+| 194 | PMI Project Management Certifications                                      | Documentation | NULL                              | https://www.pmi.org/certifications                                                                               |
+| 195 | Full Stack MERN App Deployment on Render                                   | Video         | NULL                              | https://www.youtube.com/watch?v=txQW5opPILw                                                                      |
+| 196 | How to Become a Mobile App Developer                                       | Video         | NULL                              | https://www.youtube.com/watch?v=4zPNJ8jRdYk                                                                      |
+| 197 | TryHackMe Beginner Lab Walkthrough                                         | Video         | NULL                              | https://www.youtube.com/watch?v=pWLhUqB2PfU                                                                      |
+| 198 | Hands-On Cybersecurity and Ethical Hacking                                 | Video         | NULL                              | https://www.youtube.com/watch?v=ug8W0sFiVJo                                                                      |
+| 199 | What Is Information Architecture? - UX Design Guide                        | Video         | NULL                              | https://www.youtube.com/watch?v=OJLfjgVlwDo                                                                      |
+| 200 | What Is Product Management?                                                | Video         | NULL                              | https://www.youtube.com/watch?v=XD45n_agC3g                                                                      |
+| 201 | Agile Scrum Full Course                                                    | Video         | NULL                              | https://www.youtube.com/watch?v=VFQtSqChlsk                                                                      |
+| 202 | Mixpanel Tutorial - Product Analytics                                      | Video         | NULL                              | https://www.youtube.com/watch?v=iZ_aGK2_82A                                                                      |
+| 203 | Requirements Elicitation & Gathering                                       | Video         | NULL                              | https://www.youtube.com/watch?v=uAHeTzmc_2g                                                                      |
+| 204 | Digital Marketing Full Course 2025                                         | Video         | NULL                              | https://www.youtube.com/watch?v=IJsE_ub_al8                                                                      |
+| 205 | Full SEO Course & Tutorial for Beginners                                   | Video         | NULL                              | https://www.youtube.com/watch?v=CjxQTvq_kRo                                                                      |
+| 206 | Complete Social Media Marketing Course                                     | Video         | NULL                              | https://www.youtube.com/watch?v=q5ASe_sxRYI                                                                      |
+| 207 | Google Ads Full Course 2026                                                | Video         | NULL                              | https://www.youtube.com/watch?v=c-JLDF6r1Y8                                                                      |
+| 208 | Email Marketing Full Course 2026                                           | Video         | NULL                              | https://www.youtube.com/watch?v=zswJO8jxyuw                                                                      |
+| 209 | Project Management Full Course                                             | Video         | NULL                              | https://www.youtube.com/watch?v=uWPIsaYpY7U                                                                      |
+| 210 | Jira Tutorial for Beginners - Project Management                           | Video         | NULL                              | https://www.youtube.com/watch?v=nHuhojfjeUY                                                                      |
+| 211 | HTML Tutorial for Beginners - Apna College                                 | Video         | NULL                              | https://www.youtube.com/watch?v=HcOc7P5BMi4                                                                      |
+| 212 | HTML Full Course in Hindi - CodeWithHarry                                  | Video         | NULL                              | https://www.youtube.com/watch?v=k2DSi1zGEc8                                                                      |
+| 213 | Learn HTML - Full Tutorial for Beginners - freeCodeCamp                    | Video         | NULL                              | https://www.youtube.com/watch?v=kUMe1FH4CHE                                                                      |
+| 214 | Frontend Developer Step 1 - HTML Detailed Notes                            | Notes         | NULL                              | https://careercompass-1-i7uc.onrender.com/resources/Frontend_Developer_Step_1_HTML_Detailed_Notes.pdf            |
+| 215 | CSS Tutorial for Beginners - Apna College                                  | Video         | NULL                              | https://www.youtube.com/watch?v=ESnrn1kAD4E                                                                      |
+| 216 | CSS Tutorial in Hindi - CodeWithHarry                                      | Video         | NULL                              | https://www.youtube.com/watch?v=Edsxf_NBFrw                                                                      |
+| 217 | Responsive Web Development Complete Course - Sheryians Coding School       | Video         | NULL                              | https://www.youtube.com/watch?v=J_r6hBo9lO4                                                                      |
+| 218 | A CSS Learning Guide for Beginners - Chai aur Code                         | Video         | NULL                              | https://www.youtube.com/watch?v=aLzfFJb8rWo                                                                      |
+| 219 | Frontend Developer Step 2 - CSS Detailed Notes                             | Notes         | NULL                              | https://careercompass-1-i7uc.onrender.com/resources/Frontend_Developer_Step_2_CSS_Detailed_Notes.pdf             |
+| 220 | JavaScript Full Course - Sheryians Coding School                           | Video         | NULL                              | https://www.youtube.com/watch?v=a-wVHL0lpb0                                                                      |
+| 221 | JavaScript in 1 Shot - Chai aur Code                                       | Video         | NULL                              | https://www.youtube.com/watch?v=sscX432bMZo                                                                      |
+| 222 | JavaScript Tutorials in Hindi - CodeWithHarry                              | Video         | NULL                              | https://www.youtube.com/watch?v=ER9SspLe4Hg                                                                      |
+| 223 | Learn JavaScript - Full Course for Beginners - freeCodeCamp                | Video         | NULL                              | https://www.youtube.com/watch?v=PkZNo7MFNFg                                                                      |
+| 224 | Frontend Developer Step 3 - JavaScript Detailed Notes                      | Notes         | NULL                              | https://careercompass-1-i7uc.onrender.com/resources/Frontend_Developer_Step_3_JavaScript_Detailed_Notes.pdf      |
+| 230 | React Complete Course - CodeWithHarry                                      | Video         | NULL                              | https://www.youtube.com/playlist?list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt                                         |
+| 231 | Build a Portfolio Website & Deploy - Traversy Media                        | Video         | NULL                              | https://www.youtube.com/@TraversyMedia                                                                           |
+| 232 | ChatGPT Clone Project - CodeWithHarry                                      | Video         | NULL                              | https://www.youtube.com/watch?v=R4YvM7bL1JQ                                                                      |
+| 233 | Git & GitHub Tutorial for Beginners in Hindi - CodeWithHarry               | Video         | NULL                              | https://www.youtube.com/watch?v=gwWKnnCMQ5c                                                                      |
+| 234 | Chrome DevTools Crash Course - freeCodeCamp                                | Video         | NULL                              | https://www.youtube.com/watch?v=gTVpBbFWry8                                                                      |
+| 235 | Ultimate Resume Guide for Software Engineers - Apna College                | Video         | NULL                              | https://www.youtube.com/watch?v=y3R9e2L8I9E                                                                      |
+| 236 | Frontend Developer Step 4 - React Detailed Notes                           | Notes         | NULL                              | https://careercompass-1-i7uc.onrender.com/resources/Frontend_Developer_Step_4_React_Detailed_Notes.pdf           |
+| 237 | Frontend Developer Step 5 - Projects Detailed Notes                        | Notes         | NULL                              | https://careercompass-1-i7uc.onrender.com/resources/Frontend_Developer_Step_5_Projects_Detailed_Notes.pdf        |
+| 238 | Frontend Developer Step 6 - Tools Detailed Notes                           | Notes         | NULL                              | https://careercompass-1-i7uc.onrender.com/resources/Frontend_Developer_Step_6_Tools_Detailed_Notes.pdf           |
+| 239 | Frontend Developer Step 7 - Job Preparation Detailed Notes                 | Notes         | NULL                              | https://careercompass-1-i7uc.onrender.com/resources/Frontend_Developer_Step_7_Job_Preparation_Detailed_Notes.pdf |
+| 240 | Personal Portfolio Website using HTML CSS JavaScript - CodeWithHarry       | Video         | NULL                              | https://www.youtube.com/watch?v=oFnIe-RpkE4                                                                      |
+| 241 | How To Write a Resume That Gets You a Job - CodeWithHarry                  | Video         | NULL                              | https://www.youtube.com/watch?v=C7pNLIq3kOI                                                                      |
+| 242 | Frontend Developer Interview - React & JavaScript - Mohit Decodes          | Video         | NULL                              | https://www.youtube.com/watch?v=uYrfh-t9hKE                                                                      |
++-----+----------------------------------------------------------------------------+---------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------+-------------+-------------------+----------------+
+| roadmap_step_id | resource_id | resource_category | resource_order |
++-----------------+-------------+-------------------+----------------+
+|               1 |           1 | documentation     |              1 |
+|               1 |         214 | notes             |              1 |
+|               1 |         211 | video             |              1 |
+|               1 |         212 | video             |              2 |
+|               1 |         213 | video             |              3 |
+|               2 |           1 | documentation     |              1 |
+|               2 |         219 | notes             |              1 |
+|               2 |         215 | video             |              1 |
+|               2 |         216 | video             |              2 |
+|               2 |         217 | video             |              3 |
+|               2 |         218 | video             |              4 |
+|               3 |           1 | documentation     |              1 |
+|               3 |           4 | documentation     |              2 |
+|               3 |         224 | notes             |              1 |
+|               3 |          98 | video             |              1 |
+|               3 |         221 | video             |              2 |
+|               3 |         222 | video             |              3 |
+|               3 |         223 | video             |              4 |
+|               4 |          87 | documentation     |              1 |
+|               4 |         236 | notes             |              1 |
+|               4 |          99 | video             |              1 |
+|               4 |         230 | video             |              2 |
+|               5 |           1 | documentation     |              1 |
+|               5 |         237 | notes             |              1 |
+|               5 |         240 | video             |              2 |
+|               6 |           1 | documentation     |              1 |
+|               6 |          90 | documentation     |              2 |
+|               6 |          92 | documentation     |              3 |
+|               6 |          91 | documentation     |              4 |
+|               6 |          93 | documentation     |              5 |
+|               6 |         238 | notes             |              1 |
+|               6 |         233 | video             |              1 |
+|               6 |         234 | video             |              2 |
+|               7 |           1 | documentation     |              1 |
+|               7 |         113 | documentation     |              2 |
+|               7 |         239 | notes             |              1 |
+|               7 |         235 | video             |              1 |
+|               7 |         241 | video             |              2 |
+|               7 |         242 | video             |              3 |
+|               8 |           1 | documentation     |              1 |
+|               8 |         111 | documentation     |              2 |
+|               8 |           4 | documentation     |              3 |
+|               8 |          98 | video             |              1 |
+|               8 |         112 | video             |              2 |
+|               9 |           9 | documentation     |              1 |
+|               9 |         102 | video             |              1 |
+|              10 |           1 | documentation     |              1 |
+|              10 |           5 | documentation     |              2 |
+|              10 |          88 | documentation     |              3 |
+|              10 |           6 | documentation     |              4 |
+|              10 |          89 | documentation     |              5 |
+|              10 |         100 | video             |              1 |
+|              10 |         101 | video             |              2 |
+|              11 |           1 | documentation     |              1 |
+|              11 |           6 | documentation     |              2 |
+|              11 |         106 | video             |              1 |
+|              12 |          50 | documentation     |              1 |
+|              12 |         100 | video             |              1 |
+|              13 |          28 | documentation     |              1 |
+|              13 |          90 | documentation     |              2 |
+|              13 |          91 | documentation     |              3 |
+|              13 |          94 | documentation     |              4 |
+|              13 |          95 | documentation     |              5 |
+|              13 |         104 | video             |              1 |
+|              13 |         105 | video             |              2 |
+|              14 |           1 | documentation     |              1 |
+|              14 |          91 | documentation     |              2 |
+|              14 |         113 | documentation     |              3 |
+|              14 |         107 | video             |              1 |
+|              14 |         110 | video             |              2 |
+|              14 |         114 | video             |              3 |
+|              15 |           1 | documentation     |              1 |
+|              15 |          96 | video             |              1 |
+|              15 |          97 | video             |              2 |
+|              16 |           1 | documentation     |              1 |
+|              16 |           4 | documentation     |              2 |
+|              16 |          98 | video             |              1 |
+|              17 |          87 | documentation     |              1 |
+|              17 |          99 | video             |              1 |
+|              18 |           1 | documentation     |              1 |
+|              18 |           5 | documentation     |              2 |
+|              18 |          50 | documentation     |              3 |
+|              18 |          88 | documentation     |              4 |
+|              18 |           6 | documentation     |              5 |
+|              18 |          89 | documentation     |              6 |
+|              18 |         100 | video             |              1 |
+|              19 |           1 | documentation     |              1 |
+|              19 |           6 | documentation     |              2 |
+|              19 |           7 | documentation     |              3 |
+|              19 |           9 | documentation     |              4 |
+|              19 |         102 | video             |              1 |
+|              19 |         106 | video             |              2 |
+|              20 |          87 | documentation     |              1 |
+|              20 |          88 | documentation     |              2 |
+|              20 |          91 | documentation     |              3 |
+|              20 |           1 | documentation     |              4 |
+|              20 |           9 | documentation     |              5 |
+|              20 |         100 | video             |              1 |
+|              20 |         115 | video             |              1 |
+|              20 |         102 | video             |              2 |
+|              20 |         105 | video             |              3 |
+|              20 |         107 | video             |              4 |
+|              21 |           1 | documentation     |              1 |
+|              21 |          28 | documentation     |              2 |
+|              21 |          91 | documentation     |              3 |
+|              21 |         113 | documentation     |              4 |
+|              21 |          94 | documentation     |              5 |
+|              21 |          95 | documentation     |              6 |
+|              21 |         195 | video             |             99 |
+|              22 |           2 | documentation     |              1 |
+|              22 |          20 | documentation     |              2 |
+|              22 |         111 | documentation     |              3 |
+|              22 |         112 | video             |              1 |
+|              23 |          20 | documentation     |              1 |
+|              23 |           2 | documentation     |              2 |
+|              23 |          21 | documentation     |              3 |
+|              23 |         117 | video             |              1 |
+|              23 |         118 | video             |              2 |
+|              24 |           9 | documentation     |              1 |
+|              24 |           7 | documentation     |              2 |
+|              24 |         102 | video             |              1 |
+|              24 |         103 | video             |              2 |
+|              25 |         100 | documentation     |              1 |
+|              25 |          87 | documentation     |              2 |
+|              25 |          88 | documentation     |              3 |
+|              25 |          89 | documentation     |              4 |
+|              25 |          90 | documentation     |              5 |
+|              25 |          91 | documentation     |              6 |
+|              25 |         115 | video             |              1 |
+|              25 |         119 | video             |              2 |
+|              26 |          22 | documentation     |              1 |
+|              26 |          20 | documentation     |              2 |
+|              26 |         120 | video             |              1 |
+|              26 |         121 | video             |              2 |
+|              27 |          21 | documentation     |              1 |
+|              27 |          20 | documentation     |              2 |
+|              27 |         122 | video             |              1 |
+|              27 |         123 | video             |              2 |
+|              28 |         113 | documentation     |              1 |
+|              28 |         114 | video             |              1 |
+|              28 |         107 | video             |              2 |
+|              29 |         124 | Video             |              1 |
+|              30 |          23 | Documentation     |              1 |
+|              30 |          26 | Documentation     |              2 |
+|              30 |         125 | Video             |              1 |
+|              30 |         126 | Video             |              2 |
+|              31 |          24 | Documentation     |              1 |
+|              31 |          25 | Documentation     |              2 |
+|              31 |         127 | Video             |              1 |
+|              31 |         128 | Video             |              2 |
+|              32 |         134 | Documentation     |              1 |
+|              32 |         129 | Video             |              1 |
+|              33 |         130 | Video             |              1 |
+|              33 |         131 | Video             |              2 |
+|              34 |          23 | Documentation     |              1 |
+|              34 |          26 | Documentation     |              2 |
+|              34 |         132 | Video             |              1 |
+|              34 |         133 | Video             |              2 |
+|              35 |         196 | video             |             99 |
+|              36 |          61 | documentation     |              1 |
+|              36 |          54 | documentation     |              2 |
+|              36 |         143 | video             |              1 |
+|              36 |         144 | video             |              2 |
+|              37 |          90 | documentation     |              1 |
+|              37 |          91 | documentation     |              2 |
+|              37 |         104 | video             |              1 |
+|              37 |         145 | video             |              2 |
+|              38 |          28 | documentation     |              1 |
+|              38 |         105 | video             |              1 |
+|              39 |          29 | documentation     |              1 |
+|              39 |         146 | video             |              1 |
+|              40 |          27 | documentation     |              1 |
+|              40 |          55 | documentation     |              2 |
+|              40 |          56 | documentation     |              3 |
+|              40 |         147 | video             |              1 |
+|              41 |         135 | documentation     |              1 |
+|              41 |         148 | video             |              1 |
+|              42 |          60 | documentation     |              1 |
+|              42 |         149 | video             |              1 |
+|              43 |          89 | documentation     |              1 |
+|              43 |         139 | documentation     |              2 |
+|              43 |         124 | video             |              1 |
+|              43 |         150 | video             |              2 |
+|              44 |          35 | documentation     |              1 |
+|              44 |          36 | documentation     |              2 |
+|              44 |         151 | video             |              1 |
+|              45 |          31 | documentation     |              1 |
+|              45 |          32 | documentation     |              2 |
+|              45 |          33 | documentation     |              3 |
+|              45 |         152 | video             |              1 |
+|              45 |         153 | video             |              2 |
+|              46 |          34 | documentation     |              1 |
+|              46 |         154 | video             |              1 |
+|              47 |         137 | documentation     |              1 |
+|              47 |         155 | video             |              1 |
+|              48 |         136 | documentation     |              1 |
+|              48 |          28 | documentation     |              2 |
+|              48 |         156 | video             |              1 |
+|              49 |         113 | documentation     |              1 |
+|              49 |         157 | video             |              1 |
+|              49 |         114 | video             |              2 |
+|              50 |          89 | documentation     |              1 |
+|              50 |         139 | documentation     |              2 |
+|              50 |         124 | video             |              1 |
+|              50 |         150 | video             |              2 |
+|              51 |         138 | documentation     |              1 |
+|              51 |         158 | video             |              1 |
+|              52 |          35 | documentation     |              1 |
+|              52 |          36 | documentation     |              2 |
+|              52 |         151 | video             |              1 |
+|              53 |          32 | documentation     |              1 |
+|              53 |          33 | documentation     |              2 |
+|              53 |         153 | video             |              1 |
+|              54 |          34 | documentation     |              1 |
+|              54 |         159 | video             |              1 |
+|              55 |         136 | documentation     |              1 |
+|              55 |          28 | documentation     |              2 |
+|              55 |         156 | video             |              1 |
+|              56 |         113 | documentation     |              1 |
+|              56 |         160 | video             |              1 |
+|              56 |         114 | video             |              2 |
+|              57 |          89 | documentation     |              1 |
+|              57 |           9 | documentation     |              2 |
+|              57 |         124 | video             |              1 |
+|              57 |         102 | video             |              2 |
+|              58 |         138 | documentation     |              1 |
+|              58 |         139 | documentation     |              2 |
+|              58 |         158 | video             |              1 |
+|              58 |         150 | video             |              2 |
+|              59 |          37 | documentation     |              1 |
+|              59 |         161 | video             |              1 |
+|              60 |          35 | documentation     |              1 |
+|              60 |          36 | documentation     |              2 |
+|              60 |         151 | video             |              1 |
+|              61 |          34 | documentation     |              1 |
+|              61 |         159 | video             |              1 |
+|              62 |         142 | documentation     |              1 |
+|              62 |         162 | video             |              1 |
+|              63 |         113 | documentation     |              1 |
+|              63 |         163 | video             |              1 |
+|              63 |         114 | video             |              2 |
+|              64 |         140 | documentation     |              1 |
+|              64 |           9 | documentation     |              2 |
+|              64 |         164 | video             |              1 |
+|              64 |         102 | video             |              2 |
+|              65 |         138 | documentation     |              1 |
+|              65 |         158 | video             |              1 |
+|              66 |         141 | documentation     |              1 |
+|              66 |          37 | documentation     |              2 |
+|              66 |         165 | video             |              1 |
+|              67 |          76 | documentation     |              1 |
+|              67 |          43 | documentation     |              2 |
+|              67 |         166 | video             |              1 |
+|              68 |          38 | documentation     |              1 |
+|              68 |         167 | video             |              1 |
+|              69 |         107 | video             |              1 |
+|              70 |         113 | documentation     |              1 |
+|              70 |         168 | video             |              1 |
+|              70 |         114 | video             |              2 |
+|              71 |           9 | documentation     |              1 |
+|              71 |         102 | video             |              1 |
+|              72 |          89 | documentation     |              1 |
+|              72 |         124 | video             |              1 |
+|              73 |         170 | video             |              1 |
+|              74 |          44 | documentation     |              1 |
+|              74 |         171 | video             |              1 |
+|              75 |          27 | documentation     |              1 |
+|              75 |          55 | documentation     |              2 |
+|              75 |          56 | documentation     |              3 |
+|              75 |         147 | video             |              1 |
+|              76 |          45 | documentation     |              1 |
+|              76 |          47 | documentation     |              2 |
+|              76 |         172 | video             |              1 |
+|              77 |          20 | documentation     |              1 |
+|              77 |          21 | documentation     |              2 |
+|              77 |         113 | documentation     |              3 |
+|              77 |         122 | video             |              1 |
+|              77 |         123 | video             |              2 |
+|              77 |         114 | video             |              3 |
+|              78 |          54 | documentation     |              1 |
+|              78 |          61 | documentation     |              2 |
+|              78 |         144 | video             |              1 |
+|              78 |         143 | video             |              2 |
+|              79 |          50 | documentation     |              1 |
+|              79 |         173 | video             |              1 |
+|              80 |          61 | documentation     |              1 |
+|              80 |          48 | documentation     |              2 |
+|              80 |          49 | documentation     |              3 |
+|              80 |         143 | video             |              1 |
+|              80 |         174 | video             |              2 |
+|              81 |          51 | documentation     |              1 |
+|              81 |         175 | video             |              1 |
+|              82 |         169 | documentation     |              1 |
+|              82 |         175 | video             |              1 |
+|              83 |          48 | documentation     |              1 |
+|              83 |          49 | documentation     |              2 |
+|              83 |         197 | video             |             99 |
+|              84 |          51 | documentation     |              1 |
+|              84 |         113 | documentation     |              2 |
+|              84 |         175 | video             |              1 |
+|              84 |         114 | video             |              2 |
+|              85 |          54 | documentation     |              1 |
+|              85 |          61 | documentation     |              2 |
+|              85 |         144 | video             |              1 |
+|              85 |         143 | video             |              2 |
+|              86 |          50 | documentation     |              1 |
+|              86 |         173 | video             |              1 |
+|              87 |          50 | documentation     |              1 |
+|              87 |          52 | documentation     |              2 |
+|              87 |         176 | video             |              1 |
+|              88 |          48 | documentation     |              1 |
+|              88 |          49 | documentation     |              2 |
+|              88 |         174 | video             |              1 |
+|              89 |          48 | documentation     |              1 |
+|              89 |          49 | documentation     |              2 |
+|              89 |         198 | video             |             99 |
+|              90 |          50 | documentation     |              1 |
+|              90 |         174 | video             |              1 |
+|              91 |         113 | documentation     |              1 |
+|              91 |         114 | video             |              1 |
+|              92 |          54 | documentation     |              1 |
+|              92 |          61 | documentation     |              2 |
+|              92 |         144 | video             |              1 |
+|              92 |         143 | video             |              2 |
+|              93 |          50 | documentation     |              1 |
+|              93 |         173 | video             |              1 |
+|              94 |          53 | documentation     |              1 |
+|              94 |         175 | video             |              1 |
+|              95 |          48 | documentation     |              1 |
+|              95 |          49 | documentation     |              2 |
+|              95 |         174 | video             |              1 |
+|              96 |          53 | documentation     |              1 |
+|              96 |         178 | video             |              1 |
+|              96 |         175 | video             |              2 |
+|              97 |          50 | documentation     |              1 |
+|              97 |         107 | video             |              1 |
+|              98 |          51 | documentation     |              1 |
+|              98 |         113 | documentation     |              2 |
+|              98 |         175 | video             |              1 |
+|              98 |         114 | video             |              2 |
+|              99 |          61 | documentation     |              1 |
+|              99 |          54 | documentation     |              2 |
+|              99 |         143 | video             |              1 |
+|              99 |         144 | video             |              2 |
+|             100 |          27 | documentation     |              1 |
+|             100 |          55 | documentation     |              2 |
+|             100 |          56 | documentation     |              3 |
+|             100 |         147 | video             |              1 |
+|             101 |          27 | documentation     |              1 |
+|             101 |          56 | documentation     |              2 |
+|             101 |         178 | video             |              1 |
+|             102 |          28 | documentation     |              1 |
+|             102 |          29 | documentation     |              2 |
+|             102 |         105 | video             |              1 |
+|             102 |         146 | video             |              2 |
+|             103 |          57 | documentation     |              1 |
+|             103 |         177 | video             |              1 |
+|             104 |          58 | documentation     |              1 |
+|             104 |         177 | video             |              1 |
+|             105 |          27 | documentation     |              1 |
+|             105 |         113 | documentation     |              2 |
+|             105 |         178 | video             |              1 |
+|             105 |         114 | video             |              2 |
+|             106 |          61 | documentation     |              1 |
+|             106 |          54 | documentation     |              2 |
+|             106 |         143 | video             |              1 |
+|             106 |         144 | video             |              2 |
+|             107 |          27 | documentation     |              1 |
+|             107 |          55 | documentation     |              2 |
+|             107 |          56 | documentation     |              3 |
+|             107 |         147 | video             |              1 |
+|             108 |          58 | documentation     |              1 |
+|             108 |         178 | video             |              1 |
+|             109 |          28 | documentation     |              1 |
+|             109 |          29 | documentation     |              2 |
+|             109 |         105 | video             |              1 |
+|             109 |         146 | video             |              2 |
+|             110 |          57 | documentation     |              1 |
+|             110 |         177 | video             |              1 |
+|             111 |          58 | documentation     |              1 |
+|             111 |         177 | video             |              1 |
+|             112 |          27 | documentation     |              1 |
+|             112 |         113 | documentation     |              2 |
+|             112 |         178 | video             |              1 |
+|             112 |         114 | video             |              2 |
+|             113 |          61 | documentation     |              1 |
+|             113 |          54 | documentation     |              2 |
+|             113 |         143 | video             |              1 |
+|             113 |         144 | video             |              2 |
+|             114 |          27 | documentation     |              1 |
+|             114 |          55 | documentation     |              2 |
+|             114 |          56 | documentation     |              3 |
+|             114 |         147 | video             |              1 |
+|             115 |          28 | documentation     |              1 |
+|             115 |          29 | documentation     |              2 |
+|             115 |         105 | video             |              1 |
+|             115 |         146 | video             |              2 |
+|             116 |          57 | documentation     |              1 |
+|             116 |         135 | documentation     |              2 |
+|             116 |         177 | video             |              1 |
+|             116 |         148 | video             |              2 |
+|             117 |          60 | documentation     |              1 |
+|             117 |         169 | documentation     |              2 |
+|             117 |         149 | video             |              1 |
+|             117 |         175 | video             |              2 |
+|             118 |          58 | documentation     |              1 |
+|             118 |         177 | video             |              1 |
+|             119 |          27 | documentation     |              1 |
+|             119 |         113 | documentation     |              2 |
+|             119 |         178 | video             |              1 |
+|             119 |         114 | video             |              2 |
+|             120 |          63 | documentation     |              1 |
+|             120 |         180 | video             |              1 |
+|             121 |          62 | documentation     |              1 |
+|             121 |         180 | video             |              1 |
+|             122 |          63 | documentation     |              1 |
+|             122 |         180 | video             |              1 |
+|             123 |          62 | documentation     |              1 |
+|             123 |         181 | video             |              1 |
+|             124 |          63 | documentation     |              1 |
+|             124 |         179 | documentation     |              2 |
+|             124 |         182 | video             |              1 |
+|             125 |           1 | documentation     |              1 |
+|             125 |         107 | video             |              1 |
+|             126 |         113 | documentation     |              1 |
+|             126 |         114 | video             |              1 |
+|             127 |          65 | documentation     |              1 |
+|             127 |         181 | video             |             99 |
+|             128 |          66 | documentation     |              1 |
+|             128 |         183 | video             |              1 |
+|             129 |          64 | documentation     |              1 |
+|             129 |         199 | video             |             99 |
+|             130 |          62 | documentation     |              1 |
+|             130 |         180 | video             |              1 |
+|             130 |         181 | video             |              2 |
+|             131 |          66 | documentation     |              1 |
+|             131 |         183 | video             |              1 |
+|             132 |           1 | documentation     |              1 |
+|             132 |         107 | video             |              1 |
+|             133 |         113 | documentation     |              1 |
+|             133 |         114 | video             |              1 |
+|             134 |          63 | documentation     |              1 |
+|             134 |          65 | documentation     |              2 |
+|             134 |         180 | video             |              1 |
+|             135 |          62 | documentation     |              1 |
+|             135 |         180 | video             |              1 |
+|             136 |          66 | documentation     |              1 |
+|             136 |          64 | documentation     |              2 |
+|             136 |         183 | video             |              1 |
+|             137 |          62 | documentation     |              1 |
+|             137 |         181 | video             |              1 |
+|             138 |          63 | documentation     |              1 |
+|             138 |         179 | documentation     |              2 |
+|             138 |         182 | video             |              1 |
+|             139 |           1 | documentation     |              1 |
+|             139 |         107 | video             |              1 |
+|             140 |         113 | documentation     |              1 |
+|             140 |         114 | video             |              1 |
+|             141 |          73 | Course            |              2 |
+|             141 |          74 | Course            |              3 |
+|             141 |          84 | Course            |              4 |
+|             141 |          71 | Documentation     |              1 |
+|             141 |         200 | video             |             99 |
+|             142 |          66 | documentation     |              1 |
+|             142 |         187 | documentation     |              1 |
+|             142 |         183 | video             |              2 |
+|             143 |          78 | documentation     |              1 |
+|             143 |          86 | documentation     |              2 |
+|             143 |         201 | video             |             99 |
+|             144 |         185 | documentation     |              1 |
+|             144 |         200 | video             |             99 |
+|             145 |         186 | documentation     |              1 |
+|             145 |         202 | video             |             99 |
+|             146 |           1 | documentation     |              1 |
+|             146 |         107 | video             |              2 |
+|             147 |          73 | documentation     |              1 |
+|             147 |         113 | documentation     |              1 |
+|             147 |          74 | documentation     |              2 |
+|             147 |         114 | video             |              2 |
+|             148 |          75 | documentation     |              1 |
+|             148 |         203 | video             |             99 |
+|             149 |         140 | documentation     |              1 |
+|             149 |           9 | documentation     |              3 |
+|             149 |         164 | video             |              2 |
+|             149 |         102 | video             |              4 |
+|             150 |          75 | documentation     |              1 |
+|             150 |         203 | video             |             99 |
+|             151 |          78 | documentation     |              1 |
+|             151 |          86 | documentation     |              2 |
+|             151 |         201 | video             |             99 |
+|             152 |          76 | documentation     |              1 |
+|             152 |          43 | documentation     |              3 |
+|             152 |         142 | documentation     |              4 |
+|             152 |         166 | video             |              2 |
+|             152 |         162 | video             |              5 |
+|             153 |           1 | documentation     |              1 |
+|             153 |         107 | video             |              2 |
+|             154 |         113 | documentation     |              1 |
+|             154 |         193 | documentation     |              1 |
+|             154 |         114 | video             |              2 |
+|             155 |          79 | documentation     |              1 |
+|             155 |          80 | documentation     |              2 |
+|             155 |         204 | video             |             99 |
+|             156 |         188 | documentation     |              1 |
+|             156 |          79 | documentation     |              2 |
+|             156 |         205 | video             |             99 |
+|             157 |          82 | documentation     |              1 |
+|             157 |          80 | documentation     |              2 |
+|             157 |         206 | video             |             99 |
+|             158 |          79 | documentation     |              1 |
+|             158 |          81 | documentation     |              2 |
+|             158 |         207 | video             |             99 |
+|             159 |          80 | documentation     |              1 |
+|             159 |         208 | video             |             99 |
+|             160 |           1 | documentation     |              1 |
+|             160 |         107 | video             |              2 |
+|             161 |          79 | documentation     |              1 |
+|             161 |         113 | documentation     |              1 |
+|             161 |          80 | documentation     |              2 |
+|             161 |          82 | documentation     |              3 |
+|             161 |         114 | video             |              2 |
+|             162 |          83 | documentation     |              1 |
+|             162 |          72 | documentation     |              2 |
+|             162 |         209 | video             |             99 |
+|             163 |          78 | documentation     |              1 |
+|             163 |          86 | documentation     |              2 |
+|             163 |         201 | video             |             99 |
+|             164 |         189 | documentation     |              1 |
+|             164 |         209 | video             |             99 |
+|             165 |          83 | documentation     |              1 |
+|             165 |         209 | video             |             99 |
+|             166 |         190 | documentation     |              1 |
+|             166 |         191 | documentation     |              2 |
+|             166 |         192 | documentation     |              3 |
+|             166 |         210 | video             |             99 |
+|             167 |           1 | documentation     |              1 |
+|             167 |         107 | video             |              2 |
+|             168 |         113 | documentation     |              1 |
+|             168 |         194 | documentation     |              1 |
+|             168 |          72 | documentation     |              2 |
+|             168 |         114 | video             |              2 |
++-----------------+-------------+-------------------+----------------+
