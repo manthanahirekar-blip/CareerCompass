@@ -116,7 +116,7 @@ if (!stepId || isNaN(stepId)) {
 
 } else {
 
-    fetch(`https://careercompass-1yfu.onrender.com/api/roadmap-steps/${stepId}/resources`)
+    fetch(`http://127.0.0.1:5000/api/roadmap-steps/${stepId}/resources`)
 
         .then((response) => {
 
