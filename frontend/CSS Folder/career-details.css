@@ -260,7 +260,7 @@ li {
 
 .career-hero {
     width: 100%;
-    background: #151e55;
+    background: linear-gradient(135deg, #111827 0%, #1F2937 100%);
     position: relative;
     overflow: hidden;
     padding: 4.5rem 0 5rem;
@@ -301,13 +301,16 @@ li {
 }
 
 .career-category {
-    width: fit-content;
-    background-color: #5B5DF6;
-    padding: 8px 20px;
-    border: none;
-    border-radius: 20px;
-    font-size: .85rem;
-    font-weight: 600;
+    display: inline-block;
+    background: rgba(139, 92, 246, 0.15);
+    color: #8B5CF6;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    /* margin-bottom: 24px; */
+    border: 1px solid rgba(139, 92, 246, 0.3);
 }
 
 .career-title {
@@ -385,10 +388,21 @@ li {
 }
 
 .start-learning-btn {
-    margin-top: 1rem;
+    background: linear-gradient(135deg, #6D5DF6, #5B5DF6);
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 28px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(91, 93, 246, 0.35);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: .5rem;
+    justify-content: center;
+
 }
 
 
