@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - CareerCompass</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS Folder/navbar.css">
+    <link rel="stylesheet" href="CSS Folder/footer.css">
+    <link rel="stylesheet" href="CSS Folder/dashboard.css">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <main class="dashboard">
+
+        <div class="dashboard-container">
+
+            <!-- WELCOME -->
+            <section class="welcome-section">
+
+                <div class="welcome-content">
+
+                    <span class="welcome-badge">
+                        <i class="ri-dashboard-line"></i>
+                        MY DASHBOARD
+                    </span>
+
+                    <h1>
+                        Welcome back,
+                        <span id="dashboardUserName">User</span> 👋
+                    </h1>
+
+                    <p>
+                        Track your learning progress and continue building the
+                        skills needed for your career.
+                    </p>
+
+                </div>
+
+                <div class="welcome-profile">
+
+                    <div class="profile-avatar">
+                        <i class="ri-user-3-line"></i>
+                    </div>
+
+                    <div class="profile-info">
+                        <span class="profile-label">Logged in as</span>
+                        <strong id="dashboardUserEmail">user@example.com</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- TOP STATS -->
+            <section class="stats-grid">
+
+                <article class="stat-card">
+
+                    <div class="stat-icon blue">
+                        <i class="ri-road-map-line"></i>
+                    </div>
+
+                    <div class="stat-content">
+                        <span class="stat-label">Current Career</span>
+                        <h3 id="currentCareer">Not Selected</h3>
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon green">
+                        <i class="ri-checkbox-circle-line"></i>
+                    </div>
+
+                    <div class="stat-content">
+                        <span class="stat-label">Steps Completed</span>
+                        <h3>
+                            <span id="completedSteps">0</span>
+                            <small>/ <span id="totalSteps">0</span></small>
+                        </h3>
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon purple">
+                        <i class="ri-pie-chart-line"></i>
+                    </div>
+
+                    <div class="stat-content">
+                        <span class="stat-label">Overall Progress</span>
+                        <h3>
+                            <span id="overallProgress">0</span>%
+                        </h3>
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon orange">
+                        <i class="ri-bar-chart-2-line"></i>
+                    </div>
+
+                    <div class="stat-content">
+                        <span class="stat-label">Learning Level</span>
+                        <h3 id="careerDifficulty">—</h3>
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- LEARNING OVERVIEW -->
+            <!-- =================================================
+     MAIN DASHBOARD GRID
+================================================== -->
+
+            <section class="dashboard-grid">
+
+
+                <!-- =================================================
+         YOUR JOURNEY
+    ================================================== -->
+
+                <div class="dashboard-card journey-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="section-label">
+                                YOUR JOURNEY
+                            </span>
+
+                            <h2 id="journeyTitle">
+                                Learning Overview
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="journey-content">
+
+                        <div class="journey-icon">
+
+                            <i class="ri-road-map-line"></i>
+
+                        </div>
+
+
+                        <div class="journey-main">
+
+                            <div class="journey-topline">
+
+                                <div>
+
+                                    <span class="journey-label">
+                                        ROADMAP PROGRESS
+                                    </span>
+
+                                    <strong id="journeyProgressText">
+                                        0% Complete
+                                    </strong>
+
+                                </div>
+
+
+                                <span class="journey-count">
+
+                                    <span id="journeyCompleted">
+                                        0
+                                    </span>
+
+                                    /
+
+                                    <span id="journeyTotal">
+                                        0
+                                    </span>
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="journey-progress-track">
+
+                                <div class="journey-progress-fill" id="journeyProgressFill">
+                                </div>
+
+                            </div>
+
+
+                            <p id="journeyDescription">
+
+                                Start following your roadmap to build
+                                your skills step by step.
+
+                            </p>
+
+
+                            <a href="careers.html" class="primary-btn" id="journeyButton">
+
+                                <i class="ri-play-circle-line"></i>
+
+                                Start Learning
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+         LEARNING PROGRESS
+    ================================================== -->
+
+                <div class="dashboard-card progress-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="section-label">
+                                PROGRESS
+                            </span>
+
+                            <h2>
+                                Learning Progress
+                            </h2>
+
+                        </div>
+
+
+                        <div class="progress-percentage" id="progressPercentage">
+
+                            0%
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-circle-wrapper">
+
+                        <div class="progress-circle" id="progressCircle">
+
+                            <div class="progress-circle-inner">
+
+                                <strong id="progressCircleValue">
+                                    0%
+                                </strong>
+
+                                <span>
+                                    Complete
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-details">
+
+                        <div class="progress-detail">
+
+                            <span>
+                                Completed
+                            </span>
+
+                            <strong id="progressCompleted">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="progress-detail">
+
+                            <span>
+                                Remaining
+                            </span>
+
+                            <strong id="progressRemaining">
+                                0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- QUICK ACTIONS -->
+            <section class="quick-actions-section">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">QUICK ACTIONS</span>
+                        <h2>Continue with CareerCompass</h2>
+                    </div>
+
+                    <p>
+                        Jump directly to the parts of your career journey you use most.
+                    </p>
+
+                </div>
+
+
+                <div class="action-grid">
+
+                    <a href="careers.html" class="action-card">
+
+                        <div class="action-icon blue">
+                            <i class="ri-compass-3-line"></i>
+                        </div>
+
+                        <div class="action-content">
+                            <h3>Explore Careers</h3>
+                            <p>
+                                Discover careers, skills, salary ranges and career opportunities.
+                            </p>
+                        </div>
+
+                        <i class="ri-arrow-right-up-line action-arrow"></i>
+
+                    </a>
+
+
+                    <a href="roadmap-details.html" class="action-card" id="continueRoadmapCard">
+
+                        <div class="action-icon purple">
+                            <i class="ri-road-map-line"></i>
+                        </div>
+
+                        <div class="action-content">
+                            <h3>Continue Roadmap</h3>
+                            <p id="continueRoadmapText">
+                                Follow your selected career roadmap and complete the next steps.
+                            </p>
+                        </div>
+
+                        <i class="ri-arrow-right-up-line action-arrow"></i>
+
+                    </a>
+
+
+                    <a href="careers.html" class="action-card" id="careerDetailsCard">
+
+                        <div class="action-icon green">
+                            <i class="ri-briefcase-4-line"></i>
+                        </div>
+
+                        <div class="action-content">
+
+                            <h3>Career Details</h3>
+
+                            <p id="careerDetailsText">
+                                View your selected career, required skills,
+                                responsibilities and career information.
+                            </p>
+
+                        </div>
+
+                        <i class="ri-arrow-right-up-line action-arrow"></i>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- ACCOUNT -->
+            <section class="account-card">
+
+                <div class="account-icon">
+                    <i class="ri-user-settings-line"></i>
+                </div>
+
+                <div class="account-content">
+
+                    <span class="section-label">YOUR ACCOUNT</span>
+
+                    <h2>Manage Your Profile</h2>
+
+                    <p>
+                        Your account and learning progress are securely connected
+                        to your CareerCompass profile.
+                    </p>
+
+                </div>
+
+                <button class="secondary-btn" id="logoutBtn">
+                    <i class="ri-logout-box-r-line"></i>
+                    Logout
+                </button>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <div id="footer"></div>
+
+    <script src="JS Folder/navbar.js"></script>
+    <script src="JS Folder/footer.js"></script>
+    <script src="JS Folder/dashboard.js"></script>
+
+</body>
+
+</html>

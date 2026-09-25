@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | CareerCompass</title>
+
+    <!-- Remix Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+        rel="stylesheet"
+    >
+
+    <!-- Auth CSS -->
+    <link rel="stylesheet" href="CSS Folder/auth.css">
+</head>
+
+<body>
+
+    <!-- ================================
+         AUTH PAGE
+    ================================= -->
+
+    <main class="auth-page">
+
+        <!-- ================================
+             LEFT SIDE - BRANDING
+        ================================= -->
+
+        <section class="auth-brand">
+
+            <div class="brand-content">
+
+                <a href="index.html" class="brand-logo">
+                    <span class="logo-icon">
+                        <i class="ri-compass-3-line"></i>
+                    </span>
+
+                    <span>Career<span>Compass</span></span>
+                </a>
+
+                <div class="brand-text">
+
+                    <span class="brand-badge">
+                        <i class="ri-rocket-line"></i>
+                        Start Your Career Journey
+                    </span>
+
+                    <h1>
+                        Build Your
+                        <span>Career Path</span>
+                        With Confidence.
+                    </h1>
+
+                    <p>
+                        Create your CareerCompass account and start exploring
+                        careers, learning roadmaps, resources and opportunities
+                        designed for students.
+                    </p>
+
+                </div>
+
+                <!-- Benefits -->
+
+                <div class="auth-benefits">
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="ri-compass-3-line"></i>
+                        </div>
+
+                        <div>
+                            <h3>Explore Careers</h3>
+                            <p>Discover career paths that match your interests.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="ri-road-map-line"></i>
+                        </div>
+
+                        <div>
+                            <h3>Follow Roadmaps</h3>
+                            <p>Learn step-by-step with structured roadmaps.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="ri-book-open-line"></i>
+                        </div>
+
+                        <div>
+                            <h3>Learn With Resources</h3>
+                            <p>Access curated videos, notes and documentation.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             RIGHT SIDE - REGISTER FORM
+        ================================= -->
+
+        <section class="auth-form-section">
+
+            <div class="auth-form-container">
+
+                <!-- Mobile Logo -->
+
+                <a href="index.html" class="mobile-brand-logo">
+                    <span class="logo-icon">
+                        <i class="ri-compass-3-line"></i>
+                    </span>
+
+                    <span>Career<span>Compass</span></span>
+                </a>
+
+
+                <!-- Heading -->
+
+                <div class="auth-heading">
+
+                    <span class="heading-icon">
+                        <i class="ri-user-add-line"></i>
+                    </span>
+
+                    <h2>Create Your Account</h2>
+
+                    <p>
+                        Join CareerCompass and start building your career journey.
+                    </p>
+
+                </div>
+
+
+                <!-- Register Form -->
+
+                <form id="registerForm" class="auth-form" novalidate>
+
+                    <!-- Full Name -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="ri-user-line input-icon"></i>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+                        <small class="form-error" id="nameError"></small>
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="ri-mail-line input-icon"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email address"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                        <small class="form-error" id="emailError"></small>
+
+                    </div>
+
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="ri-lock-line input-icon"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-target="password"
+                                aria-label="Show password"
+                            >
+                                <i class="ri-eye-line"></i>
+                            </button>
+
+                        </div>
+
+                        <!-- Password Strength -->
+
+                        <div class="password-strength">
+
+                            <div class="strength-bars">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <span id="strengthText">
+                                Password strength
+                            </span>
+
+                        </div>
+
+                        <small class="form-error" id="passwordError"></small>
+
+                    </div>
+
+
+                    <!-- Confirm Password -->
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="ri-lock-password-line input-icon"></i>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm your password"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-target="confirmPassword"
+                                aria-label="Show password"
+                            >
+                                <i class="ri-eye-line"></i>
+                            </button>
+
+                        </div>
+
+                        <small
+                            class="form-error"
+                            id="confirmPasswordError"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- Terms -->
+
+                    <div class="terms-group">
+
+                        <label class="checkbox-label">
+
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                name="terms"
+                            >
+
+                            <span class="custom-checkbox">
+                                <i class="ri-check-line"></i>
+                            </span>
+
+                            <span>
+                                I agree to the
+                                <a href="#">Terms & Conditions</a>
+                                and
+                                <a href="#">Privacy Policy</a>.
+                            </span>
+
+                        </label>
+
+                        <small class="form-error" id="termsError"></small>
+
+                    </div>
+
+
+                    <!-- Submit -->
+
+                    <button
+                        type="submit"
+                        class="auth-submit-btn"
+                        id="registerBtn"
+                    >
+
+                        <span>Create Account</span>
+
+                        <i class="ri-arrow-right-line"></i>
+
+                    </button>
+
+
+                    <!-- Success/Error Message -->
+
+                    <div
+                        class="form-message"
+                        id="formMessage"
+                        role="alert"
+                    ></div>
+
+                </form>
+
+
+                <!-- Login Link -->
+
+                <div class="auth-switch">
+
+                    <span>Already have an account?</span>
+
+                    <a href="login.html">
+                        Login
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- Back Home -->
+
+                <a href="index.html" class="back-home">
+                    <i class="ri-arrow-left-line"></i>
+                    Back to CareerCompass
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Auth JavaScript -->
+
+    <script src="JS Folder/auth.js"></script>
+
+</body>
+
+</html>

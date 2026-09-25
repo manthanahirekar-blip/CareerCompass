@@ -1,21 +1,4 @@
 // ==========================================
-// Mobile menu (same pattern as every other page)
-// ==========================================
-const mobileMenu = document.getElementById('mobile-menu');
-const navLinks = document.querySelector('.nav-links');
-mobileMenu.addEventListener('click', () => {
-    mobileMenu.classList.toggle('is-active');
-    navLinks.classList.toggle('active');
-});
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        mobileMenu.classList.remove('is-active');
-        navLinks.classList.remove('active');
-    });
-});
-
-
-// ==========================================
 // State containers
 // ==========================================
 const loadingState = document.getElementById("loadingState");

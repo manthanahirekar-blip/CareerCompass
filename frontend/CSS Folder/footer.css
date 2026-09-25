@@ -1,0 +1,493 @@
+/* =========================================================
+   CAREERCOMPASS - COMMON FOOTER
+========================================================= */
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.cc-footer {
+    width: 100%;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.cc-footer-container {
+    width: min(1400px, calc(100% - 116px));
+
+    margin: 0 auto;
+
+    padding: 52px 0 0;
+}
+
+
+/* =========================================================
+   MAIN FOOTER GRID
+========================================================= */
+
+.cc-footer-main {
+
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1fr
+        1fr
+        1fr
+        1.45fr;
+
+    gap: 55px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.cc-footer-brand {
+    max-width: 390px;
+}
+
+
+.cc-footer-logo {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    text-decoration: none;
+}
+
+
+.cc-footer-logo-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+}
+
+
+.cc-footer-logo-icon svg {
+    width: 45px;
+    height: 45px;
+
+    display: block;
+}
+
+
+.cc-footer-logo-text {
+    font-size: 25px;
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: -0.8px;
+
+    white-space: nowrap;
+}
+
+
+.cc-footer-logo-career {
+    color: #111827;
+}
+
+
+.cc-footer-logo-compass {
+    color: #5b5df6;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.cc-footer-description {
+    margin: 24px 0 23px;
+
+    max-width: 390px;
+
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
+
+.cc-footer-socials {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.cc-footer-social {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 10px;
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.cc-footer-social:hover {
+    color: #5b5df6;
+
+    background: #f5f3ff;
+
+    border-color: #ddd6fe;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FOOTER COLUMNS
+========================================================= */
+
+.cc-footer-column h3,
+.cc-footer-explore h3 {
+    margin: 3px 0 28px;
+
+    color: #111827;
+
+    font-size: 18px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+.cc-footer-column ul {
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 19px;
+}
+
+
+.cc-footer-column li {
+    margin: 0;
+
+    padding: 0;
+}
+
+
+.cc-footer-column a {
+    color: #64748b;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    line-height: 1.4;
+
+    transition: color 0.2s ease;
+}
+
+
+.cc-footer-column a:hover {
+    color: #5b5df6;
+}
+
+
+/* =========================================================
+   READY TO EXPLORE
+========================================================= */
+
+.cc-footer-explore h3 {
+    margin-bottom: 19px;
+}
+
+
+.cc-footer-explore p {
+    max-width: 290px;
+
+    margin: 0 0 21px;
+
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   EXPLORE BUTTON
+========================================================= */
+
+.cc-footer-explore-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 13px 25px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6D5DF6,
+            #5B5DF6
+        );
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 6px 18px rgba(91, 93, 246, 0.15);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.cc-footer-explore-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 22px rgba(91, 93, 246, 0.25);
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.cc-footer-divider {
+    width: 100%;
+
+    height: 1px;
+
+    margin-top: 58px;
+
+    background: #e2e8f0;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.cc-footer-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 70px;
+}
+
+
+.cc-footer-bottom p {
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 16px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1150px) {
+
+    .cc-footer-container {
+        width: calc(100% - 70px);
+    }
+
+
+    .cc-footer-main {
+        grid-template-columns:
+            1.7fr
+            1fr
+            1fr
+            1fr;
+
+        gap: 40px;
+    }
+
+
+    .cc-footer-explore {
+        grid-column: 2 / 5;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .cc-footer-container {
+        width: calc(100% - 50px);
+
+        padding-top: 45px;
+    }
+
+
+    .cc-footer-main {
+        grid-template-columns:
+            1.5fr
+            1fr
+            1fr;
+
+        gap: 40px 30px;
+    }
+
+
+    .cc-footer-brand {
+        grid-column: 1 / -1;
+
+        max-width: 500px;
+    }
+
+
+    .cc-footer-explore {
+        grid-column: 1 / -1;
+    }
+
+
+    .cc-footer-divider {
+        margin-top: 45px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .cc-footer-container {
+        width: calc(100% - 32px);
+
+        padding-top: 40px;
+    }
+
+
+    .cc-footer-main {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .cc-footer-brand {
+        grid-column: auto;
+    }
+
+
+    .cc-footer-explore {
+        grid-column: auto;
+    }
+
+
+    .cc-footer-logo-text {
+        font-size: 22px;
+    }
+
+
+    .cc-footer-description {
+        font-size: 14px;
+
+        margin-top: 20px;
+    }
+
+
+    .cc-footer-column h3,
+    .cc-footer-explore h3 {
+        font-size: 17px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .cc-footer-column a,
+    .cc-footer-explore p {
+        font-size: 14px;
+    }
+
+
+    .cc-footer-bottom {
+        min-height: 60px;
+    }
+
+
+    .cc-footer-bottom p {
+        font-size: 13px;
+    }
+
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | CareerCompass</title>
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Authentication CSS -->
+    <link rel="stylesheet" href="CSS Folder/auth.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         AUTH PAGE
+    ========================================== -->
+
+    <main class="auth-page">
+
+        <!-- =====================================
+             LEFT SIDE - BRANDING
+        ====================================== -->
+
+        <section class="auth-brand">
+
+            <div class="brand-content">
+
+                <!-- Logo -->
+
+                <a href="index.html" class="brand-logo">
+
+                    <span class="logo-icon">
+                        <i class="ri-compass-3-line"></i>
+                    </span>
+
+                    <span>
+                        Career<span>Compass</span>
+                    </span>
+
+                </a>
+
+
+                <!-- Brand Content -->
+
+                <div class="brand-text">
+
+                    <span class="brand-badge">
+                        <i class="ri-compass-3-line"></i>
+                        Continue Your Career Journey
+                    </span>
+
+                    <h1>
+                        Your Career.
+                        <span>Your Direction.</span>
+                        Your Future.
+                    </h1>
+
+                    <p>
+                        Sign in to continue exploring career paths,
+                        follow learning roadmaps and access resources
+                        designed to help you move forward.
+                    </p>
+
+                </div>
+
+
+                <!-- Benefits -->
+
+                <div class="auth-benefits">
+
+                    <!-- Benefit 1 -->
+
+                    <div class="benefit-item">
+
+                        <div class="benefit-icon">
+                            <i class="ri-compass-3-line"></i>
+                        </div>
+
+                        <div>
+                            <h3>Explore Career Paths</h3>
+
+                            <p>
+                                Find career options and understand
+                                what each path requires.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Benefit 2 -->
+
+                    <div class="benefit-item">
+
+                        <div class="benefit-icon">
+                            <i class="ri-road-map-line"></i>
+                        </div>
+
+                        <div>
+                            <h3>Continue Your Roadmap</h3>
+
+                            <p>
+                                Follow structured learning steps
+                                and track your career journey.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Benefit 3 -->
+
+                    <div class="benefit-item">
+
+                        <div class="benefit-icon">
+                            <i class="ri-book-open-line"></i>
+                        </div>
+
+                        <div>
+                            <h3>Access Learning Resources</h3>
+
+                            <p>
+                                Learn through curated videos,
+                                notes and documentation.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             RIGHT SIDE - LOGIN FORM
+        ====================================== -->
+
+        <section class="auth-form-section">
+
+            <div class="auth-form-container">
+
+
+                <!-- Mobile Logo -->
+
+                <a href="index.html" class="mobile-brand-logo">
+
+                    <span class="logo-icon">
+                        <i class="ri-compass-3-line"></i>
+                    </span>
+
+                    <span>
+                        Career<span>Compass</span>
+                    </span>
+
+                </a>
+
+
+                <!-- Heading -->
+
+                <div class="auth-heading">
+
+                    <span class="heading-icon">
+                        <i class="ri-login-box-line"></i>
+                    </span>
+
+                    <h2>Welcome Back</h2>
+
+                    <p>
+                        Login to continue your CareerCompass journey.
+                    </p>
+
+                </div>
+
+
+                <!-- Login Form -->
+
+                <form id="loginForm" class="auth-form" autocomplete="off">
+
+
+                    <!-- =================================
+                         EMAIL
+                    ================================== -->
+
+                    <div class="form-group">
+
+                        <label for="loginEmail">
+                            Email Address
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="ri-mail-line input-icon"></i>
+
+                            <input type="email" id="loginEmail" name="loginEmail" placeholder="Enter your email" autocomplete="off" required>
+
+                        </div>
+
+                        <small class="form-error" id="loginEmailError"></small>
+
+                    </div>
+
+
+                    <!-- =================================
+                         PASSWORD
+                    ================================== -->
+
+                    <div class="form-group">
+
+                        <div class="password-label-row">
+
+                            <label for="loginPassword">
+                                Password
+                            </label>
+
+                            <a href="#" class="forgot-password">
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+
+                        <div class="input-wrapper">
+
+                            <i class="ri-lock-line input-icon"></i>
+
+                            <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password" autocomplete="new-password" required>
+
+                            <button type="button" class="password-toggle" data-target="loginPassword"
+                                aria-label="Show password">
+                                <i class="ri-eye-line"></i>
+                            </button>
+
+                        </div>
+
+                        <small class="form-error" id="loginPasswordError"></small>
+
+                    </div>
+
+
+                    <!-- =================================
+                         REMEMBER ME
+                    ================================== -->
+
+                    <div class="login-options">
+
+                        <label class="checkbox-label">
+
+                            <input type="checkbox" id="rememberMe" name="rememberMe">
+
+                            <span class="custom-checkbox">
+                                <i class="ri-check-line"></i>
+                            </span>
+
+                            <span>
+                                Remember me
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- =================================
+                         LOGIN BUTTON
+                    ================================== -->
+
+                    <button type="submit" class="auth-submit-btn" id="loginBtn">
+
+                        <span>Login</span>
+
+                        <i class="ri-arrow-right-line"></i>
+
+                    </button>
+
+
+                    <!-- =================================
+                         FORM MESSAGE
+                    ================================== -->
+
+                    <div class="form-message" id="loginMessage" role="alert"></div>
+
+                </form>
+
+
+                <!-- =================================
+                     REGISTER LINK
+                ================================== -->
+
+                <div class="auth-switch">
+
+                    <span>
+                        Don't have an account?
+                    </span>
+
+                    <a href="register.html">
+
+                        Create Account
+
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- =================================
+                     BACK HOME
+                ================================== -->
+
+                <a href="index.html" class="back-home">
+
+                    <i class="ri-arrow-left-line"></i>
+
+                    Back to CareerCompass
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Authentication JavaScript -->
+
+    <script src="JS Folder/auth.js"></script>
+
+</body>
+
+</html>

@@ -1,16 +1,45 @@
+from auth import auth
 import os
 import re
 
 from dotenv import load_dotenv
 load_dotenv()
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, session
 from flask_cors import CORS
 import mysql.connector
 
+from datetime import timedelta
+
 
 app = Flask(__name__)
-CORS(app)
+
+# =========================================
+# SESSION CONFIGURATION
+# =========================================
+
+app.secret_key = os.getenv("SECRET_KEY", "careercompass-dev-secret-key")
+app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(days=30)
+
+app.config["SESSION_COOKIE_HTTPONLY"] = True
+app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
+app.config["SESSION_COOKIE_SECURE"] = False
+
+app.register_blueprint(auth)
+
+CORS(
+    app,
+    resources={
+        r"/api/*": {
+            "origins": [
+                "http://127.0.0.1:5500",
+                "http://localhost:5500"
+            ],
+            "supports_credentials": True
+        }
+    }
+)
+
 app.config["JSON_SORT_KEYS"] = False
 
 
@@ -87,9 +116,10 @@ def get_careers():
                 color,
                 image,
                 short_description,
-                salary_min,
+               salary_min,
                 salary_max,
                 demand,
+                difficulty,
                 experience
             FROM careers
             ORDER BY id;
@@ -163,6 +193,8 @@ def get_careers():
                 },
 
                 "demand": career["demand"],
+
+                "difficulty": career["difficulty"],
 
                 "experience": career["experience"],
 
@@ -524,50 +556,8 @@ def get_career(career_id):
             for item in related
         ]
 
-
         # =====================================
-        # 12. PROJECTS TO BUILD
-        # career_projects -> projects
-        # ordered by project_order
-        # =====================================
-
-        cursor.execute("""
-            SELECT
-                p.id,
-                p.title,
-                p.description,
-                p.difficulty,
-                p.project_type,
-                p.image,
-                p.url
-            FROM career_projects cp
-            JOIN projects p
-                ON cp.project_id = p.id
-            WHERE cp.career_id = %s
-            ORDER BY cp.project_order;
-        """, (career_id,))
-
-        projects = cursor.fetchall()
-
-
-        response["projects"] = [
-
-            {
-                "id": item["id"],
-                "title": item["title"],
-                "shortDescription": item["description"],
-                "difficulty": item["difficulty"],
-                "type": item["project_type"],
-                "image": item["image"],
-                "url": item["url"]
-            }
-
-            for item in projects
-        ]
-
-
-        # =====================================
-        # 13. FAQs
+        # 12. FAQs
         # =====================================
 
         cursor.execute("""
@@ -786,6 +776,49 @@ def get_career_roadmap(career_id):
                     []
                 )
             })
+
+
+                    # =====================================
+        # 7. PROJECTS TO BUILD
+        #
+        # career_projects -> projects
+        # ordered by project_order
+        # =====================================
+
+        cursor.execute("""
+            SELECT
+                p.id,
+                p.title,
+                p.description,
+                p.difficulty,
+                p.project_type,
+                p.image,
+                p.url
+            FROM career_projects cp
+            JOIN projects p
+                ON cp.project_id = p.id
+            WHERE cp.career_id = %s
+            ORDER BY cp.project_order;
+        """, (career_id,))
+
+        projects = cursor.fetchall()
+
+        response["projects"] = [
+
+            {
+                "id": item["id"],
+                "title": item["title"],
+                "shortDescription": item["description"],
+                "difficulty": item["difficulty"],
+                "type": item["project_type"],
+                "image": item["image"],
+                "url": item["url"]
+            }
+
+            for item in projects
+        ]
+
+
 
         return jsonify(response)
 

@@ -1,0 +1,1053 @@
+/* =========================================================
+   CAREERCOMPASS - COMMON NAVBAR
+   Clean / Minimal / Light Design
+========================================================= */
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+html {
+    scroll-behavior: smooth;
+}
+ body {
+     font-family: 'Plus Jakarta Sans', sans-serif;
+     background-color: #F8F9FD;
+     color: #6B7280;
+     line-height: 1.6;
+     -webkit-font-smoothing: antialiased;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     /* color: #111827; */
+     font-weight: 700;
+ }
+ a{
+    text-decoration: none;
+ }
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.cc-navbar {
+    width: 100%;
+    height: 82px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 9999;
+}
+
+
+/* =========================================================
+   MAIN NAVBAR CONTAINER
+========================================================= */
+
+.cc-navbar-container {
+    width: min(1400px, calc(100% - 64px));
+
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+/* =========================================================
+   LOGO - LEFT
+========================================================= */
+
+.brand-logo, .mobile-brand-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    width: fit-content;
+    color: #333;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.logo-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #8B5CF6;
+    color: #ffffff;
+    font-size: 22px;
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.35);
+}
+
+.brand-logo > span:last-child span, .mobile-brand-logo > span:last-child span {
+    color: #8B5CF6;
+}
+
+
+/* =========================================================
+   NAVIGATION - CENTER
+========================================================= */
+
+.cc-nav-wrapper {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+
+.cc-nav-links {
+    list-style: none;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 36px;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+.cc-nav-links li {
+    margin: 0;
+
+    padding: 0;
+}
+
+
+/* Navigation Link */
+
+.cc-nav-links a {
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 8px 0;
+
+    color: #475569;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    transition: color 0.2s ease;
+}
+
+
+/* No Navigation Icons */
+
+.cc-nav-links a i {
+    display: none;
+}
+
+
+/* Hover */
+
+.cc-nav-links a:hover {
+    color: #8B5CF6;
+}
+
+
+/* =========================================================
+   ACTIVE NAVIGATION
+========================================================= */
+
+.cc-nav-links a.active {
+    color: #8B5CF6;
+
+    font-weight: 600;
+}
+
+
+.cc-nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 1px;
+
+    height: 2px;
+
+    background: #8B5CF6;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   AUTH AREA - RIGHT
+========================================================= */
+
+.cc-auth-area {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   GUEST ACTIONS
+========================================================= */
+
+.cc-guest-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 24px;
+}
+
+
+/* Login */
+
+.cc-login-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 9px 2px;
+
+    color: #334155;
+
+    background: transparent;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: color 0.2s ease;
+}
+
+
+.cc-login-btn:hover {
+    color: #8B5CF6;
+}
+
+
+/* =========================================================
+   GET STARTED BUTTON
+========================================================= */
+
+.cc-register-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 128px;
+    padding: 12px 20px;
+    color: #ffffff;
+     background: linear-gradient(135deg, #6D5DF6, #5B5DF6);
+    border: 1px solid #2563eb;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    border-radius: 9px;
+
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.cc-register-btn:hover {
+     background: linear-gradient(135deg, #5e4ef0, #474aed);
+
+    border-color: #8B5CF6;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.2);
+}
+
+
+/* =========================================================
+   LOGGED-IN USER
+========================================================= */
+
+.cc-user-area {
+    position: relative;
+
+    display: none;
+}
+
+
+.cc-user-area.visible {
+    display: block;
+}
+
+
+/* User Button */
+
+.cc-user-btn {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 5px 7px;
+
+    border: none;
+
+    background: transparent;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+}
+
+
+.cc-user-btn:hover {
+    background: #f8fafc;
+}
+
+
+/* Avatar */
+
+.cc-user-avatar {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #8B5CF6;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* Username */
+
+.cc-user-name {
+    max-width: 120px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* Arrow */
+
+.cc-user-arrow {
+    color: #64748b;
+
+    font-size: 15px;
+
+    transition: transform 0.2s ease;
+}
+
+
+.cc-user-btn.open .cc-user-arrow {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   USER DROPDOWN
+========================================================= */
+
+.cc-user-dropdown {
+    position: absolute;
+
+    top: calc(100% + 12px);
+
+    right: 0;
+
+    width: 245px;
+
+    padding: 7px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(-5px);
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.cc-user-dropdown.open {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* Dropdown Header */
+
+.cc-dropdown-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 9px;
+}
+
+
+.cc-dropdown-avatar {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.cc-dropdown-user-info {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.cc-dropdown-user-info strong {
+    color: #0f172a;
+
+    font-size: 13px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.cc-dropdown-user-info span {
+    color: #64748b;
+
+    font-size: 11px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* Divider */
+
+.cc-dropdown-divider {
+    height: 1px;
+
+    background: #e5e7eb;
+
+    margin: 3px 5px 6px;
+}
+
+
+/* Dropdown Links / Logout */
+
+.cc-user-dropdown > a,
+.cc-logout-btn {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: transparent;
+
+    color: #475569;
+
+    text-decoration: none;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.cc-user-dropdown > a:hover {
+    color: #2563eb;
+
+    background: #eff6ff;
+}
+
+
+.cc-logout-btn:hover {
+    color: #dc2626;
+
+    background: #fef2f2;
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.cc-mobile-menu-btn {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #0f172a;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+
+.cc-mobile-menu-btn:hover {
+    color: #2563eb;
+
+    background: #f8fafc;
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+.cc-mobile-menu {
+    display: none;
+
+    position: absolute;
+
+    top: 82px;
+
+    left: 0;
+
+    right: 0;
+
+    padding: 14px 24px 20px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+
+.cc-mobile-menu.open {
+    display: block;
+}
+
+
+/* Mobile Links */
+
+.cc-mobile-links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.cc-mobile-links a {
+    display: flex;
+
+    align-items: center;
+
+    padding: 12px 10px;
+
+    color: #475569;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    border-radius: 7px;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.cc-mobile-links a i {
+    display: none;
+}
+
+
+.cc-mobile-links a:hover,
+.cc-mobile-links a.active {
+    color: #2563eb;
+
+    background: #f1f5ff;
+}
+
+
+/* =========================================================
+   MOBILE GUEST ACTIONS
+========================================================= */
+
+.cc-mobile-guest-actions {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 13px;
+
+    padding-top: 13px;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+
+.cc-mobile-login,
+.cc-mobile-register {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 11px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.cc-mobile-login {
+    color: #334155;
+
+    background: #f1f5f9;
+}
+
+
+.cc-mobile-register {
+    color: #ffffff;
+
+    background: #2563eb;
+}
+
+
+/* =========================================================
+   MOBILE USER
+========================================================= */
+
+.cc-mobile-user-actions {
+    display: none;
+
+    margin-top: 13px;
+
+    padding-top: 13px;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+
+.cc-mobile-user-actions.visible {
+    display: block;
+}
+
+
+.cc-mobile-user-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+.cc-mobile-avatar {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.cc-mobile-user-info > div {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.cc-mobile-user-info strong {
+    color: #0f172a;
+
+    font-size: 13px;
+}
+
+
+.cc-mobile-user-info span {
+    color: #64748b;
+
+    font-size: 11px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* Mobile Logout */
+
+.cc-mobile-logout {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.cc-mobile-logout:hover {
+    background: #fee2e2;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .cc-navbar-container {
+        width: calc(100% - 48px);
+
+        gap: 20px;
+    }
+
+
+    .cc-nav-links {
+        gap: 25px;
+    }
+
+
+    .cc-nav-links a {
+        font-size: 14px;
+    }
+
+
+    .cc-logo-text {
+        font-size: 23px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .cc-navbar-container {
+        width: calc(100% - 32px);
+
+        gap: 15px;
+    }
+
+
+    .cc-nav-links {
+        gap: 17px;
+    }
+
+
+    .cc-nav-links a {
+        font-size: 13px;
+    }
+
+
+    .cc-guest-actions {
+        gap: 13px;
+    }
+
+
+    .cc-register-btn {
+        min-width: 110px;
+
+        padding: 11px 15px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .cc-navbar {
+        height: 72px;
+    }
+
+
+    .cc-navbar-container {
+        width: calc(100% - 30px);
+
+        gap: 15px;
+    }
+
+
+    /* Hide desktop navigation */
+
+    .cc-nav-wrapper,
+    .cc-auth-area {
+        display: none;
+    }
+
+
+    /* Show mobile button */
+
+    .cc-mobile-menu-btn {
+        display: flex;
+
+        margin-left: auto;
+    }
+
+
+    .cc-mobile-menu {
+        top: 72px;
+    }
+
+
+    .cc-logo-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .cc-logo-text {
+        font-size: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .cc-navbar-container {
+        width: calc(100% - 22px);
+    }
+
+
+    .cc-logo {
+        gap: 9px;
+    }
+
+
+    .cc-logo-icon {
+        width: 39px;
+        height: 39px;
+
+        border-width: 2.5px;
+    }
+
+
+    .cc-logo-icon svg {
+        width: 26px;
+        height: 26px;
+    }
+
+
+    .cc-logo-text {
+        font-size: 20px;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .cc-mobile-menu {
+        padding-left: 12px;
+
+        padding-right: 12px;
+    }
+
+}

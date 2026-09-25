@@ -2,332 +2,160 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Google Font -->
+
+    <title>Contact - CareerCompass</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Remix Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-
+    <link rel="stylesheet" href="CSS Folder/navbar.css">
+    <link rel="stylesheet" href="CSS Folder/footer.css">
     <link rel="stylesheet" href="CSS Folder/contact.css">
+
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="nav-container">
-        <a href="#" class="logo">
-            <img src="assets/logos/logo.jpg" alt="CareerCompass Logo">
-            CareerCompass
-        </a>
-        
-        <!-- Mobile Menu Toggle Button -->
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="careers.html">Career</a></li>
-            <li><a href="roadmap.html">Roadmap</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="about.html">About</a></li>
-            <!-- Mobile par button ko menu ke andar show karne ke liye ya alag rakhne ke liye -->
-            <li class="mobile-btn-container"><a href="contact.html" class="nav-btn mobile-contact-btn">Contact</a></li>
-        </ul>
+    <div id="navbar"></div>
 
-        <a href="contact.html" class="nav-btn desktop-btn">Contact</a>
-    </div>
-</nav>
-    <!-- ==================== SECTION 1: HERO ==================== -->
-    <section class="hero-section">
-        <div class="hero-glow"></div>
-        <div class="container hero-content">
-            <div class="badge">
-                <i class="fa-solid fa-envelope"></i> Contact Us
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="contact-hero">
+
+            <div class="hero-content">
+
+                <span class="badge">
+                    <i class="ri-chat-3-line"></i>
+                    CONTACT CAREERCOMPASS
+                </span>
+
+                <h1>
+                    We're Here to
+                    <span>Help You Move Forward.</span>
+                </h1>
+
+                <p>
+                    Have a question, feedback or need help using
+                    CareerCompass? Get in touch with us.
+                </p>
+
             </div>
-            <h1 class="hero-title">Get In Touch With CareerCompass</h1>
-            <p class="hero-desc">
-                Have questions, suggestions, feedback, or want to collaborate?<br>
-                We're always happy to connect and help students build successful careers.
-            </p>
-            <div class="hero-buttons">
-                <a href="#contact-form" class="btn btn-primary">
-                    Send a Message <i class="fa-solid fa-arrow-down"></i>
-                </a>
-                <a href="careers.html" class="btn btn-secondary">Explore Careers</a>
-            </div>
-            <div class="hero-illustration">
-                <div class="ill-item">
-                    <div class="ill-icon-box"><i class="fa-solid fa-paper-plane"></i></div>
-                    <span class="ill-text">Quick Support</span>
-                </div>
-                <div class="ill-item">
-                    <div class="ill-icon-box"><i class="fa-solid fa-comments"></i></div>
-                    <span class="ill-text">Career Guidance</span>
-                </div>
-                <div class="ill-item">
-                    <div class="ill-icon-box"><i class="fa-solid fa-handshake"></i></div>
-                    <span class="ill-text">Collaboration</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ==================== SECTION 2: CONTACT INFORMATION ==================== -->
-    <section class="contact-info-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contact Information</h2>
-                <p class="section-desc">Reach out to us through any of the following ways.</p>
-            </div>
-            <div class="info-grid">
-                <!-- Card 1 -->
-                <div class="info-card">
-                    <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
-                    <h3 class="info-card-title">Email</h3>
-                    <p class="info-card-desc">Send us your questions anytime.</p>
-                    <div class="info-card-value">hello@CareerCompass.dev</div>
-                    <a href="mailto:hello@CareerCompass.dev" class="btn">Email Us</a>
-                </div>
-                <!-- Card 2 -->
-                <div class="info-card">
-                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
-                    <h3 class="info-card-title">Location</h3>
-                    <p class="info-card-desc">Based in India.</p>
-                    <div class="info-card-value">Mumbai, Maharashtra</div>
-                    <a href="#" class="btn" pointer-events: none;">View Map</a>
-                </div>
-                <!-- Card 3 -->
-                <div class="info-card">
-                    <div class="info-icon"><i class="fa-brands fa-github"></i></div>
-                    <h3 class="info-card-title">GitHub</h3>
-                    <p class="info-card-desc">View the project repository.</p>
-                    <div class="info-card-value">github.com/CareerCompass</div>
-                    <a href="https://github.com" target="_blank" class="btn">Visit GitHub</a>
-                </div>
-                <!-- Card 4 -->
-                <div class="info-card">
-                    <div class="info-icon"><i class="fa-brands fa-linkedin-in"></i></div>
-                    <h3 class="info-card-title">LinkedIn</h3>
-                    <p class="info-card-desc">Connect professionally.</p>
-                    <div class="info-card-value">linkedin.com/company/CareerCompass</div>
-                    <a href="https://linkedin.com" target="_blank" class="btn">Visit LinkedIn</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ==================== SECTION 3: CONTACT FORM ==================== -->
-    <section id="contact-form" class="contact-form-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Send Us A Message</h2>
-                <p class="section-desc">Fill out the form below and we'll get back to you as soon as possible.</p>
-            </div>
-            <div class="form-card">
-                <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label class="form-label" for="fullname">Full Name</label>
-                            <input type="text" id="fullname" class="form-control" placeholder="John Doe" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="subject">Subject</label>
-                        <input type="text" id="subject" class="form-control" placeholder="How can we help you?"
-                            required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="message">Message</label>
-                        <textarea id="message" class="form-control" placeholder="Write your message here..."
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="form-submit-btn">Send Message</button>
-                    <div class="form-note">We usually respond within 24–48 hours.</div>
-                </form>
-            </div>
-        </div>
-    </section>
 
-    <!-- ==================== SECTION 4: WHY CONTACT US ==================== -->
-    <section class="why-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Why Contact Us?</h2>
-                <p class="section-desc">We are here to support your student journey every step of the way.</p>
-            </div>
-            <div class="features-grid">
-                <!-- Card 1 -->
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-compass"></i></div>
-                    <div class="feature-content">
-                        <h3>Career Guidance</h3>
-                        <p>Get answers related to career paths, skill requirements, and industry standards.</p>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-book-open"></i></div>
-                    <div class="feature-content">
-                        <h3>Resource Suggestions</h3>
-                        <p>Recommend new learning resources, courses, or tools to expand our library.</p>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-                    <div class="feature-content">
-                        <h3>Report Issues</h3>
-                        <p>Report broken links, outdated roadmaps, or platform errors so we can fix them fast.</p>
-                    </div>
-                </div>
-                <!-- Card 4 -->
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-handshake-angle"></i></div>
-                    <div class="feature-content">
-                        <h3>Collaborations</h3>
-                        <p>Reach out for institutional partnerships, guest writing, and sponsorships.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- CONTACT SECTION -->
 
-    <!-- ==================== SECTION 5: FAQ ==================== -->
-    <section class="faq-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <p class="section-desc">Find quick answers to common questions about CareerCompass.</p>
-            </div>
-            <div class="faq-container">
-                <!-- Question 1 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Is CareerCompass free to use?</span>
-                        <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                    <div class="faq-answer">
-                        Yes, CareerCompass is 100% free for students and aspiring professionals looking to build structured
-                        career paths and discover top learning resources.
-                    </div>
-                </div>
-                <!-- Question 2 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Can I request a new career roadmap?</span>
-                        <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                    <div class="faq-answer">
-                        Absolutely! You can submit a request using our contact form above with your desired domain, and
-                        our curriculum team will review it for upcoming updates.
-                    </div>
-                </div>
-                <!-- Question 3 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>How often are resources updated?</span>
-                        <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                    <div class="faq-answer">
-                        Our resource library is continuously reviewed and updated on a monthly basis to ensure all
-                        links, tools, and tutorials remain relevant and high-quality.
-                    </div>
-                </div>
-                <!-- Question 4 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Can I contribute resources?</span>
-                        <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                    <div class="faq-answer">
-                        We love community contributions! You can reach out via our contact form or visit our GitHub
-                        repository to submit pull requests and suggestions.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="contact-section">
 
-    <!-- ==================== SECTION 6: CALL TO ACTION ==================== -->
-    <section class="cta-section" style="padding: 90px 0 120px; background-color: #F8FAFF;">
-        <div class="container">
-            <div class="cta-card"
-                style="max-width: 1050px; margin: 0 auto; background: linear-gradient(135deg, #1A1C30 0%, #111322 100%); border-radius: 24px; padding: 70px 50px; text-align: center; position: relative; overflow: hidden; box-shadow: 0 20px 35px -10px rgba(91, 93, 246, 0.12);">
-                <div class="cta-glow"
-                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 500px; height: 250px; background: radial-gradient(circle, rgba(91, 93, 246, 0.25) 0%, transparent 70%); pointer-events: none;">
-                </div>
-                <div class="cta-content" style="position: relative; z-index: 1; max-width: 700px; margin: 0 auto;">
-                    <h2 class="cta-title"
-                        style="font-size: 40px; font-weight: 800; color: #FFFFFF; margin-bottom: 20px; letter-spacing: -0.02em;">
-                        Ready To Start Your Career Journey?</h2>
-                    <p class="cta-desc" style="font-size: 17px; color: #94A3B8; margin-bottom: 36px; line-height: 1.7;">
-                        Explore careers, discover learning resources,<br>
-                        and build the skills for your dream job.
-                    </p>
-                    <div class="cta-buttons" style="display: flex; justify-content: center; gap: 16px;">
-                        <a href="roadmap.html" class="btn btn-primary">Explore Roadmaps</a>
-                        <a href="resources.html" class="btn btn-secondary"
-                            style="background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.2);">Browse
-                            Resources</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="contact-grid">
 
-    <footer class="footer">
 
-        <div class="footer-container">
+                <!-- LEFT -->
 
-            <div class="footer-wrapper">
+                <div class="contact-info">
 
-                <!-- ======================
-                    Brand
-            ======================= -->
+                    <span class="section-label">
+                        GET IN TOUCH
+                    </span>
 
-                <div class="footer-brand">
-
-                    <a href="#" class="footer-logo">
-
-                        <img src="assets/logos/logo.jpg" alt="CareerCompass Logo">
-
-                        <span>CareerCompass</span>
-
-                    </a>
+                    <h2>
+                        How can we help?
+                    </h2>
 
                     <p>
-                        Discover careers, explore learning paths, and access curated resources—all in one place.
+                        Whether you have a question about careers,
+                        roadmaps, resources or your CareerCompass
+                        account, we're here to help.
                     </p>
 
-                    <div class="social-links">
 
-                        <a href="#">
-                            <i class="ri-twitter-fill"></i>
+                    <div class="contact-cards">
+
+                        <a href="careers.html" class="contact-card">
+
+                            <div class="contact-icon purple">
+                                <i class="ri-compass-3-line"></i>
+                            </div>
+
+                            <div>
+                                <h3>Explore Careers</h3>
+
+                                <p>
+                                    Looking for career information?
+                                    Explore available career paths.
+                                </p>
+                            </div>
+
+                            <i class="ri-arrow-right-line arrow"></i>
+
                         </a>
 
-                        <a href="#">
-                            <i class="ri-linkedin-box-fill"></i>
+
+                        <a href="dashboard.html" class="contact-card">
+
+                            <div class="contact-icon blue">
+                                <i class="ri-user-settings-line"></i>
+                            </div>
+
+                            <div>
+                                <h3>Account & Progress</h3>
+
+                                <p>
+                                    Check your profile, selected career and learning progress.
+                                </p>
+                            </div>
+
+                            <i class="ri-arrow-right-line arrow"></i>
+
                         </a>
 
-                        <a href="#">
-                            <i class="ri-github-fill"></i>
+
+                        <a href="about.html" class="contact-card">
+
+                            <div class="contact-icon green">
+                                <i class="ri-information-line"></i>
+                            </div>
+
+                            <div>
+                                <h3>About CareerCompass</h3>
+
+                                <p>
+                                    Learn more about the platform,
+                                    its purpose and how it works.
+                                </p>
+                            </div>
+
+                            <i class="ri-arrow-right-line arrow"></i>
+
                         </a>
 
-                        <a href="#">
-                            <i class="ri-instagram-line"></i>
+
+                        <a href="dashboard.html" class="contact-card">
+
+                            <div class="contact-icon orange">
+                                <i class="ri-dashboard-line"></i>
+                            </div>
+
+                            <div>
+                                <h3>Your Dashboard</h3>
+
+                                <p>
+                                    Continue your learning journey
+                                    and check your roadmap progress.
+                                </p>
+                            </div>
+
+                            <i class="ri-arrow-right-line arrow"></i>
+
                         </a>
 
                     </div>
@@ -335,110 +163,248 @@
                 </div>
 
 
-                <!-- ======================
-                Platform Links
-            ======================= -->
+                <!-- FORM -->
 
-                <div class="footer-links">
+                <div class="contact-form-card">
 
-                    <h3>Platform</h3>
+                    <div class="form-heading">
 
-                    <ul>
+                        <div class="form-icon">
+                            <i class="ri-mail-send-line"></i>
+                        </div>
 
-                        <li><a href="careers.html">Career Explorer</a></li>
+                        <div>
+                            <h2>Send Us a Message</h2>
 
-                        <li><a href="roadmap.html">Roadmaps</a></li>
+                            <p>
+                                We'd love to hear from you.
+                            </p>
+                        </div>
 
-                        <li><a href="resources.html">Resources</a></li>
+                    </div>
 
-                        <li><a href="about.html">About</a></li>
 
-                        <!-- <li><a href="#">Resume Builder</a></li> -->
+                    <form id="contactForm">
 
-                    </ul>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="contactName">
+                                    Your Name
+                                </label>
+
+                                <input type="text" id="contactName" placeholder="Enter your name" required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="contactEmail">
+                                    Email Address
+                                </label>
+
+                                <input type="email" id="contactEmail" placeholder="Enter your email" required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="contactSubject">
+                                Subject
+                            </label>
+
+                            <select id="contactSubject" required>
+
+                                <option value="">
+                                    Select a topic
+                                </option>
+
+                                <option value="Career Question">
+                                    Career Question
+                                </option>
+
+                                <option value="Roadmap Help">
+                                    Roadmap Help
+                                </option>
+
+                                <option value="Website Feedback">
+                                    Website Feedback
+                                </option>
+
+                                <option value="Technical Issue">
+                                    Technical Issue
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="contactMessage">
+                                Message
+                            </label>
+
+                            <textarea id="contactMessage" rows="6" placeholder="Write your message..."
+                                required></textarea>
+
+                        </div>
+
+
+                        <button type="submit" class="primary-btn">
+
+                            Send Message
+
+                            <i class="ri-send-plane-line"></i>
+
+                        </button>
+
+
+                        <p class="form-message" id="formMessage"></p>
+
+                    </form>
 
                 </div>
 
+            </div>
 
-                <!-- ======================
-                Company Links
-            ======================= -->
-
-                <div class="footer-links">
-
-                    <h3>Company</h3>
-
-                    <ul>
-
-                        <li><a href="#">About Us</a></li>
-
-                        <li><a href="#">Contact Us</a></li>
-
-                        <li><a href="#">FAQ</a></li>
-
-                        <li><a href="#">Privacy Policy</a></li>
-
-                    </ul>
-
-                </div>
+        </section>
 
 
-                <!-- ======================
-                Support Links
-            ======================= -->
+        <!-- QUICK LINKS -->
 
-                <div class="footer-links">
+        <section class="quick-section">
 
-                    <h3>Support</h3>
+            <div class="section-title">
 
-                    <ul>
+                <span>
+                    EXPLORE CAREERCOMPASS
+                </span>
 
-                        <li><a href="#">Help Center</a></li>
+                <h2>
+                    Find What You Need
+                </h2>
 
-                        <li><a href="#">FAQs</a></li>
-
-                        <li><a href="#">Privacy Policy</a></li>
-
-                        <li><a href="#">Terms & Conditions</a></li>
-
-                    </ul>
-
-                </div>
+            </div>
 
 
-                <!-- ======================
-                    CTA CARD
-            ======================= -->
+            <div class="quick-grid">
 
-                <div class="footer-cta">
+
+                <a href="careers.html" class="quick-card">
+
+                    <i class="ri-compass-3-line"></i>
 
                     <h3>
-                        Ready to Explore?
+                        Explore Careers
                     </h3>
 
                     <p>
-                        Discover your ideal career path and start learning today.
+                        Discover career paths and required skills.
                     </p>
 
-                    <a href="careers.html" class="footer-btn">
-                        Explore Careers
-                    </a>
-                </div>
+                </a>
+
+
+                <a href="dashboard.html" class="quick-card">
+
+                    <i class="ri-dashboard-line"></i>
+
+                    <h3>Your Dashboard</h3>
+
+                    <p>
+                        Continue your learning journey and track your progress.
+                    </p>
+
+                </a>
+
+
+                <a href="about.html" class="quick-card">
+
+                    <i class="ri-information-line"></i>
+
+                    <h3>
+                        About Us
+                    </h3>
+
+                    <p>
+                        Learn more about CareerCompass.
+                    </p>
+
+                </a>
+
+
+                <a href="index.html" class="quick-card">
+
+                    <i class="ri-home-5-line"></i>
+
+                    <h3>
+                        Back to Home
+                    </h3>
+
+                    <p>
+                        Return to the CareerCompass homepage.
+                    </p>
+
+                </a>
+
             </div>
 
+        </section>
 
-            <!--=========================
-            Bottom Footer
-        ==========================-->
 
-            <div class="footer-bottom">
+        <!-- CTA -->
+
+        <section class="contact-cta">
+
+            <div>
+
+                <i class="ri-compass-3-line"></i>
+
+                <h2>
+                    Your Career Journey Starts Here.
+                </h2>
+
                 <p>
-                    © 2026 CareerCompass. All Rights Reserved.
+                    Explore careers, choose your direction and
+                    start building the skills you need.
                 </p>
+
+                <a href="careers.html" class="primary-btn">
+
+                    Explore Careers
+
+                    <i class="ri-arrow-right-line"></i>
+
+                </a>
+
             </div>
-        </div>
-    </footer>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <div id="footer"></div>
+
+
+    <script src="JS Folder/navbar.js"></script>
+    <script src="JS Folder/footer.js"></script>
     <script src="JS Folder/contact.js"></script>
+
 </body>
 
 </html>
